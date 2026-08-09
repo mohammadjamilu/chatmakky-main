@@ -277,13 +277,15 @@
   }
 
   /* model provider chips */
-  .provider-grid{display:grid; grid-template-columns:repeat(6, 1fr); gap:14px;}
+  .provider-grid{display:grid; grid-template-columns:repeat(6, 1fr); gap:18px;}
   .provider-card{
     background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm);
-    padding:22px 16px; display:flex; align-items:center; justify-content:center;
+    padding:26px 18px; display:flex; align-items:center; justify-content:center;
+    transition:border-color .2s, transform .2s, background .2s;
   }
+  .provider-card:hover{border-color:var(--primary-light); transform:translateY(-3px); background:var(--surface-2);}
   .provider-card .ic{
-    width:46px; height:46px; border-radius:10px; background:var(--surface-2);
+    width:72px; height:72px; border-radius:16px; background:var(--surface-2);
     display:flex; align-items:center; justify-content:center; font-size:17px; flex-shrink:0;
   }
   .provider-card h4{font-size:0.9rem; font-weight:600;}
