@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<!-- BASE:START (managed by Coding Agent — do not edit) -->
-<base href="/chatmakky-main/">
-<!-- BASE:END -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -493,93 +489,6 @@
     </div>
   </section>
 
-  <!-- AUTOMATION -->
-  <section class="section section-alt" id="automation">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Automation</div>
-        <h2>Let the agent handle the busywork</h2>
-        <p>Automate the repetitive stuff, from comment replies to calendar bookings.</p>
-      </div>
-      <div class="auto-grid">
-        <div class="auto-card"><div class="ic">⚡</div><h4>Automatic message reply</h4><p>Reply to every incoming message in your brand's voice, any time of day.</p></div>
-        <div class="auto-card"><div class="ic">💭</div><h4>Comment automation</h4><p>Reply to comments on Facebook and Instagram posts, or move the chat to DM.</p></div>
-        <div class="auto-card"><div class="ic">⭕</div><h4>Story reply</h4><p>Respond when someone replies to your Instagram or Facebook story.</p></div>
-        <div class="auto-card"><div class="ic">🎬</div><h4>Reels reply</h4><p>Catch comments and replies on Reels and turn them into chats.</p></div>
-        <div class="auto-card"><div class="ic">🔁</div><h4>Follow up</h4><p>Check back on quiet conversations so leads don't go cold.</p></div>
-        <div class="auto-card"><div class="ic">📅</div><h4>Booking</h4><p>Let customers check availability and book appointments from chat.</p></div>
-        <div class="auto-card"><div class="ic">📤</div><h4>Post scheduling</h4><p>Queue and publish posts across connected channels from one place.</p></div>
-        <div class="auto-card"><div class="ic">🧩</div><h4>Drag-and-drop flows</h4><p>Build conversation logic visually. Branch, wait, call a tool, or hand off to a human.</p></div>
-      </div>
-
-      <p class="flow-caption" style="margin-top:56px; text-align:center;">A real flow, built by dragging nodes onto a canvas</p>
-      <p class="flow-caption" style="margin-top:-14px; text-align:center; display:none;" id="swipe-hint">← Swipe to see the full flow →</p>
-      <div class="flow-builder">
-        <div class="fb-topbar">
-          <div class="fb-lights"><span></span><span></span><span></span></div>
-          <div class="fb-title">Flow Builder</div>
-          <button class="fb-reset" type="button">↻ Reset</button>
-        </div>
-        <div class="fb-canvas-scroll">
-          <div class="fb-canvas">
-            <div class="fb-badge fb-badge-drag">✛ Drag &amp; Drop</div>
-            <div class="fb-badge fb-badge-ai">✨ AI powered</div>
-
-            <svg class="fb-wires" viewBox="0 0 1040 250" preserveAspectRatio="none">
-              <defs>
-                <marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                  <circle cx="4" cy="4" r="3.4" fill="#3DDC97"></circle>
-                </marker>
-                <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                  <circle cx="4" cy="4" r="3.4" fill="#F0994D"></circle>
-                </marker>
-              </defs>
-              <path class="wire wire-teal" d="M88,119 C100,119 100,113 118,113" marker-end="url(#arrowTeal)"></path>
-              <path class="wire wire-teal" d="M350,90 C400,90 420,43 460,43" marker-end="url(#arrowTeal)"></path>
-              <path class="wire wire-orange" d="M350,140 C400,140 420,183 460,183" marker-end="url(#arrowOrange)"></path>
-              <path class="wire wire-teal" d="M720,183 C740,183 745,173 760,173" marker-end="url(#arrowTeal)"></path>
-            </svg>
-
-            <div class="fb-port teal" style="left:83px; top:114px;"></div>
-            <div class="fb-port hollow" style="left:114px; top:109px;"></div>
-            <div class="fb-port teal" style="left:346px; top:86px;"></div>
-            <div class="fb-port hollow" style="left:456px; top:39px;"></div>
-            <div class="fb-port orange" style="left:346px; top:136px;"></div>
-            <div class="fb-port hollow" style="left:456px; top:179px;"></div>
-            <div class="fb-port teal" style="left:716px; top:179px;"></div>
-            <div class="fb-port hollow" style="left:756px; top:169px;"></div>
-
-            <div class="fb-node start" style="left:0px; top:95px; width:90px;">
-              <span class="dot-ic">▶</span> Start
-            </div>
-
-            <div class="fb-node condition" style="left:120px; top:70px; width:230px;">
-              <div class="fb-node-head">🔀 Condition</div>
-              <div class="fb-node-body">
-                <div class="kv"><span class="key">intent</span> <span>=</span> <span class="val">support</span></div>
-              </div>
-            </div>
-
-            <div class="fb-node message" style="left:460px; top:0px; width:260px;">
-              <div class="fb-node-head">💬 Send Message</div>
-              <div class="fb-node-body">Connects the customer to support.</div>
-            </div>
-
-            <div class="fb-node ai" style="left:460px; top:140px; width:260px;">
-              <div class="fb-node-head">⚡ AI Generate</div>
-              <div class="fb-node-body">Creates a reply with GPT.</div>
-            </div>
-
-            <div class="fb-node message" style="left:760px; top:130px; width:260px;">
-              <div class="fb-node-head">💬 Send Message</div>
-              <div class="fb-node-body">{{ai_reply}}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FULL FEATURES -->
   <section class="section" id="features">
     <div class="wrap">
@@ -601,6 +510,7 @@
             <div class="feat-item"><div class="ic">📅</div><div><h5>Booking</h5><p>Book appointments in chat and sync to your calendar.</p></div></div>
             <div class="feat-item"><div class="ic">📤</div><div><h5>Post</h5><p>Publish content to connected channels.</p></div></div>
             <div class="feat-item"><div class="ic">📣</div><div><h5>Broadcast</h5><p>Send targeted messages to contacts in bulk.</p></div></div>
+            <div class="feat-item"><div class="ic">🧩</div><div><h5>Drag-and-drop flows</h5><p>Build conversation logic visually, without code.</p></div></div>
             <div class="feat-item"><div class="ic">📊</div><div><h5>Analytics</h5><p>Track conversations, conversions, and channel performance.</p></div></div>
           </div>
         </div>
@@ -715,7 +625,7 @@
 <footer id="login" data-section="footer">
   <div class="wrap" style="padding-top:28px; padding-bottom:22px;">
     <div style="border-top:1px solid var(--line); padding-top:22px;">
-      <div class="mobile-foot-grid" style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:28px; align-items:flex-start;">
+      <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:28px; align-items:flex-start;">
         <div class="foot-brand">
           <a href="#top" class="logo" style="font-size:1rem;">
             <img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284332925_IMG_8969.PNG" alt="ChatMakky" style="width:auto; height:34px; display:block; flex-shrink:0; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"> <span style="font-weight:800; color:var(--text);">ChatMakky</span>
@@ -738,15 +648,14 @@
             <li><a href="#channels">Channels</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#automation">Automation</a></li>
           </ul>
         </div>
 
         <div class="foot-col">
           <h5>Company</h5>
           <ul>
-            <li><a href="/chatmakky-main/privacy-policy">Privacy policy</a></li>
-            <li><a href="/chatmakky-main/terms-of-service">Terms of service</a></li>
+            <li><a href="/privacy-policy">Privacy policy</a></li>
+            <li><a href="/terms-of-service">Terms of service</a></li>
             <li><a href="mailto:support@chatmakky.com">Contact</a></li>
           </ul>
 
@@ -767,8 +676,8 @@
         <div class="foot-col">
           <h5>Legal</h5>
           <ul>
-            <li><a href="/chatmakky-main/privacy-policy">Privacy policy</a></li>
-            <li><a href="/chatmakky-main/terms-of-service">Terms of service</a></li>
+            <li><a href="/privacy-policy">Privacy policy</a></li>
+            <li><a href="/terms-of-service">Terms of service</a></li>
           </ul>
         </div>
       </div>
