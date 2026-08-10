@@ -413,25 +413,14 @@
   }
 
 #mobile-menu{
-      display:none;
+      display:none !important;
     }
     #mobile-menu.open{
-      display:flex;
+      display:flex !important;
       flex-direction:column;
       gap:8px;
-    }
-    @media (max-width:640px){
-      #mobile-menu.open,
-      #mobile-menu[aria-hidden="false"]{
-        display:flex;
-        flex-direction:column;
-        gap:8px;
-        padding-top:12px;
-        padding-bottom:16px;
-      }
-      #mobile-menu:not(.open)[aria-hidden="true"]{
-        display:none;
-      }
+      padding-top:12px;
+      padding-bottom:16px;
     }
 
 @media (max-width:768px){
@@ -496,7 +485,6 @@
         gap:8px;
         padding-top:22px;
       }
-      /* If a mobile header dropdown exists elsewhere in the page, keep it compact and stacked */
       header .nav-actions > a.btn,
       header .nav-links{
         display:none !important;
@@ -643,7 +631,6 @@
       .price-amount .num{font-size:2.05rem;}
       .cta-band{padding:40px 16px; border-radius:20px;}
       footer .foot-bottom{flex-direction:column;}
-      /* Keep any mobile menu content readable and stacked if present */
       header .mobile-menu,
       header .nav-menu,
       header .dropdown-menu{
