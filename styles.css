@@ -619,18 +619,18 @@
       .dash-chart{padding:9px 10px;}
       .dash-chart-head{font-size:0.58rem;}
       .provider-grid{
-        grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)) !important;
+        grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
         gap:14px !important;
       }
       .provider-card{
-        padding:24px 16px !important;
+        padding:22px 14px !important;
         border-radius:16px;
-        min-height:184px;
+        min-height:176px;
       }
       .provider-card .ic{
-        width:60px !important;
-        height:60px !important;
-        margin-bottom:12px;
+        width:56px !important;
+        height:56px !important;
+        margin-bottom:10px;
       }
       .provider-card .ic img{
         width:76% !important;
@@ -692,14 +692,14 @@
         gap:12px !important;
       }
       .provider-card{
-        padding:22px 14px !important;
+        padding:20px 12px !important;
         border-radius:16px;
-        min-height:176px;
+        min-height:168px;
       }
       .provider-card .ic{
-        width:56px !important;
-        height:56px !important;
-        margin-bottom:10px;
+        width:52px !important;
+        height:52px !important;
+        margin-bottom:8px;
       }
       .split-visual{padding:20px 16px;}
       .split h3{font-size:1.28rem;}
