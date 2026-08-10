@@ -480,18 +480,17 @@
     }
 
     .theme-toggle{
-      width:30px;
-      height:30px;
+      width:40px;
+      height:40px;
       padding:0;
       border-radius:50%;
-      font-size:0.82rem;
+      font-size:1.05rem;
       line-height:1;
       flex-shrink:0;
     }
     .theme-toggle .theme-icon{
       display:inline-block;
-      transform:translateY(0);
-      font-size:0.82rem;
+      transform:translateY(1px);
     }
 
     body.light-mode{
@@ -506,213 +505,6 @@
       --muted-2:#6C7295;
     }
 
-    /* Light mode text/readability overrides for the entire page */
-    body.light-mode,
-    body.light-mode p,
-    body.light-mode li,
-    body.light-mode span,
-    body.light-mode label,
-    body.light-mode small,
-    body.light-mode strong,
-    body.light-mode em,
-    body.light-mode i,
-    body.light-mode a,
-    body.light-mode button{
-      color:var(--text);
-    }
-    body.light-mode .hero p.lead,
-    body.light-mode .hero-note,
-    body.light-mode .head p,
-    body.light-mode .split p,
-    body.light-mode .provider-card p,
-    body.light-mode .integration-card p,
-    body.light-mode .auto-card p,
-    body.light-mode .feat-item p,
-    body.light-mode .price-card .sub,
-    body.light-mode .dstat-sub,
-    body.light-mode .dash-sub,
-    body.light-mode .dash-chart-head,
-    body.light-mode .marquee-track span,
-    body.light-mode footer,
-    body.light-mode .foot-brand p,
-    body.light-mode .foot-col a,
-    body.light-mode .foot-bottom,
-    body.light-mode .channel-card h4,
-    body.light-mode .provider-card p,
-    body.light-mode .partner-sub{
-      color:var(--muted);
-    }
-    body.light-mode h1,
-    body.light-mode h2,
-    body.light-mode h3,
-    body.light-mode h4,
-    body.light-mode h5,
-    body.light-mode h6{
-      color:var(--text);
-    }
-    body.light-mode .logo span,
-    body.light-mode .nav-links a.nav-item,
-    body.light-mode .nav-actions .btn,
-    body.light-mode .menu-toggle,
-    body.light-mode .mm-btn,
-    body.light-mode .mm-close,
-    body.light-mode .theme-toggle,
-    body.light-mode .theme-toggle .theme-icon,
-    body.light-mode .mm-theme-toggle,
-    body.light-mode .mm-theme-toggle .theme-icon{
-      color:var(--text);
-    }
-    body.light-mode .menu-toggle{
-      -webkit-text-fill-color:var(--text);
-      text-shadow:none;
-      opacity:1;
-    }
-    body.light-mode .nav-links a.nav-item:hover,
-    body.light-mode .foot-col a:hover{
-      color:var(--text);
-    }
-    body.light-mode .mm-btn-ghost{
-      color:var(--text);
-    }
-    body.light-mode .mm-btn-solid{
-      color:#fff;
-    }
-    body.light-mode .mm-btn-solid .theme-icon{
-      color:#fff;
-    }
-    body.light-mode .mm-modal,
-    body.light-mode #mobile-menu.mobile-menu-overlay,
-    body.light-mode #mobile-menu.mobile-menu-overlay *{
-      color:var(--text);
-    }
-    body.light-mode #mobile-menu.mobile-menu-overlay{
-      background:rgba(247,248,255,0.96);
-    }
-    body.light-mode .mm-btn{
-      background:rgba(255,255,255,0.75);
-      border-color:var(--line-strong);
-    }
-    body.light-mode .mm-close{
-      background:rgba(255,255,255,0.85);
-      border-color:var(--line-strong);
-    }
-    body.light-mode .nav-actions > .theme-toggle,
-    body.light-mode .nav-actions > .theme-toggle .theme-icon{
-      color:var(--text);
-    }
-    body.light-mode .dash-title,
-    body.light-mode .dstat-num,
-    body.light-mode .price-card h3,
-    body.light-mode .feat-item h5,
-    body.light-mode .integration-card h4,
-    body.light-mode .provider-card h4,
-    body.light-mode .foot-col h5,
-    body.light-mode .partner-name,
-    body.light-mode .partner-badge{
-      color:var(--text);
-    }
-    body.light-mode .eyebrow,
-    body.light-mode .flow-caption{
-      color:#7A49C9;
-    }
-    body.light-mode .dash-chat,
-    body.light-mode .dsi,
-    body.light-mode .dt,
-    body.light-mode .dstat-label,
-    body.light-mode .dash-chart-tabs,
-    body.light-mode .check-list li,
-    body.light-mode .foot-col ul li a,
-    body.light-mode .partner-sub,
-    body.light-mode .partner-socials .social-icon{
-      color:var(--muted);
-    }
-    body.light-mode .dash-search{
-      color:var(--muted-2);
-    }
-    body.light-mode .dash-search::placeholder{
-      color:var(--muted-2);
-      opacity:1;
-    }
-    body.light-mode .logo,
-    body.light-mode .logo *{
-      color:var(--text);
-    }
-    body.light-mode .nav-links a.nav-item{
-      color:var(--muted);
-    }
-    body.light-mode .nav-links a.nav-item:hover{
-      background:rgba(70,64,224,0.06);
-    }
-    body.light-mode .btn-ghost{
-      color:var(--text);
-      border-color:var(--line-strong);
-      background:rgba(70,64,224,0.03);
-    }
-    body.light-mode .btn-solid{
-      color:#fff;
-    }
-    body.light-mode .btn-solid:hover{
-      color:#fff;
-    }
-    body.light-mode .theme-toggle,
-    body.light-mode .menu-toggle{
-      color:var(--text);
-    }
-    body.light-mode .menu-toggle{
-      background:transparent;
-    }
-    body.light-mode .menu-toggle::selection{
-      color:var(--text);
-    }
-    body.light-mode .dash-chat,
-    body.light-mode .live-dot,
-    body.light-mode .dstat-num.money,
-    body.light-mode .price-amount .num,
-    body.light-mode .partner-badge,
-    body.light-mode .partner-ic i{
-      color:inherit;
-    }
-
-    @media (max-width:768px){
-      .theme-toggle{
-        width:32px;
-        height:32px;
-        font-size:0.72rem;
-      }
-      .theme-toggle .theme-icon{
-        font-size:0.72rem;
-      }
-    }
-
-    @media (max-width:640px){
-      .theme-toggle{
-        width:26px;
-        height:26px;
-        padding:0;
-        font-size:0.62rem;
-      }
-      .theme-toggle .theme-icon{
-        font-size:0.62rem;
-      }
-      .nav-actions > .theme-toggle{
-        display:none;
-      }
-      .mm-theme-toggle{
-        display:flex;
-      }
-    }
-
-    @media (max-width:480px){
-      .theme-toggle{
-        width:28px;
-        height:28px;
-        font-size:0.64rem;
-      }
-      .theme-toggle .theme-icon{
-        font-size:0.64rem;
-      }
-    }
-
 :root.light-mode,
     body.light-mode{
       --bg:#F6F7FF;
@@ -725,157 +517,16 @@
       --muted:#4D4B77;
       --muted-2:#6E6A98;
     }
-
     body.light-mode{
       background:var(--bg);
       color:var(--text);
     }
-
     body.light-mode::before{
       background:
         radial-gradient(900px 500px at 12% -10%, rgba(70,64,224,0.14), transparent 60%),
         radial-gradient(700px 500px at 100% 10%, rgba(157,78,221,0.10), transparent 55%),
         var(--bg);
     }
-
-    /* Global light-mode text re-coloring for readability */
-    body.light-mode,
-    body.light-mode h1,
-    body.light-mode h2,
-    body.light-mode h3,
-    body.light-mode h4,
-    body.light-mode h5,
-    body.light-mode h6,
-    body.light-mode p,
-    body.light-mode li,
-    body.light-mode span,
-    body.light-mode div,
-    body.light-mode label,
-    body.light-mode small,
-    body.light-mode strong,
-    body.light-mode b,
-    body.light-mode a,
-    body.light-mode button,
-    body.light-mode input,
-    body.light-mode textarea,
-    body.light-mode select,
-    body.light-mode .nav-item,
-    body.light-mode .logo,
-    body.light-mode .hero-note,
-    body.light-mode .hero p.lead,
-    body.light-mode .head p,
-    body.light-mode .foot-brand p,
-    body.light-mode .foot-col a,
-    body.light-mode .foot-col h5,
-    body.light-mode .foot-bottom,
-    body.light-mode .provider-card p,
-    body.light-mode .provider-card h4,
-    body.light-mode .integration-card p,
-    body.light-mode .integration-card h4,
-    body.light-mode .feat-item p,
-    body.light-mode .feat-item h5,
-    body.light-mode .price-card .sub,
-    body.light-mode .price-card h3,
-    body.light-mode .price-card .per,
-    body.light-mode .price-card li,
-    body.light-mode .check-list li,
-    body.light-mode .dash-title,
-    body.light-mode .dash-sub,
-    body.light-mode .dash-search,
-    body.light-mode .dash-chart-head,
-    body.light-mode .dash-chart-tabs,
-    body.light-mode .dsi,
-    body.light-mode .dstat-label,
-    body.light-mode .dstat-sub,
-    body.light-mode .channel-card h4,
-    body.light-mode .chan-item label,
-    body.light-mode .btn-ghost,
-    body.light-mode .btn-solid,
-    body.light-mode .mm-btn,
-    body.light-mode .mm-btn-ghost,
-    body.light-mode .mm-modal,
-    body.light-mode .mm-close,
-    body.light-mode .menu-toggle,
-    body.light-mode .theme-toggle,
-    body.light-mode .theme-toggle .theme-icon{
-      color:var(--text);
-    }
-
-    body.light-mode .muted,
-    body.light-mode .hero-note,
-    body.light-mode .hero p.lead,
-    body.light-mode .head p,
-    body.light-mode .foot-brand p,
-    body.light-mode .foot-brand .address,
-    body.light-mode .foot-col a,
-    body.light-mode .foot-bottom,
-    body.light-mode .provider-card p,
-    body.light-mode .integration-card p,
-    body.light-mode .feat-item p,
-    body.light-mode .price-card .sub,
-    body.light-mode .price-card .per,
-    body.light-mode .dash-sub,
-    body.light-mode .dstat-sub,
-    body.light-mode .dash-search,
-    body.light-mode .dash-chart-head,
-    body.light-mode .dash-chart-tabs,
-    body.light-mode .channel-card h4{
-      color:var(--muted);
-    }
-
-    body.light-mode .muted-2,
-    body.light-mode .foot-col h5,
-    body.light-mode .dsi,
-    body.light-mode .dstat-label,
-    body.light-mode .price-card .sub{
-      color:var(--muted-2);
-    }
-
-    body.light-mode header{
-      background:rgba(247,248,255,0.82);
-      border-bottom:1px solid var(--line);
-    }
-
-    body.light-mode header .nav-item,
-    body.light-mode header .logo,
-    body.light-mode header .menu-toggle,
-    body.light-mode header .theme-toggle,
-    body.light-mode header .btn-ghost,
-    body.light-mode header .btn-solid{
-      color:var(--text);
-    }
-
-    body.light-mode .nav-links a.nav-item:hover{
-      color:var(--text);
-      background:rgba(70,64,224,0.07);
-    }
-
-    body.light-mode .menu-toggle{
-      color:var(--text) !important;
-    }
-    body.light-mode .menu-toggle i,
-    body.light-mode .menu-toggle svg{
-      color:var(--text) !important;
-      fill:currentColor !important;
-    }
-
-    body.light-mode .mobile-menu-overlay,
-    body.light-mode #mobile-menu.mobile-menu-overlay{
-      background:rgba(247,248,255,0.96);
-    }
-    body.light-mode .mm-btn{
-      color:var(--text);
-      background:rgba(70,64,224,0.03);
-      border-color:var(--line-strong);
-    }
-    body.light-mode .mm-btn-ghost{
-      color:var(--text);
-      background:transparent;
-    }
-    body.light-mode .mm-btn-solid{
-      color:#fff;
-    }
-
     body.light-mode .dash-mock{
       background:#FFFFFF;
       box-shadow:0 30px 80px rgba(22,25,74,0.10), 0 0 0 10px rgba(70,64,224,0.04);
@@ -892,27 +543,13 @@
     body.light-mode .channel-card{
       background:var(--surface);
     }
-
     body.light-mode .marquee-wrap,
     body.light-mode footer{
       border-color:var(--line);
     }
-
     body.light-mode .btn-ghost{
       background:rgba(70,64,224,0.03);
-      color:var(--text);
-      border-color:var(--line-strong);
     }
-
-    body.light-mode .btn-ghost:hover{
-      background:rgba(70,64,224,0.08);
-      border-color:rgba(70,64,224,0.28);
-    }
-
-    body.light-mode .btn-solid{
-      color:#fff;
-    }
-
     .theme-toggle{
       width:40px;
       height:40px;
@@ -1418,89 +1055,6 @@
       --muted-2:#6B7192;
       --success:#1FAE73;
     }
-    body.light-mode,
-    body.light-mode *{
-      color:var(--text);
-    }
-    body.light-mode a,
-    body.light-mode p,
-    body.light-mode li,
-    body.light-mode span,
-    body.light-mode label,
-    body.light-mode small,
-    body.light-mode strong,
-    body.light-mode em,
-    body.light-mode cite,
-    body.light-mode code,
-    body.light-mode sub,
-    body.light-mode sup{
-      color:var(--text);
-    }
-    body.light-mode .nav-links a.nav-item,
-    body.light-mode .foot-col a,
-    body.light-mode .foot-bottom,
-    body.light-mode .foot-brand p,
-    body.light-mode .foot-brand .address,
-    body.light-mode .partner-sub,
-    body.light-mode .partner-name,
-    body.light-mode .partner-badge,
-    body.light-mode .partner-socials .social-icon,
-    body.light-mode .social-row .social-icon,
-    body.light-mode .hero p.lead,
-    body.light-mode .hero-note,
-    body.light-mode .head p,
-    body.light-mode .split p,
-    body.light-mode .provider-card p,
-    body.light-mode .integration-card p,
-    body.light-mode .auto-card p,
-    body.light-mode .feat-item p,
-    body.light-mode .price-card .sub,
-    body.light-mode .price-amount .per{
-      color:var(--muted);
-    }
-    body.light-mode h1,
-    body.light-mode h2,
-    body.light-mode h3,
-    body.light-mode h4,
-    body.light-mode h5,
-    body.light-mode h6,
-    body.light-mode .logo,
-    body.light-mode .logo *,
-    body.light-mode .dash-title,
-    body.light-mode .dstat-num,
-    body.light-mode .price-amount .num,
-    body.light-mode .provider-card h4,
-    body.light-mode .integration-card h4,
-    body.light-mode .auto-card h4,
-    body.light-mode .feat-item h5,
-    body.light-mode .price-card h3,
-    body.light-mode .partner-name{
-      color:var(--text);
-    }
-    body.light-mode header{
-      background:rgba(247,248,255,0.82);
-      border-bottom:1px solid var(--line);
-    }
-    body.light-mode header .nav-links a.nav-item:hover{
-      color:var(--text);
-      background:rgba(70,64,224,0.06);
-    }
-    body.light-mode .menu-toggle{
-      color:var(--text);
-    }
-    body.light-mode .menu-toggle i,
-    body.light-mode .menu-toggle span{
-      color:var(--text);
-    }
-    body.light-mode .mm-btn,
-    body.light-mode .mm-btn *{
-      color:var(--text);
-    }
-    body.light-mode .mm-btn-solid,
-    body.light-mode .mm-btn-solid *{
-      color:#fff;
-    }
-    body.light-mode .grain{opacity:0.02;}
     body.light-mode::before{
       background:
         radial-gradient(900px 500px at 12% -10%, rgba(70,64,224,0.12), transparent 60%),
