@@ -355,7 +355,7 @@
 
 <main id="top" data-section="section-2">
   
-=======
+
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
@@ -386,6 +386,7 @@
         <p>Connect once and your agent can start talking there right away.</p>
       </div>
 
+      <!-- channel orbit: icons wired into the live dashboard, fully responsive -->
       <div class="channel-orbit">
         <div class="chan-col">
           <div class="chan-item"><span class="chan-badge brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></span><label>WhatsApp</label><span class="chan-wire"></span></div>
@@ -442,6 +443,7 @@
         </div>
       </div>
 
+      <!-- mobile fallback -->
       <div class="channel-grid">
         <div class="channel-card"><div class="channel-ic brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></div><h4>WhatsApp</h4></div>
         <div class="channel-card"><div class="channel-ic brand-facebook"><i class="fa-brands fa-facebook-f"></i></div><h4>Facebook</h4></div>
@@ -457,6 +459,7 @@
     </div>
   </section>
 
+  <!-- BRING YOUR OWN MODEL -->
   <section class="section section-alt" id="providers">
     <div class="wrap">
       <div class="head">
@@ -475,81 +478,7 @@
     </div>
   </section>
 
-  <section class="section flow-section" id="flow-builder">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Visual Builder</div>
-        <h2>Build flows without writing a single line of code</h2>
-        <p>Drag and drop nodes to map conversations, automate branches, and connect AI actions in one visual canvas.</p>
-      </div>
-
-      <div class="flow-shell">
-        <div class="flow-topbar">
-          <div class="flow-dots"><span class="flow-dot r"></span><span class="flow-dot y"></span><span class="flow-dot g"></span></div>
-          <div class="flow-title">Flow Builder</div>
-        </div>
-
-        <div class="flow-canvas">
-          <div class="flow-path" aria-hidden="true">
-            <svg viewBox="0 0 960 320" preserveAspectRatio="none">
-              <path class="flow-wire blue" d="M 116 160 C 140 160, 152 160, 174 160" />
-              <circle class="flow-dot-out blue" cx="116" cy="160" r="4.5"></circle>
-              <circle class="flow-dot-out blue" cx="174" cy="160" r="4.5"></circle>
-
-              <path class="flow-wire blue" d="M 390 114 C 448 92, 506 88, 560 124" />
-              <circle class="flow-dot-out blue" cx="390" cy="114" r="4.5"></circle>
-              <circle class="flow-dot-out blue" cx="560" cy="124" r="4.5"></circle>
-
-              <path class="flow-wire red" d="M 390 214 C 448 244, 506 252, 560 220" />
-              <circle class="flow-dot-out red" cx="390" cy="214" r="4.5"></circle>
-              <circle class="flow-dot-out red" cx="560" cy="220" r="4.5"></circle>
-
-              <path class="flow-wire blue" d="M 660 172 C 706 172, 742 172, 780 172" />
-              <circle class="flow-dot-out blue" cx="660" cy="172" r="4.5"></circle>
-              <circle class="flow-dot-out blue" cx="780" cy="172" r="4.5"></circle>
-            </svg>
-          </div>
-
-          <div class="flow-board">
-            <div class="flow-node start">
-              <div class="mini-ic"><i class="fa-solid fa-arrow-pointer"></i></div>
-              <div class="txt">Start</div>
-            </div>
-
-            <div class="flow-column">
-              <div class="flow-node condition">
-                <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
-                <div class="body">
-                  <div class="kv"><span class="pillk tan mono">intent</span><span>=</span><span class="pillk gray mono">support</span></div>
-                </div>
-              </div>
-
-              <div class="flow-right-stack">
-                <div class="flow-node send">
-                  <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
-                  <div class="body">Connecting you to support…</div>
-                </div>
-
-                <div class="flow-node ai">
-                  <div class="headr"><i class="fa-solid fa-bolt"></i> AI Generate</div>
-                  <div class="body">Generate response with GPT</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="flow-right-final">
-              <div class="flow-node send">
-                <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
-                <div class="body mono">{{ai_reply}}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  <!-- ADVANCED INTEGRATIONS -->
   <section class="section" id="integrations">
     <div class="wrap">
       <div class="split">
@@ -574,6 +503,7 @@
     </div>
   </section>
 
+  <!-- FULL FEATURES -->
   <section class="section" id="features">
     <div class="wrap">
       <div class="head">
@@ -624,6 +554,7 @@
     </div>
   </section>
 
+  <!-- PRICING -->
   <section class="section section-alt" id="pricing">
     <div class="wrap">
       <div class="head">
@@ -663,7 +594,7 @@
             <li><span class="tick">✓</span> Build website with one click</li>
             <li><span class="tick">✓</span> MCP server</li>
           </ul>
-          <a href="#get-started" class="btn btn-solid btn-block">Get Started Free</a>
+          <a href="#get-started" class="btn btn-solid btn-block">Get Started</a>
         </div>
 
         <div class="price-card">
@@ -683,368 +614,14 @@
             <li><span class="tick">✓</span> Sales</li>
             <li><span class="tick">✓</span> Wallet passes</li>
           </ul>
-          <a href="#get-started" class="btn btn-ghost btn-block">Get Started Free</a>
+          <a href="#get-started" class="btn btn-ghost btn-block">Get Started</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section class="section" id="get-started" style="padding-top:0;">
-    <div class="wrap">
-      <div class="cta-band">
-        <h2>Your agent is a few minutes away</h2>
-        <p>Connect a channel, pick a model, and start talking to customers today.</p>
-        <div class="hero-ctas">
-          <a href="#pricing" class="btn btn-solid btn-lg">Get Started Free</a>
-          <a href="#login" class="btn btn-ghost btn-lg">Log in</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-  </style>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> Build once, deploy to ten channels</div>
-      <h1>One AI agent. <span class="grad">Every channel</span> your customers already use.</h1>
-      <p class="lead">Set it up once, connect your AI providers, and put the same agent on WhatsApp, Instagram, your website, and more.</p>
-      <div class="hero-ctas">
-        <a href="#get-started" class="btn btn-solid btn-lg">Get Started Free</a>
-        <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
-      </div>
-      <p class="hero-note">No credit card required · Bring your own AI provider keys · Cancel anytime</p>
-    </div>
-  </section>
-
-  <!-- marquee -->
-  <div class="marquee-wrap">
-    <div class="wrap">
-      <div class="marquee-track" id="marquee"></div>
-    </div>
-  </div>
-
-  <!-- CHANNELS -->
-  <section class="section" id="channels">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Channels</div>
-        <h2>Meet customers where they already are</h2>
-        <p>Connect once and your agent can start talking there right away.</p>
-      </div>
-
-      <div class="channel-orbit">
-        <div class="chan-col">
-          <div class="chan-item"><span class="chan-badge brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></span><label>WhatsApp</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-facebook"><i class="fa-brands fa-facebook-f"></i></span><label>Facebook</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-website"><i class="fa-solid fa-globe"></i></span><label>Website</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-email"><i class="fa-solid fa-envelope"></i></span><label>Email</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-phone"><i class="fa-solid fa-phone"></i></span><label>Phone</label><span class="chan-wire"></span></div>
-        </div>
-
-        <div class="dash-mock">
-          <div class="dash-topbar">
-            <span class="dash-dot r"></span><span class="dash-dot y"></span><span class="dash-dot g"></span>
-            <div class="dash-search">Search conversations…</div>
-            <i class="fa-regular fa-comment-dots dash-chat"></i>
-          </div>
-          <div class="dash-body">
-            <div class="dash-sidebar">
-              <div class="dsi active"><i class="fa-solid fa-chart-simple"></i> Overview</div>
-              <div class="dsi"><i class="fa-solid fa-robot"></i> Agents</div>
-              <div class="dsi"><i class="fa-solid fa-toolbox"></i> Tools</div>
-              <div class="dsi"><i class="fa-solid fa-diagram-project"></i> Flows</div>
-              <div class="dsi"><i class="fa-solid fa-address-book"></i> Contacts</div>
-              <div class="dsi"><i class="fa-solid fa-inbox"></i> Inbox</div>
-              <div class="dsi"><i class="fa-solid fa-gear"></i> Settings</div>
-            </div>
-            <div class="dash-main">
-              <div class="dash-head">
-                <div><div class="dash-title">Welcome back, ChatMakky!</div><div class="dash-sub">Dashboard overview</div></div>
-                <div class="dash-tabs"><span class="dt">Today</span><span class="dt">This week</span><span class="dt active">This month</span><span class="dt">All time</span></div>
-              </div>
-              <div class="dash-stats">
-                <div class="dstat"><div class="dstat-label"><i class="fa-solid fa-robot"></i> Agents</div><div class="dstat-num">2</div><div class="dstat-sub">Agents created</div></div>
-                <div class="dstat"><div class="dstat-label"><i class="fa-solid fa-users"></i> Contacts</div><div class="dstat-num">13</div><div class="dstat-sub">All-time visitors</div></div>
-                <div class="dstat"><div class="dstat-label"><i class="fa-solid fa-message"></i> Messages</div><div class="dstat-num">710</div><div class="dstat-sub">Messages exchanged</div></div>
-                <div class="dstat"><div class="dstat-label"><i class="fa-solid fa-sack-dollar"></i> Revenue</div><div class="dstat-num money">$1,240</div><div class="dstat-sub">Earnings</div></div>
-              </div>
-              <div class="dash-chart">
-                <div class="dash-chart-head"><span><span class="live-dot"></span> Trends over time</span><span class="dash-chart-tabs">Daily · Weekly · <b>Monthly</b></span></div>
-                <svg viewBox="0 0 560 90" class="dash-spark" preserveAspectRatio="none">
-                  <polyline class="spark-fill" points="0,80 40,74 80,70 120,66 160,44 200,20 240,10 280,26 320,50 360,58 400,52 440,44 480,38 520,30 560,26 560,90 0,90"></polyline>
-                  <polyline class="spark-line" points="0,80 40,74 80,70 120,66 160,44 200,20 240,10 280,26 320,50 360,58 400,52 440,44 480,38 520,30 560,26"></polyline>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="chan-col right">
-          <div class="chan-item"><span class="chan-badge brand-instagram"><i class="fa-brands fa-instagram"></i></span><label>Instagram</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-telegram"><i class="fa-brands fa-telegram"></i></span><label>Telegram</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-tiktok"><i class="fa-brands fa-tiktok"></i></span><label>TikTok</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-x"><i class="fa-brands fa-x-twitter"></i></span><label>X</label><span class="chan-wire"></span></div>
-          <div class="chan-item"><span class="chan-badge brand-discord"><i class="fa-brands fa-discord"></i></span><label>Discord</label><span class="chan-wire"></span></div>
-        </div>
-      </div>
-
-      <div class="channel-grid">
-        <div class="channel-card"><div class="channel-ic brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></div><h4>WhatsApp</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-facebook"><i class="fa-brands fa-facebook-f"></i></div><h4>Facebook</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-instagram"><i class="fa-brands fa-instagram"></i></div><h4>Instagram</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-tiktok"><i class="fa-brands fa-tiktok"></i></div><h4>TikTok</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-website"><i class="fa-solid fa-globe"></i></div><h4>Website</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-telegram"><i class="fa-brands fa-telegram"></i></div><h4>Telegram</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-x"><i class="fa-brands fa-x-twitter"></i></div><h4>X (Twitter)</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-discord"><i class="fa-brands fa-discord"></i></div><h4>Discord</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-email"><i class="fa-solid fa-envelope"></i></div><h4>Email</h4></div>
-        <div class="channel-card"><div class="channel-ic brand-phone"><i class="fa-solid fa-phone"></i></div><h4>Phone</h4></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="providers">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">AI Providers</div>
-        <h2>Bring your own AI model</h2>
-        <p>Connect your own API keys from the AI providers you already trust.</p>
-      </div>
-      <div class="provider-grid" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;">
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345238154_preview-2-removebg-preview.png" alt="ChatGPT" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>ChatGPT</h4><p>GPT Models</p></div></div>
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345252621_preview-3-removebg-preview.png" alt="Claude" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>Claude</h4><p>Anthropic</p></div></div>
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345264502_preview-4-removebg-preview.png" alt="Gemini" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>Gemini</h4><p>Google</p></div></div>
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345105593_preview-6-removebg-preview.png" alt="DeepSeek" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>DeepSeek</h4><p>Reasoning</p></div></div>
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345307904_preview-5.webp" alt="Groq" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>Groq</h4><p>Fast Mode</p></div></div>
-        <div class="provider-card" style="padding:28px 20px; min-height:196px; flex-direction:column; justify-content:flex-start; align-items:center; text-align:center;"><div class="ic" style="width:72px; height:72px; margin-bottom:14px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345321007_preview-8.webp" alt="ElevenLabs" style="width:84%; height:84%; border-radius:8px; aspect-ratio: 1.0000; object-fit: cover; object-position: center;"></div><div><h4>ElevenLabs</h4><p>Voice AI</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section flow-section" id="flow-builder">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Visual Builder</div>
-        <h2>Build flows without writing a single line of code</h2>
-        <p>Drag and drop nodes to map conversations, automate branches, and connect AI actions in one visual canvas.</p>
-      </div>
-
-      <div class="flow-shell">
-        <div class="flow-topbar">
-          <div class="flow-dots"><span class="flow-dot r"></span><span class="flow-dot y"></span><span class="flow-dot g"></span></div>
-          <div class="flow-title">Flow Builder</div>
-        </div>
-
-        <div class="flow-canvas">
-          <div class="flow-badge-row">
-            <div class="flow-badge reset"><i class="fa-solid fa-wand-magic-sparkles"></i> Reset</div>
-          </div>
-
-          <div class="flow-path">
-            <div class="flow-line" style="left:78px; top:50%; width:138px;"></div>
-            <div class="flow-line" style="left:316px; top:32%; width:150px; transform:rotate(-16deg); transform-origin:left center;"></div>
-            <div class="flow-line red" style="left:316px; top:63%; width:150px; transform:rotate(16deg); transform-origin:left center;"></div>
-            <div class="flow-line" style="left:540px; top:49%; width:140px;"></div>
-
-            <span class="flow-dot-out" style="left:304px; top:28%;"></span>
-            <span class="flow-dot-out red" style="left:304px; top:64%;"></span>
-            <span class="flow-dot-out" style="left:528px; top:49%;"></span>
-            <div class="flow-badge-stack">
-              <div class="flow-badge ai"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Powered</div>
-            </div>
-          </div>
-
-          <div class="flow-board">
-            <div class="flow-node start">
-              <div class="mini-ic"><i class="fa-solid fa-arrow-pointer"></i></div>
-              <div class="txt">Start</div>
-            </div>
-
-            <div class="flow-column">
-              <div class="flow-node condition">
-                <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
-                <div class="body">
-                  <div class="kv"><span class="pillk tan">intent</span><span>=</span><span class="pillk mono">support</span></div>
-                </div>
-              </div>
-
-              <div class="flow-right-stack">
-                <div class="flow-node send">
-                  <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
-                  <div class="body">Connecting you to support…</div>
-                </div>
-
-                <div class="flow-node ai">
-                  <div class="headr"><i class="fa-solid fa-bolt"></i> AI Generate</div>
-                  <div class="body">Generate response with GPT</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="flow-right-final">
-              <div class="flow-node send">
-                <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
-                <div class="body mono">{{ai_reply}}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="flow-toolbar">
-        <div class="flow-tool blue"><i class="fa-regular fa-message"></i> Send Messages</div>
-        <div class="flow-tool gold"><i class="fa-solid fa-diagram-project"></i> Conditions &amp; Logic</div>
-        <div class="flow-tool purple"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Actions</div>
-        <div class="flow-tool more"><i class="fa-solid fa-plus"></i> And Many More</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="integrations">
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <div class="eyebrow">Advanced integrations</div>
-          <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem); margin-bottom:20px;">Give your agent real tools, not just answers</h2>
-          <p style="color:var(--muted); font-size:1.05rem; margin-bottom:28px;">Tools, code, and Workspace in chat.</p>
-          <ul class="check-list">
-            <li><span class="tick">✓</span> <b>MCP</b>: connect any tool server</li>
-            <li><span class="tick">✓</span> <b>GitHub</b>: sync repos and ship pages</li>
-            <li><span class="tick">✓</span> <b>Google</b>: Docs, Sheets, Calendar in chat</li>
-          </ul>
-        </div>
-        <div class="split-visual">
-          <div class="integration-list">
-            <div class="integration-card"><div class="ic" style="background:#fff; padding:9px;"><img src="https://app.chatmakky.com/objects/quick-uploads/1060/6fc867f9db123ec9.svg" alt="MCP" style="width:100%; height:100%; object-fit:contain;"></div><div><h4>MCP servers</h4><p>Connect tools in seconds.</p></div></div>
-            <div class="integration-card"><div class="ic" style="background:#fff; padding:9px;"><img src="https://app.chatmakky.com/objects/quick-uploads/1060/37f2becef0243c04.svg" alt="GitHub" style="width:100%; height:100%; object-fit:contain;"></div><div><h4>GitHub</h4><p>Push, sync, and track repos.</p></div></div>
-            <div class="integration-card"><div class="ic" style="background:#fff; padding:9px;"><img src="https://app.chatmakky.com/objects/quick-uploads/1060/97648907b97a4ec3.svg" alt="Google Workspace" style="width:100%; height:100%; object-fit:contain;"></div><div><h4>Google Workspace</h4><p>Docs, Sheets, Calendar—right in chat.</p></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="features">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Everything included</div>
-        <h2>Every feature, in one platform</h2>
-      </div>
-
-      <div class="feat-groups">
-        <div class="feat-group">
-          <h3>Automation &amp; workflow</h3>
-          <div class="feat-grid">
-            <div class="feat-item"><div class="ic">⚡</div><div><h5>Automatic message reply</h5><p>Instant replies to every incoming message.</p></div></div>
-            <div class="feat-item"><div class="ic">💭</div><div><h5>Comment automation</h5><p>Reply to comments across social channels.</p></div></div>
-            <div class="feat-item"><div class="ic">⭕</div><div><h5>Story reply</h5><p>Respond automatically to story replies.</p></div></div>
-            <div class="feat-item"><div class="ic">🎬</div><div><h5>Reels reply</h5><p>Turn Reels comments into conversations.</p></div></div>
-            <div class="feat-item"><div class="ic">🔁</div><div><h5>Follow up</h5><p>Check in so leads don't go cold.</p></div></div>
-            <div class="feat-item"><div class="ic">📅</div><div><h5>Booking</h5><p>Book appointments in chat and sync to your calendar.</p></div></div>
-            <div class="feat-item"><div class="ic">📤</div><div><h5>Post</h5><p>Publish content to connected channels.</p></div></div>
-            <div class="feat-item"><div class="ic">📣</div><div><h5>Broadcast</h5><p>Send targeted messages to contacts in bulk.</p></div></div>
-            <div class="feat-item"><div class="ic">🧩</div><div><h5>Drag-and-drop flows</h5><p>Build conversation logic visually, without code.</p></div></div>
-            <div class="feat-item"><div class="ic">📊</div><div><h5>Analytics</h5><p>Track conversations, conversions, and channel performance.</p></div></div>
-            <div class="feat-item"><div class="ic">🔔</div><div><h5>Smart Notifications</h5><p>Get alerts for new leads, bookings, and important conversations.</p></div></div>
-            <div class="feat-item"><div class="ic">🏷️</div><div><h5>Lead Management</h5><p>Organize, tag, and track leads throughout the customer journey.</p></div></div>
-          </div>
-        </div>
-
-        <div class="feat-group">
-          <h3>Agent intelligence</h3>
-          <div class="feat-grid">
-            <div class="feat-item"><div class="ic">🗣️</div><div><h5>Human-like messaging</h5><p>Natural replies that sound like a person, not a script.</p></div></div>
-            <div class="feat-item"><div class="ic">🎧</div><div><h5>Voice understanding</h5><p>Listens to and understands voice messages from customers.</p></div></div>
-            <div class="feat-item"><div class="ic">🔊</div><div><h5>Voice replies</h5><p>Sends spoken responses back, not just text.</p></div></div>
-            <div class="feat-item"><div class="ic">🖼️</div><div><h5>Image sending</h5><p>Shares images as part of the conversation.</p></div></div>
-            <div class="feat-item"><div class="ic">🔍</div><div><h5>Image analysis</h5><p>Reads and understands images customers send in.</p></div></div>
-            <div class="feat-item"><div class="ic">📢</div><div><h5>Ad identification</h5><p>Sees which ad a customer clicked before they messaged.</p></div></div>
-            <div class="feat-item"><div class="ic">✳️</div><div><h5>One reply, many messages</h5><p>Answers several quick messages with one smart reply.</p></div></div>
-            <div class="feat-item"><div class="ic">🙋</div><div><h5>Human handoff</h5><p>Passes the conversation to a person when needed.</p></div></div>
-            <div class="feat-item"><div class="ic">🧾</div><div><h5>Google Sheets + notifications</h5><p>Logs conversation data to Sheets and alerts your team.</p></div></div>
-            <div class="feat-item"><div class="ic">🧮</div><div><h5>Invoicing</h5><p>Creates and sends invoices right in chat.</p></div></div>
-            <div class="feat-item"><div class="ic">🔁</div><div><h5>Follow-up</h5><p>Checks back on open conversations automatically.</p></div></div>
-            <div class="feat-item"><div class="ic">💭</div><div><h5>Comment reply</h5><p>Replies to comments without manual monitoring.</p></div></div>
-            <div class="feat-item"><div class="ic">🧠</div><div><h5>Reply understanding</h5><p>Understands what a customer is replying to in context.</p></div></div>
-            <div class="feat-item"><div class="ic">✏️</div><div><h5>Message editing</h5><p>Fixes a sent message after it goes out.</p></div></div>
-            <div class="feat-item"><div class="ic">🚫</div><div><h5>Spam comment removal</h5><p>Detects and deletes spam comments automatically.</p></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="pricing">
-    <div class="wrap">
-      <div class="head">
-        <div class="eyebrow">Pricing</div>
-        <h2>Plans that scale as you grow</h2>
-        <p>Start small, then add channels and automation as you need them. Every plan includes bring-your-own AI keys.</p>
-      </div>
-      <div class="pricing-grid">
-
-        <div class="price-card">
-          <h3>Basic</h3>
-          <p class="sub">Build One Business Agent</p>
-          <div class="price-amount"><span class="num">$12</span><span class="per">/ month</span></div>
-          <ul class="check-list">
-            <li><span class="tick">✓</span> 1 AI agent</li>
-            <li><span class="tick">✓</span> All 10 channels</li>
-            <li><span class="tick">✓</span> Bring your own AI keys</li>
-            <li><span class="tick">✓</span> Drag-and-drop flow builder</li>
-            <li><span class="tick">✓</span> Unlimited conversations</li>
-            <li><span class="tick">✓</span> Social poster</li>
-          </ul>
-          <a href="#get-started" class="btn btn-ghost btn-block">Get Started Free</a>
-        </div>
-
-        <div class="price-card featured">
-          <div class="price-tag">Most popular</div>
-          <h3>Advanced</h3>
-          <p class="sub">Manage Multiple Business</p>
-          <div class="price-amount"><span class="num">$22</span><span class="per">/ month</span></div>
-          <ul class="check-list">
-            <li><span class="tick">✓</span> 3 AI agents</li>
-            <li><span class="tick">✓</span> All 10 channels</li>
-            <li><span class="tick">✓</span> Bring your own AI keys</li>
-            <li><span class="tick">✓</span> Drag-and-drop flow builder</li>
-            <li><span class="tick">✓</span> Unlimited conversations</li>
-            <li><span class="tick">✓</span> Social poster</li>
-            <li><span class="tick">✓</span> Build website with one click</li>
-            <li><span class="tick">✓</span> MCP server</li>
-          </ul>
-          <a href="#get-started" class="btn btn-solid btn-block">Get Started Free</a>
-        </div>
-
-        <div class="price-card">
-          <h3>Agency package</h3>
-          <p class="sub">Scale Your Client Base</p>
-          <div class="price-amount"><span class="num">$62</span><span class="per">/ month</span></div>
-          <ul class="check-list">
-            <li><span class="tick">✓</span> 10 AI agents</li>
-            <li><span class="tick">✓</span> All 10 channels</li>
-            <li><span class="tick">✓</span> Bring your own AI keys</li>
-            <li><span class="tick">✓</span> Drag-and-drop flow builder</li>
-            <li><span class="tick">✓</span> Unlimited conversations</li>
-            <li><span class="tick">✓</span> Social poster</li>
-            <li><span class="tick">✓</span> Build website with one click</li>
-            <li><span class="tick">✓</span> MCP server</li>
-            <li><span class="tick">✓</span> Web shop</li>
-            <li><span class="tick">✓</span> Sales</li>
-            <li><span class="tick">✓</span> Wallet passes</li>
-          </ul>
-          <a href="#get-started" class="btn btn-ghost btn-block">Get Started Free</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  <!-- CTA -->
   <section class="section" id="get-started" style="padding-top:0;">
     <div class="wrap">
       <div class="cta-band">
