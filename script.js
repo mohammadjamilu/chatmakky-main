@@ -2,20 +2,13 @@
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
       const closeBtn = menu ? menu.querySelector('.mm-close') : null;
-      const themeToggle = document.querySelector('.nav-actions > .theme-toggle');
+      const themeToggle = document.querySelector('.theme-toggle');
       const themeIcon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
 
       const setTheme = (light) => {
         document.body.classList.toggle('light-mode', light);
         if (themeToggle) themeToggle.setAttribute('aria-pressed', light ? 'true' : 'false');
         if (themeIcon) themeIcon.textContent = light ? '☀️' : '🌙';
-
-        const mobileThemeToggle = menu ? menu.querySelector('.mm-theme-toggle') : null;
-        if (mobileThemeToggle) {
-          mobileThemeToggle.setAttribute('aria-pressed', light ? 'true' : 'false');
-          const mobileIcon = mobileThemeToggle.querySelector('.theme-icon');
-          if (mobileIcon) mobileIcon.textContent = light ? '☀️' : '🌙';
-        }
       };
 
       const savedTheme = localStorage.getItem('theme');
@@ -26,14 +19,6 @@
           const nextLight = !document.body.classList.contains('light-mode');
           setTheme(nextLight);
           localStorage.setItem('theme', nextLight ? 'light' : 'dark');
-        });
-      }
-
-      if (menu) {
-        menu.querySelectorAll('.mm-btn').forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            setOpen(false);
-          });
         });
       }
 
@@ -69,20 +54,9 @@
 
       menu.querySelectorAll('.mm-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
-          if (!btn.classList.contains('mm-theme-toggle')) {
-            setOpen(false);
-          }
+          setOpen(false);
         });
       });
-
-      const mobileThemeToggle = menu ? menu.querySelector('.mm-theme-toggle') : null;
-      if (mobileThemeToggle) {
-        mobileThemeToggle.addEventListener('click', function () {
-          const nextLight = !document.body.classList.contains('light-mode');
-          setTheme(nextLight);
-          localStorage.setItem('theme', nextLight ? 'light' : 'dark');
-        });
-      }
 
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && menu.classList.contains('open')) {
