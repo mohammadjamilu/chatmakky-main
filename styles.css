@@ -412,49 +412,71 @@
     .provider-card .ic{width:44px; height:44px;}
   }
 
-#mobile-menu{
-      display:none !important;
+#mobile-menu.mobile-menu-overlay{
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:200;
+      background:rgba(10,10,31,0.94);
+      backdrop-filter:blur(10px);
+      align-items:center;
+      justify-content:center;
+      padding:32px;
     }
-    #mobile-menu.open{
-      display:flex !important;
-      flex-direction:column;
-      gap:2px;
-      padding-top:8px;
-      padding-bottom:16px;
+    #mobile-menu.mobile-menu-overlay.open{
+      display:flex;
     }
-    #mobile-menu .mm-panel{
-      background:var(--surface);
-      border:1px solid var(--line);
-      border-radius:16px;
-      box-shadow:0 12px 32px rgba(0,0,0,0.35);
-      padding:16px;
+    .mm-close{
+      position:absolute;
+      top:20px;
+      right:20px;
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      border:1px solid var(--line-strong);
+      background:rgba(255,255,255,0.04);
+      color:var(--text);
+      font-size:1.1rem;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .mm-modal{
+      width:100%;
+      max-width:340px;
       display:flex;
       flex-direction:column;
-      gap:2px;
+      gap:14px;
     }
-    #mobile-menu .mm-panel .nav-item{
-      padding:14px;
-      border-radius:10px;
-      font-size:1rem;
-      font-weight:500;
+    .mm-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:16px 24px;
+      border-radius:100px;
+      font-size:1.05rem;
+      font-weight:600;
+      text-align:center;
+      border:1px solid var(--line-strong);
+      color:var(--text);
+      background:rgba(255,255,255,0.03);
+      transition:transform .15s ease, background .15s ease;
     }
-    #mobile-menu .mm-panel .nav-item:hover,
-    #mobile-menu .mm-panel .nav-item:active{
+    .mm-btn:active{
+      transform:scale(0.97);
       background:rgba(157,153,255,0.08);
     }
-    #mobile-menu .mm-divider{
-      height:1px;
-      background:var(--line);
-      margin:12px 2px 13px;
+    .mm-btn-ghost{
+      background:transparent;
     }
-    #mobile-menu .mm-actions{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-    #mobile-menu .mm-actions .btn{
-      padding:14px 20px;
-      font-size:0.98rem;
+    .mm-btn-solid{
+      background:linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color:transparent;
+      color:#fff;
+      box-shadow:0 10px 26px rgba(105,70,224,0.4);
+      font-weight:700;
     }
 
 @media (max-width:768px){
