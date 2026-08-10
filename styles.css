@@ -418,9 +418,32 @@
     #mobile-menu.open{
       display:flex !important;
       flex-direction:column;
-      gap:8px;
-      padding-top:12px;
-      padding-bottom:16px;
+      gap:2px;
+      padding-top:10px;
+      padding-bottom:20px;
+    }
+    #mobile-menu .nav-item{
+      padding:14px 14px;
+      border-radius:12px;
+      font-size:1rem;
+      font-weight:500;
+    }
+    #mobile-menu .nav-item:active{
+      background:rgba(157,153,255,0.1);
+    }
+    #mobile-menu .mm-divider{
+      height:1px;
+      background:var(--line);
+      margin:14px 2px 16px;
+    }
+    #mobile-menu .mm-actions{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    #mobile-menu .mm-actions .btn{
+      padding:14px 20px;
+      font-size:0.98rem;
     }
 
 @media (max-width:768px){
