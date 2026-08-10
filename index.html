@@ -336,6 +336,7 @@
     </nav>
     <div class="nav-actions">
       <a class="btn btn-ghost" href="#login">Log in</a>
+      <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false"><span class="theme-icon">🌙</span></button>
       <a class="btn btn-solid" href="#get-started">Get Started Free</a>
       <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
@@ -362,9 +363,10 @@
       <div class="eyebrow"><span class="dot"></span> Build once, deploy to ten channels</div>
       <h1>One AI agent. <span class="grad">Every channel</span> your customers already use.</h1>
       <p class="lead">Set it up once, connect your AI providers, and put the same agent on WhatsApp, Instagram, your website, and more.</p>
-      <div class="hero-ctas">
+                <div class="hero-ctas">
         <a href="#get-started" class="btn btn-solid btn-lg">Get Started Free</a>
         <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
+        <button type="button" class="btn btn-ghost theme-toggle" id="theme-toggle" aria-label="Toggle light mode" aria-pressed="false"><span class="theme-icon">🌙</span></button>
       </div>
       <p class="hero-note">No credit card required · Bring your own AI provider keys · Cancel anytime</p>
     </div>
@@ -630,11 +632,13 @@
         <div class="hero-ctas">
           <a href="#pricing" class="btn btn-solid btn-lg">Get Started Free</a>
           <a href="#login" class="btn btn-ghost btn-lg">Log in</a>
+          <button type="button" class="btn btn-ghost theme-toggle" id="theme-toggle-mobile" aria-label="Toggle light mode" aria-pressed="false"><span class="theme-icon">🌙</span></button>
         </div>
       </div>
     </div>
   </section>
 
+  
 </main>
 
 <footer id="login" data-section="footer">
@@ -737,6 +741,8 @@
       </div>
     </div>
   </div>
+
+  
 </footer>
 <script src="https://app.chatmakky.com/widget.js" data-widget="11593776" async=""></script>
 
