@@ -386,7 +386,6 @@
         <p>Connect once and your agent can start talking there right away.</p>
       </div>
 
-      <!-- channel orbit: icons wired into the live dashboard, fully responsive -->
       <div class="channel-orbit">
         <div class="chan-col">
           <div class="chan-item"><span class="chan-badge brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></span><label>WhatsApp</label><span class="chan-wire"></span></div>
@@ -443,7 +442,6 @@
         </div>
       </div>
 
-      <!-- mobile fallback -->
       <div class="channel-grid">
         <div class="channel-card"><div class="channel-ic brand-whatsapp"><i class="fa-brands fa-whatsapp"></i></div><h4>WhatsApp</h4></div>
         <div class="channel-card"><div class="channel-ic brand-facebook"><i class="fa-brands fa-facebook-f"></i></div><h4>Facebook</h4></div>
@@ -459,7 +457,6 @@
     </div>
   </section>
 
-  <!-- BRING YOUR OWN MODEL -->
   <section class="section section-alt" id="providers">
     <div class="wrap">
       <div class="head">
@@ -478,7 +475,6 @@
     </div>
   </section>
 
-  <!-- FLOW BUILDER -->
   <section class="section flow-section" id="flow-builder">
     <div class="wrap">
       <div class="head">
@@ -505,35 +501,49 @@
               <div class="txt">Start</div>
             </div>
 
-            <div class="flow-node condition" style="position:relative;">
-              <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
-              <div class="body">
-                <div class="kv"><span class="pillk tan">intent</span><span>=</span><span class="pillk mono">support</span></div>
+            <div class="flow-path">
+              <div class="flow-link success"><span class="flow-conn start"></span><span class="flow-conn end"></span></div>
+              <div class="flow-node condition">
+                <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
+                <div class="body">
+                  <div class="kv"><span class="pillk tan">intent</span><span>=</span><span class="pillk mono">support</span></div>
+                </div>
               </div>
-              <span class="flow-conn tl"></span>
-              <span class="flow-conn red br"></span>
+              <div class="flow-link purple"><span class="flow-conn start"></span><span class="flow-conn end"></span></div>
+              <div class="flow-node ai">
+                <div class="headr"><i class="fa-solid fa-bolt"></i> AI Generate</div>
+                <div class="body">Generate response with GPT</div>
+              </div>
+              <div class="flow-link success"><span class="flow-conn start"></span><span class="flow-conn end"></span></div>
+              <div class="flow-node send">
+                <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
+                <div class="body mono">{{ai_reply}}</div>
+              </div>
             </div>
 
-            <div class="flow-col">
+            <div class="flow-path">
+              <div class="flow-badge ai" style="justify-self:end; margin-left:auto;"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Powered</div>
+
               <div class="flow-node send">
                 <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
                 <div class="body">Connecting you to support…</div>
               </div>
 
-              <div class="flow-node ai" style="position:relative;">
-                <div class="headr"><i class="fa-solid fa-bolt"></i> AI Generate</div>
-                <div class="body">Generate response with GPT</div>
-                <span class="flow-conn"></span>
-              </div>
+              <div class="flow-link success"><span class="flow-conn start"></span><span class="flow-conn end"></span></div>
 
               <div class="flow-node send">
                 <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
-                <div class="body mono">{{ai_reply}}</div>
+                <div class="body">Escalating to a human agent…</div>
               </div>
 
-              <div class="flow-wire teal" style="top:118px; left:190px; width:64px;"></div>
-              <div class="flow-wire teal down" style="right:92px;"></div>
-              <div class="flow-wire red" style="top:170px; left:190px; width:64px;"></div>
+              <div class="flow-link red"><span class="flow-conn start red"></span><span class="flow-conn end red"></span></div>
+
+              <div class="flow-node condition">
+                <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
+                <div class="body">
+                  <div class="kv"><span class="pillk tan">status</span><span>=</span><span class="pillk mono">priority</span></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -552,7 +562,6 @@
     </div>
   </section>
 
-  <!-- ADVANCED INTEGRATIONS -->
   <section class="section" id="integrations">
     <div class="wrap">
       <div class="split">
@@ -577,7 +586,6 @@
     </div>
   </section>
 
-  <!-- FULL FEATURES -->
   <section class="section" id="features">
     <div class="wrap">
       <div class="head">
@@ -628,7 +636,6 @@
     </div>
   </section>
 
-  <!-- PRICING -->
   <section class="section section-alt" id="pricing">
     <div class="wrap">
       <div class="head">
@@ -695,7 +702,6 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section" id="get-started" style="padding-top:0;">
     <div class="wrap">
       <div class="cta-band">
