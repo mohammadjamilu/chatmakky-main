@@ -1,48 +1,83 @@
 (function () {
-      const toggle = document.querySelector('.menu-toggle');
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
       const closeBtn = menu ? menu.querySelector('.mm-close') : null;
-      if (!toggle || !menu) return;
 
-      const setOpen = (open) => {
-        menu.classList.toggle('open', open);
-        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        document.body.style.overflow = open ? 'hidden' : '';
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('theme-light', isLight);
+        if (themeIcon) {
+          themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon';
+        }
+        if (themeToggle) {
+          themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+          themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+        try {
+          localStorage.setItem('chatmakky-theme', theme);
+        } catch (e) {}
       };
 
-      setOpen(false);
+      const getInitialTheme = () => {
+        try {
+          const saved = localStorage.getItem('chatmakky-theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      };
 
-      toggle.addEventListener('click', function (e) {
-        e.stopPropagation();
-        const isOpen = menu.classList.contains('open');
-        setOpen(!isOpen);
-      });
+      applyTheme(getInitialTheme());
 
-      if (closeBtn) {
-        closeBtn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          setOpen(false);
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+          const nextTheme = document.body.classList.contains('theme-light') ? 'dark' : 'light';
+          applyTheme(nextTheme);
         });
       }
 
-      menu.addEventListener('click', function (e) {
-        if (e.target === menu) {
-          setOpen(false);
-        }
-      });
+      if (menuToggle && menu) {
+        const setOpen = (open) => {
+          menu.classList.toggle('open', open);
+          menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+          menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
 
-      menu.querySelectorAll('.mm-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          setOpen(false);
+        setOpen(false);
+
+        menuToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const isOpen = menu.classList.contains('open');
+          setOpen(!isOpen);
         });
-      });
 
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && menu.classList.contains('open')) {
-          setOpen(false);
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            setOpen(false);
+          });
         }
-      });
+
+        menu.addEventListener('click', function (e) {
+          if (e.target === menu) {
+            setOpen(false);
+          }
+        });
+
+        menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            setOpen(false);
+          });
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('open')) {
+            setOpen(false);
+          }
+        });
+      }
     })();
 
 var names = ["WhatsApp","Instagram","Facebook","TikTok","Telegram","Discord","OpenAI","Anthropic","Gemini","Grok","DeepSeek","Kimi","ElevenLabs","Groq","HeyGen"];
