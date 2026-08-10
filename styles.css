@@ -277,17 +277,17 @@
   }
 
   /* model provider chips */
-  .provider-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px;}
+  .provider-grid{display:flex; flex-wrap:wrap; justify-content:center; gap:18px;}
   .provider-card{
-    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm);
-    padding:18px 16px; display:flex; align-items:center; gap:12px;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; display:flex; align-items:center; gap:14px;
   }
   .provider-card .ic{
-    width:38px; height:38px; border-radius:10px; background:var(--surface-2);
+    width:56px; height:56px; border-radius:14px; background:var(--surface-2);
     display:flex; align-items:center; justify-content:center; font-size:17px; flex-shrink:0;
   }
-  .provider-card h4{font-size:0.9rem; font-weight:600;}
-  .provider-card p{font-size:0.76rem; color:var(--muted-2);}
+  .provider-card h4{font-size:0.95rem; font-weight:600;}
+  .provider-card p{font-size:0.78rem; color:var(--muted-2);}
 
   /* integration cards (stacked) */
   .integration-list{display:flex; flex-direction:column; gap:16px;}
@@ -391,7 +391,6 @@
   /* responsive */
   @media (max-width:980px){
     .channel-grid{grid-template-columns:repeat(3,1fr);}
-    .provider-grid{grid-template-columns:repeat(2,1fr);}
     .auto-grid{grid-template-columns:repeat(2,1fr);}
     .feat-grid{grid-template-columns:repeat(2,1fr);}
     .pricing-grid{grid-template-columns:1fr; max-width:420px; margin:0 auto;}
@@ -404,10 +403,11 @@
     .nav-links{display:none;}
     .menu-toggle{display:block;}
     .channel-grid{grid-template-columns:repeat(2,1fr);}
-    .provider-grid{grid-template-columns:1fr;}
     .auto-grid{grid-template-columns:1fr;}
     .feat-grid{grid-template-columns:1fr;}
     .foot-grid{grid-template-columns:1fr; gap:28px;}
     .cta-band{padding:50px 24px;}
     .section{padding:76px 0;}
+    .provider-card{padding:14px 16px;}
+    .provider-card .ic{width:44px; height:44px;}
   }
