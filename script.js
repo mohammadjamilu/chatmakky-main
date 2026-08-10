@@ -1,3 +1,27 @@
+(function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if (!toggle || !menu) return;
+
+      const setOpen = (open) => {
+        menu.classList.toggle('open', open);
+        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menu.style.display = open ? 'flex' : 'none';
+        if (open) {
+          menu.style.flexDirection = 'column';
+          menu.style.gap = '8px';
+        }
+      };
+
+      setOpen(false);
+
+      toggle.addEventListener('click', () => {
+        const isOpen = menu.classList.contains('open');
+        setOpen(!isOpen);
+      });
+    })();
+
 var names = ["WhatsApp","Instagram","Facebook","TikTok","Telegram","Discord","OpenAI","Anthropic","Gemini","Grok","DeepSeek","Kimi","ElevenLabs","Groq","HeyGen"];
   var track = document.getElementById('marquee');
   var html = "";
