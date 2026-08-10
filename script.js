@@ -32,8 +32,10 @@
         }
       });
 
-      menu.addEventListener('click', function (e) {
-        if (e.target.closest('.mm-modal') || e.target.closest('.mm-close')) return;
+      menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setOpen(false);
+        });
       });
 
       document.addEventListener('keydown', function (e) {
