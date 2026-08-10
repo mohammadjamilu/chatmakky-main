@@ -686,15 +686,16 @@
 
     @media (max-width:640px){
       .theme-toggle{
-        width:30px;
-        height:30px;
-        font-size:0.68rem;
+        width:26px;
+        height:26px;
+        padding:0;
+        font-size:0.62rem;
       }
       .theme-toggle .theme-icon{
-        font-size:0.68rem;
+        font-size:0.62rem;
       }
       .nav-actions > .theme-toggle{
-        display:none;
+        display:inline-flex;
       }
     }
 
