@@ -526,6 +526,9 @@
       .theme-toggle .theme-icon{
         font-size:0.68rem;
       }
+      .nav-actions > .theme-toggle{
+        display:none;
+      }
     }
 
     @media (max-width:480px){
