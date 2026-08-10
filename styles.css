@@ -655,11 +655,11 @@
       #login > .wrap > div{border-radius:20px;}
 
       /* collapse the 4-col grid to a single, centered column */
-      #login .wrap > div > div[style*="display:grid"]{
+      #login .wrap > div > div > div[style*="display:grid"]{
         grid-template-columns:1fr !important;
         gap:28px !important;
       }
-      #login > .wrap > div > div{padding:26px 20px 18px !important;}
+      #login > .wrap > div > div:last-child{padding:26px 20px 18px !important;}
 
       /* brand block: centered logo, tagline, socials, address */
       #login .foot-brand{
@@ -768,11 +768,11 @@
 
       /* bottom bar */
       #login .foot-bottom,
-      #login > .wrap > div > div:last-child{
+      #login .wrap > div > div > div:last-child{
         text-align:center;
         justify-content:center !important;
       }
-      #login > .wrap > div > div:last-child{
+      #login .wrap > div > div > div:last-child{
         padding-top:16px !important;
         margin-top:22px !important;
         font-size:0.78rem !important;
@@ -808,7 +808,7 @@
       #login > .wrap > div{border-radius:16px;}
       #login > .wrap > div > div{padding:22px 16px 14px !important;}
 
-      #login .wrap > div > div[style*="display:grid"]{
+      #login .wrap > div > div > div[style*="display:grid"]{
         gap:24px !important;
       }
 
@@ -850,7 +850,7 @@
         font-size:11px !important;
       }
 
-      #login > .wrap > div > div:last-child{
+      #login .wrap > div > div > div:last-child{
         font-size:0.74rem !important;
         line-height:1.5 !important;
         padding-top:14px !important;
