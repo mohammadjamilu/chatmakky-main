@@ -506,6 +506,39 @@
       --muted-2:#6C7295;
     }
 
+    @media (max-width:768px){
+      .theme-toggle{
+        width:32px;
+        height:32px;
+        font-size:0.72rem;
+      }
+      .theme-toggle .theme-icon{
+        font-size:0.72rem;
+      }
+    }
+
+    @media (max-width:640px){
+      .theme-toggle{
+        width:30px;
+        height:30px;
+        font-size:0.68rem;
+      }
+      .theme-toggle .theme-icon{
+        font-size:0.68rem;
+      }
+    }
+
+    @media (max-width:480px){
+      .theme-toggle{
+        width:28px;
+        height:28px;
+        font-size:0.64rem;
+      }
+      .theme-toggle .theme-icon{
+        font-size:0.64rem;
+      }
+    }
+
 :root.light-mode,
     body.light-mode{
       --bg:#F6F7FF;
