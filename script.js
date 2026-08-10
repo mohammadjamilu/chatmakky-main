@@ -1,12 +1,14 @@
 (function () {
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
       if (!toggle || !menu) return;
 
       const setOpen = (open) => {
         menu.classList.toggle('open', open);
         menu.setAttribute('aria-hidden', open ? 'false' : 'true');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.style.overflow = open ? 'hidden' : '';
       };
 
       setOpen(false);
@@ -17,8 +19,25 @@
         setOpen(!isOpen);
       });
 
-      document.addEventListener('click', function (e) {
-        if (menu.classList.contains('open') && !menu.contains(e.target) && !toggle.contains(e.target)) {
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          setOpen(false);
+        });
+      }
+
+      menu.addEventListener('click', function (e) {
+        if (e.target === menu) {
+          setOpen(false);
+        }
+      });
+
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('.mm-modal') || e.target.closest('.mm-close')) return;
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.classList.contains('open')) {
           setOpen(false);
         }
       });
