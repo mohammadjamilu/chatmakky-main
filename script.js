@@ -30,28 +30,9 @@
       }
 
       if (menu) {
-        let mobileThemeToggle = menu.querySelector('.mm-theme-toggle');
-        if (!mobileThemeToggle) {
-          mobileThemeToggle = document.createElement('button');
-          mobileThemeToggle.type = 'button';
-          mobileThemeToggle.className = 'mm-btn mm-btn-ghost mm-theme-toggle';
-          mobileThemeToggle.setAttribute('aria-label', 'Toggle theme');
-          mobileThemeToggle.innerHTML = '<span class="theme-icon">' + (document.body.classList.contains('light-mode') ? '☀️' : '🌙') + '</span> Theme';
-          const modal = menu.querySelector('.mm-modal') || menu;
-          modal.insertBefore(mobileThemeToggle, modal.firstChild);
-        }
-
-        mobileThemeToggle.addEventListener('click', function () {
-          const nextLight = !document.body.classList.contains('light-mode');
-          setTheme(nextLight);
-          localStorage.setItem('theme', nextLight ? 'light' : 'dark');
-        });
-
         menu.querySelectorAll('.mm-btn').forEach(function (btn) {
           btn.addEventListener('click', function () {
-            if (!btn.classList.contains('mm-theme-toggle')) {
-              setOpen(false);
-            }
+            setOpen(false);
           });
         });
       }
