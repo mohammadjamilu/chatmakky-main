@@ -478,6 +478,80 @@
     </div>
   </section>
 
+  <!-- FLOW BUILDER -->
+  <section class="section flow-section" id="flow-builder">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Visual Builder</div>
+        <h2>Build flows without writing a single line of code</h2>
+        <p>Drag and drop nodes to map conversations, automate branches, and connect AI actions in one visual canvas.</p>
+      </div>
+
+      <div class="flow-shell">
+        <div class="flow-topbar">
+          <div class="flow-dots"><span class="flow-dot r"></span><span class="flow-dot y"></span><span class="flow-dot g"></span></div>
+          <div class="flow-title">Flow Builder</div>
+        </div>
+
+        <div class="flow-canvas">
+          <div class="flow-badge-row">
+            <div class="flow-badge drag"><i class="fa-solid fa-up-down-left-right"></i> Drag &amp; Drop</div>
+            <div class="flow-badge reset"><i class="fa-solid fa-wand-magic-sparkles"></i> Reset</div>
+          </div>
+
+          <div class="flow-board">
+            <div class="flow-node start">
+              <div class="mini-ic"><i class="fa-solid fa-arrow-pointer"></i></div>
+              <div class="txt">Start</div>
+            </div>
+
+            <div class="flow-node condition" style="position:relative;">
+              <div class="headr"><i class="fa-solid fa-code-branch"></i> Condition</div>
+              <div class="body">
+                <div class="kv"><span class="pillk tan">intent</span><span>=</span><span class="pillk mono">support</span></div>
+              </div>
+              <span class="flow-conn tl"></span>
+              <span class="flow-conn red br"></span>
+            </div>
+
+            <div class="flow-col">
+              <div class="flow-node send">
+                <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
+                <div class="body">Connecting you to support…</div>
+              </div>
+
+              <div class="flow-node ai" style="position:relative;">
+                <div class="headr"><i class="fa-solid fa-bolt"></i> AI Generate</div>
+                <div class="body">Generate response with GPT</div>
+                <span class="flow-conn"></span>
+              </div>
+
+              <div class="flow-node send">
+                <div class="headr"><i class="fa-regular fa-comment-dots"></i> Send Message</div>
+                <div class="body mono">{{ai_reply}}</div>
+              </div>
+
+              <div class="flow-wire teal" style="top:118px; left:190px; width:64px;"></div>
+              <div class="flow-wire teal down" style="right:92px;"></div>
+              <div class="flow-wire red" style="top:170px; left:190px; width:64px;"></div>
+            </div>
+          </div>
+
+          <div class="flow-badge-stack">
+            <div class="flow-badge ai"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Powered</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-toolbar">
+        <div class="flow-tool blue"><i class="fa-regular fa-message"></i> Send Messages</div>
+        <div class="flow-tool gold"><i class="fa-solid fa-diagram-project"></i> Conditions &amp; Logic</div>
+        <div class="flow-tool purple"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Actions</div>
+        <div class="flow-tool more"><i class="fa-solid fa-plus"></i> And Many More</div>
+      </div>
+    </div>
+  </section>
+
   <!-- ADVANCED INTEGRATIONS -->
   <section class="section" id="integrations">
     <div class="wrap">
