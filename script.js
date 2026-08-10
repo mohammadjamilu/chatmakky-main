@@ -1,13 +1,13 @@
 (function () {
       const toggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
-      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
       if (!toggle || !menu) return;
 
       const setOpen = (open) => {
         menu.classList.toggle('open', open);
         menu.setAttribute('aria-hidden', open ? 'false' : 'true');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.textContent = open ? '✕' : '☰';
         document.body.style.overflow = open ? 'hidden' : '';
       };
 
@@ -19,20 +19,13 @@
         setOpen(!isOpen);
       });
 
-      if (closeBtn) {
-        closeBtn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          setOpen(false);
-        });
-      }
-
       menu.addEventListener('click', function (e) {
         if (e.target === menu) {
           setOpen(false);
         }
       });
 
-      menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+      menu.querySelectorAll('.mm-row').forEach(function (btn) {
         btn.addEventListener('click', function () {
           setOpen(false);
         });
