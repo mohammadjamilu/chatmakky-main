@@ -41,7 +41,7 @@
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
-  var slug="lp-mslgwehq-gsqfz-copy-1786266821410-copy-1786284664708-copy-1786289721314-copy-1786301395761-copy-1786301928896-copy-1786393448909";
+  var slug="lp-mslgwehq-gsqfz-copy-1786266821410-copy-1786284664708-copy-1786289721314-copy-1786301395761-copy-1786301928896";
   var SITEK="";
   var SK='lp_access_'+slug;
   var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
@@ -159,7 +159,7 @@
   function run(){
     if(contactId){
       var xhr=new XMLHttpRequest();
-      xhr.open('GET','https://app.chatmakky.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=6081');
+      xhr.open('GET','https://app.chatmakky.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=6058');
       xhr.onload=function(){
         if(xhr.status===200){
           try{
@@ -186,7 +186,7 @@
 </script>
 <script data-payment>
 (function(){
-  var slug='aW74P3UgK';
+  var slug='arzyg2q6';
   var apiBase='https://app.chatmakky.com';
   var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
   function findEmail(){
@@ -250,7 +250,7 @@
 </script>
 <script data-cart>
 (function(){
-  var slug='aW74P3UgK';
+  var slug='arzyg2q6';
   var apiBase='https://app.chatmakky.com';
   var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
   function findCartEmail(){
@@ -332,15 +332,15 @@
   
 
   <div class="wrap nav">
-    <a href="#top" class="logo" style="width:34px; height:34px; background-color:var(--surface);"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" fetchpriority="high" importance="high" decoding="sync" style="width:34px; height:34px; display:block; background:none; border:none; padding:0; box-shadow:none; object-fit: cover; object-position: center;"><span style="color:var(--text);font-weight:800;">ChatMakky</span></a>
+    <a href="#top" class="logo" style="width:34px; height:34px;"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" fetchpriority="high" importance="high" decoding="sync" style="width:34px; height:34px; display:block; background:none; border:none; padding:0; box-shadow:none; object-fit: cover; object-position: center;"><span style="color:var(--text);font-weight:800;">ChatMakky</span></a>
     <nav class="nav-links">
       <a class="nav-item" href="#features">Features</a>
       <a class="nav-item" href="#pricing">Pricing</a>
     </nav>
     <div class="nav-actions">
       <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
-      <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth" target="_blank" rel="noopener">Log in</a>
-      <a class="btn btn-solid" href="#get-started">Get Started Free</a>
+      <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Log in</a>
+      <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
       <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
   </div>
@@ -352,8 +352,8 @@
   <div class="mm-modal">
     <a class="mm-btn" href="#features">Features</a>
     <a class="mm-btn" href="#pricing">Pricing</a>
-    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth" target="_blank" rel="noopener">Log in</a>
-    <a class="mm-btn" href="#get-started">Get Started Free</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Log in</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
   </div>
 </div>
 
@@ -361,28 +361,28 @@
   
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" data-section="hero">
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span> Build once, deploy to ten channels</div>
       <h1>One AI agent. <span class="grad">Every channel</span> your customers already use.</h1>
       <p class="lead">Set it up once, connect your AI providers, and put the same agent on WhatsApp, Instagram, your website, and more.</p>
-      <div class="hero-ctas">
-        <a href="#get-started" class="btn btn-solid btn-lg">Get Started Free</a>
-        <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
-      </div>
+              <div class="hero-ctas">
+          <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get Started Free</a>
+          <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
+        </div>
       <p class="hero-note">No credit card required · Bring your own AI provider keys · Cancel anytime</p>
     </div>
   </section>
 
   <!-- marquee -->
-  <div class="marquee-wrap">
+  <div class="marquee-wrap" data-section="marquee">
     <div class="wrap">
       <div class="marquee-track" id="marquee"></div>
     </div>
   </div>
 
   <!-- CHANNELS -->
-  <section class="section" id="channels">
+  <section class="section" id="channels" data-section="channels">
     <div class="wrap">
       <div class="head">
         <div class="eyebrow">Channels</div>
@@ -464,7 +464,7 @@
   </section>
 
   <!-- BRING YOUR OWN MODEL -->
-  <section class="section section-alt" id="providers">
+  <section class="section section-alt" id="providers" data-section="providers">
     <div class="wrap">
       <div class="head">
         <div class="eyebrow">AI Providers</div>
@@ -483,7 +483,7 @@
   </section>
 
   <!-- ADVANCED INTEGRATIONS -->
-  <section class="section" id="integrations">
+  <section class="section" id="integrations" data-section="integrations">
     <div class="wrap">
       <div class="split">
         <div>
@@ -508,7 +508,7 @@
   </section>
 
   <!-- FULL FEATURES -->
-  <section class="section" id="features">
+  <section class="section" id="features" data-section="features">
     <div class="wrap">
       <div class="head">
         <div class="eyebrow">Everything included</div>
@@ -559,7 +559,7 @@
   </section>
 
   <!-- PRICING -->
-  <section class="section section-alt" id="pricing">
+  <section class="section section-alt" id="pricing" data-section="pricing">
     <div class="wrap">
       <div class="head">
         <div class="eyebrow">Pricing</div>
@@ -580,7 +580,7 @@
             <li><span class="tick">✓</span> Unlimited conversations</li>
             <li><span class="tick">✓</span> Social poster</li>
           </ul>
-          <a href="#get-started" class="btn btn-ghost btn-block">Get Started Free</a>
+          <a href="https://app.chatmakky.com/subscriber/auth?ownerId=1060&planId=106" class="btn btn-ghost btn-block">Get Started Free</a>
         </div>
 
         <div class="price-card featured">
@@ -598,7 +598,7 @@
             <li><span class="tick">✓</span> Build website with one click</li>
             <li><span class="tick">✓</span> MCP server</li>
           </ul>
-          <a href="#get-started" class="btn btn-solid btn-block">Get Started</a>
+          <a href="https://app.chatmakky.com/subscriber/auth?ownerId=1060&planId=107" class="btn btn-solid btn-block">Get Started</a>
         </div>
 
         <div class="price-card">
@@ -618,7 +618,7 @@
             <li><span class="tick">✓</span> Sales</li>
             <li><span class="tick">✓</span> Wallet passes</li>
           </ul>
-          <a href="#get-started" class="btn btn-ghost btn-block">Get Started</a>
+          <a href="https://app.chatmakky.com/subscriber/auth?ownerId=1060&planId=108" class="btn btn-ghost btn-block">Get Started</a>
         </div>
 
       </div>
@@ -626,14 +626,14 @@
   </section>
 
   <!-- CTA -->
-  <section class="section" id="get-started" style="padding-top:0;">
+  <section class="section" id="get-started" style="padding-top:0;" data-section="cta">
     <div class="wrap">
       <div class="cta-band">
         <h2>Your agent is a few minutes away</h2>
         <p>Connect a channel, pick a model, and start talking to customers today.</p>
         <div class="hero-ctas">
-          <a href="#pricing" class="btn btn-solid btn-lg">Get Started Free</a>
-          <a href="https://app.chatmakky.com/subscriber/auth" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Log in</a>
+          <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get Started Free</a>
+          <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-ghost btn-lg">Log in</a>
         </div>
       </div>
     </div>
