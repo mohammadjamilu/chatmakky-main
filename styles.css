@@ -649,238 +649,225 @@
     }
 
 @media (max-width: 768px){
+      #login{padding:44px 0 24px;}
       #login .wrap{padding-left:18px; padding-right:18px;}
-      #login > .wrap{padding-top:18px !important; padding-bottom:14px !important;}
+      #login > .wrap{padding-top:0 !important; padding-bottom:0 !important;}
       #login > .wrap > div{border-radius:20px;}
-      #login > .wrap > div > div:nth-child(3){margin-top:4px;}
 
+      /* collapse the 4-col grid to a single, centered column */
       #login .wrap > div > div[style*="display:grid"]{
         grid-template-columns:1fr !important;
-        gap:18px !important;
+        gap:28px !important;
       }
+      #login > .wrap > div > div{padding:26px 20px 18px !important;}
 
-      #login .foot-brand,
-      #login .foot-col{
+      /* brand block: centered logo, tagline, socials, address */
+      #login .foot-brand{
         width:100%;
         min-width:0;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
       }
-
-      #login .foot-brand p{
-        max-width:100% !important;
-        font-size:0.82rem !important;
-        line-height:1.5 !important;
-      }
-
-      #login .foot-col h5{
-        margin-bottom:8px !important;
-        font-size:0.7rem !important;
-      }
-
-      #login .foot-col ul{
-        gap:7px !important;
-      }
-
-      #login .foot-col a{
-        font-size:0.86rem !important;
-      }
-
       #login .foot-brand a.logo{
         width:max-content;
         max-width:100%;
+        margin:0 auto;
       }
-
+      #login .foot-brand p{
+        max-width:34ch !important;
+        font-size:0.86rem !important;
+        line-height:1.55 !important;
+        margin-left:auto; margin-right:auto;
+      }
       #login .foot-brand > div:last-child{
-        margin-top:12px !important;
+        margin-top:16px !important;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
       }
-
-      #login .foot-brand > div:last-child > div:last-child{
-        font-size:0.72rem !important;
-        line-height:1.45 !important;
-      }
-
-      #login .foot-brand > div:last-child > div:nth-child(2),
-      #login .foot-brand > div:last-child > div:nth-child(3),
-      #login .foot-brand > div:last-child > div:nth-child(4){
-        justify-content:center;
+      #login .foot-brand .flow-caption{text-align:center;}
+      #login .foot-brand > div:last-child > div:nth-child(2){
+        justify-content:center !important;
         flex-wrap:wrap;
+        gap:10px !important;
       }
-
+      #login .foot-brand > div:last-child > div:nth-child(2) a{
+        width:38px !important;
+        height:38px !important;
+      }
+      #login .foot-brand > div:last-child > div:nth-child(2) a i{
+        font-size:14px !important;
+      }
       #login .foot-brand > div:last-child > div:nth-child(3){
-        margin-top:8px !important;
+        margin-top:12px !important;
+        text-align:center;
+        max-width:30ch;
       }
 
-      #login .foot-brand > div:last-child > div:nth-child(4){
-        margin-top:8px !important;
+      /* link columns: centered headings + comfortably tappable links */
+      #login .foot-col{
+        width:100%;
+        min-width:0;
+        text-align:center;
       }
+      #login .foot-col h5{
+        margin-bottom:12px !important;
+        font-size:0.72rem !important;
+        letter-spacing:0.1em !important;
+      }
+      #login .foot-col ul{
+        align-items:center;
+        gap:2px !important;
+      }
+      #login .foot-col ul li{width:100%;}
+      #login .foot-col ul li a{
+        display:inline-flex !important;
+        justify-content:center;
+        width:100%;
+        padding:9px 0 !important;
+        font-size:0.92rem !important;
+      }
+      #login .foot-col > div[style*="margin-top:14px"]{margin-top:20px !important;}
 
+      /* official partner card */
       #login .foot-col > div[style*="border:1px solid var(--line)"]{
-        padding:14px 14px 12px !important;
+        padding:18px 16px !important;
         border-radius:16px !important;
+        width:100%;
+        text-align:left;
       }
-
+      #login .foot-col > div[style*="border:1px solid var(--line)"] > div[style*="inline-flex"]{
+        display:flex !important;
+        justify-content:center;
+        width:100%;
+      }
       #login .foot-col > div[style*="border:1px solid var(--line)"] .fa-handshake{
-        font-size:11px !important;
+        font-size:12px !important;
       }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] div[style*="font-size:0.88rem"]{
-        font-size:0.84rem !important;
+        font-size:0.9rem !important;
       }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] div[style*="font-size:0.72rem"]{
-        font-size:0.7rem !important;
+        font-size:0.76rem !important;
       }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] > div:last-child{
-        justify-content:flex-start;
+        justify-content:center !important;
         flex-wrap:wrap;
+        gap:8px !important;
       }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] a{
-        width:30px !important;
-        height:30px !important;
+        width:34px !important;
+        height:34px !important;
       }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] a i{
-        font-size:11px !important;
+        font-size:12px !important;
       }
 
+      /* bottom bar */
       #login .foot-bottom,
       #login > .wrap > div > div:last-child{
         text-align:center;
         justify-content:center !important;
       }
-
       #login > .wrap > div > div:last-child{
-        padding-top:12px !important;
-        margin-top:14px !important;
+        padding-top:16px !important;
+        margin-top:22px !important;
+        font-size:0.78rem !important;
       }
 
-      #login .wrap > div > div[style*="display:grid"] > .foot-col:nth-child(3){
-        display:flex;
-        flex-direction:column;
-        gap:14px;
-      }
-
-      #login .wrap > div > div[style*="display:grid"] > .foot-col:nth-child(3) > div{
-        margin-top:0 !important;
-      }
-
-      /* Provider grid mobile fixes */
+      /* Provider grid mobile fixes (unrelated section, kept as-is) */
       .provider-grid{
         display:grid !important;
         grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
         gap:14px !important;
         justify-content:stretch !important;
       }
-
       .provider-card{
         width:100%;
         padding:16px 14px !important;
         gap:12px !important;
         align-items:center;
       }
-
       .provider-card .ic{
         width:64px !important;
         height:64px !important;
         border-radius:16px !important;
         font-size:16px !important;
       }
-
-      .provider-card h4{
-        font-size:0.92rem !important;
-      }
-
-      .provider-card p{
-        font-size:0.74rem !important;
-        line-height:1.35;
-      }
-
-      .provider-card > div:last-child{
-        min-width:0;
-      }
+      .provider-card h4{font-size:0.92rem !important;}
+      .provider-card p{font-size:0.74rem !important; line-height:1.35;}
+      .provider-card > div:last-child{min-width:0;}
     }
 
     @media (max-width: 480px){
+      #login{padding:36px 0 20px;}
       #login .wrap{padding-left:14px; padding-right:14px;}
-      #login > .wrap{padding-top:14px !important; padding-bottom:12px !important;}
-      #login > .wrap > div{border-radius:18px;}
+      #login > .wrap > div{border-radius:16px;}
+      #login > .wrap > div > div{padding:22px 16px 14px !important;}
 
       #login .wrap > div > div[style*="display:grid"]{
-        gap:16px !important;
+        gap:24px !important;
       }
 
       #login .foot-brand p{
-        font-size:0.8rem !important;
-      }
-
-      #login .foot-brand a.logo{
-        transform:none;
+        font-size:0.82rem !important;
+        max-width:30ch !important;
       }
 
       #login .foot-brand > div:last-child{
-        margin-top:10px !important;
+        margin-top:14px !important;
       }
 
       #login .foot-brand > div:last-child > div:nth-child(2){
-        gap:7px !important;
+        gap:8px !important;
       }
 
-      #login .foot-brand > div:last-child > div:nth-child(2) a,
-      #login .foot-brand > div:last-child > div:nth-child(4) a{
+      #login .foot-brand > div:last-child > div:nth-child(2) a{
+        width:34px !important;
+        height:34px !important;
+      }
+
+      #login .foot-brand > div:last-child > div:nth-child(2) a i{
+        font-size:13px !important;
+      }
+
+      #login .foot-col h5{font-size:0.68rem !important;}
+      #login .foot-col ul li a{font-size:0.88rem !important; padding:8px 0 !important;}
+
+      #login .foot-col > div[style*="border:1px solid var(--line)"]{
+        padding:15px 14px !important;
+      }
+
+      #login .foot-col > div[style*="border:1px solid var(--line)"] a{
         width:32px !important;
         height:32px !important;
       }
 
-      #login .foot-brand > div:last-child > div:nth-child(2) a i,
-      #login .foot-brand > div:last-child > div:nth-child(4) a i{
-        font-size:12px !important;
-      }
-
-      #login .foot-col > div[style*="border:1px solid var(--line)"]{
-        padding:13px 12px 11px !important;
-      }
-
-      #login .foot-col > div[style*="border:1px solid var(--line)"] > div:last-child{
-        justify-content:flex-start;
-        gap:6px !important;
-      }
-
-      #login .foot-col > div[style*="border:1px solid var(--line)"] a{
-        width:29px !important;
-        height:29px !important;
-      }
-
       #login .foot-col > div[style*="border:1px solid var(--line)"] a i{
-        font-size:10.5px !important;
+        font-size:11px !important;
       }
 
       #login > .wrap > div > div:last-child{
-        font-size:0.72rem !important;
-        line-height:1.45 !important;
+        font-size:0.74rem !important;
+        line-height:1.5 !important;
+        padding-top:14px !important;
+        margin-top:18px !important;
       }
 
       .provider-grid{
         grid-template-columns:1fr !important;
         gap:12px !important;
       }
-
-      .provider-card{
-        padding:15px 13px !important;
-      }
-
+      .provider-card{padding:15px 13px !important;}
       .provider-card .ic{
         width:56px !important;
         height:56px !important;
         border-radius:14px !important;
         font-size:15px !important;
       }
-
-      .provider-card h4{
-        font-size:0.9rem !important;
-      }
-
-      .provider-card p{
-        font-size:0.73rem !important;
-      }
+      .provider-card h4{font-size:0.9rem !important;}
+      .provider-card p{font-size:0.73rem !important;}
     }
