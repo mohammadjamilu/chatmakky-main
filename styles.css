@@ -198,6 +198,17 @@
   @media (prefers-reduced-motion: reduce){.chan-item, .chan-wire{animation:none !important;}}
 
   .dash-mock{
+    --text:#F1EFFF;
+    --muted:#A6A2D6;
+    --muted-2:#7B77AE;
+    --surface:#15153F;
+    --surface-2:#1B1B4C;
+    --line:rgba(157,153,255,0.14);
+    --line-strong:rgba(157,153,255,0.28);
+    --success:#3DDC97;
+    --primary-light:#6E68FF;
+    --primary:#4640E0;
+    --secondary:#9D4EDD;
     border-radius:16px; overflow:hidden;
     background:#0E0E2C; border:1px solid var(--line-strong);
     box-shadow:0 30px 80px rgba(0,0,0,0.55), 0 0 0 10px rgba(70,64,224,0.05);
