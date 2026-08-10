@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-08-10T20:33:26.363Z</lastmod>
+    <lastmod>2026-08-10T20:38:50.019Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.chatmakky.com/terms-of-service/</loc>
-    <lastmod>2026-08-10T20:32:17.898Z</lastmod>
+    <lastmod>2026-08-10T20:38:28.404Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/privacy-policy/</loc>
+    <lastmod>2026-08-10T20:37:51.552Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.chatmakky.com/</loc>
     <lastmod>2026-08-10T20:24:23.873Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/privacy-policy/</loc>
-    <lastmod>2026-08-10T20:22:23.127Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
