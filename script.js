@@ -75,6 +75,15 @@
         });
       });
 
+      const mobileThemeToggle = menu ? menu.querySelector('.mm-theme-toggle') : null;
+      if (mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', function () {
+          const nextLight = !document.body.classList.contains('light-mode');
+          setTheme(nextLight);
+          localStorage.setItem('theme', nextLight ? 'light' : 'dark');
+        });
+      }
+
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && menu.classList.contains('open')) {
           setOpen(false);
