@@ -335,12 +335,20 @@
     <div class="nav-actions">
       <a class="btn btn-ghost" href="#login">Log in</a>
       <a class="btn btn-solid" href="#get-started">Get Started Free</a>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
+  </div>
+
+  <div id="mobile-menu" class="wrap mobile-menu" aria-hidden="true">
+    <a class="nav-item" href="#features">Features</a>
+    <a class="nav-item" href="#pricing">Pricing</a>
+    <a class="btn btn-ghost btn-block" href="#login">Log in</a>
+    <a class="btn btn-solid btn-block" href="#get-started">Get Started Free</a>
   </div>
 </header>
 
 <main id="top" data-section="section-2">
+  
 
   <!-- HERO -->
   <section class="hero">
@@ -624,6 +632,8 @@
 </main>
 
 <footer id="login" data-section="footer">
+  
+
   <div class="wrap" style="padding-top:22px; padding-bottom:18px;">
     <div style="position:relative; overflow:hidden; border:1px solid var(--line); border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008)); box-shadow:0 14px 36px rgba(0,0,0,0.2);">
       <div style="position:absolute; inset:auto auto 0 0; width:240px; height:240px; background:radial-gradient(circle at 30% 30%, rgba(110,104,255,0.1), transparent 62%); pointer-events:none;"></div>
