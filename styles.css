@@ -480,17 +480,18 @@
     }
 
     .theme-toggle{
-      width:40px;
-      height:40px;
+      width:30px;
+      height:30px;
       padding:0;
       border-radius:50%;
-      font-size:1.05rem;
+      font-size:0.82rem;
       line-height:1;
       flex-shrink:0;
     }
     .theme-toggle .theme-icon{
       display:inline-block;
-      transform:translateY(1px);
+      transform:translateY(0);
+      font-size:0.82rem;
     }
 
     body.light-mode{
