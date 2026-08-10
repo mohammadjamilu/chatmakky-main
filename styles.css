@@ -579,14 +579,14 @@
       .channel-orbit{display:none;}
       .channel-grid{
         display:grid;
-        grid-template-columns:repeat(2, minmax(0,1fr));
-        gap:12px;
+        grid-template-columns:repeat(5, minmax(0,1fr));
+        gap:8px;
       }
-      .channel-card{padding:18px 12px;}
+      .channel-card{padding:12px 8px;}
       .channel-ic{
-        width:40px; height:40px; margin-bottom:10px; border-radius:12px;
+        width:30px; height:30px; margin-bottom:8px; border-radius:10px;
       }
-      .channel-card h4{font-size:0.84rem;}
+      .channel-card h4{font-size:0.72rem; line-height:1.2;}
       .dash-mock{box-shadow:0 22px 50px rgba(0,0,0,0.45), 0 0 0 8px rgba(70,64,224,0.04);}
       .dash-sidebar{display:none;}
       .dash-main{padding:14px 14px 16px;}
@@ -666,7 +666,7 @@
       .section{padding:66px 0;}
       .head{margin-bottom:30px;}
       .head h2{font-size:1.45rem;}
-      .channel-grid{grid-template-columns:1fr; }
+      .channel-grid{grid-template-columns:repeat(5, minmax(0,1fr)); gap:8px; }
       .provider-grid{
         grid-template-columns:1fr !important;
       }
