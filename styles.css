@@ -508,8 +508,8 @@
         gap:0;
       }
       .provider-card .ic{
-        width:64px !important;
-        height:64px !important;
+        width:72px !important;
+        height:72px !important;
         border-radius:16px;
         margin-bottom:14px;
       }
@@ -524,8 +524,8 @@
         margin:0;
       }
       .provider-card .ic img{
-        width:78% !important;
-        height:78% !important;
+        width:82% !important;
+        height:82% !important;
       }
       .integration-card{padding:18px;}
       .feat-item{padding:18px;}
@@ -628,13 +628,13 @@
         min-height:176px;
       }
       .provider-card .ic{
-        width:56px !important;
-        height:56px !important;
+        width:64px !important;
+        height:64px !important;
         margin-bottom:10px;
       }
       .provider-card .ic img{
-        width:76% !important;
-        height:76% !important;
+        width:80% !important;
+        height:80% !important;
       }
       .integration-card{
         padding:16px;
@@ -697,8 +697,8 @@
         min-height:168px;
       }
       .provider-card .ic{
-        width:52px !important;
-        height:52px !important;
+        width:60px !important;
+        height:60px !important;
         margin-bottom:8px;
       }
       .split-visual{padding:20px 16px;}
