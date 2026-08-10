@@ -695,7 +695,10 @@
         font-size:0.62rem;
       }
       .nav-actions > .theme-toggle{
-        display:inline-flex;
+        display:none;
+      }
+      .mm-theme-toggle{
+        display:flex;
       }
     }
 
