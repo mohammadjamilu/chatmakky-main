@@ -31,10 +31,16 @@
       applyTheme(getInitialTheme());
 
       if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
+        const toggleTheme = function (e) {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           const nextTheme = document.body.classList.contains('theme-light') ? 'dark' : 'light';
           applyTheme(nextTheme);
-        });
+        };
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', toggleTheme, { passive: false });
       }
 
       if (menuToggle && menu) {
