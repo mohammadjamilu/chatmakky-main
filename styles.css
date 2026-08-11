@@ -379,7 +379,6 @@
   .cta-band::before{
     content:""; position:absolute; inset:0;
     background:radial-gradient(400px 200px at 80% 0%, rgba(255,255,255,0.18), transparent 70%);
-    pointer-events:none;
   }
   .cta-band h2{color:#fff; font-size:clamp(1.6rem,3vw,2.3rem); margin-bottom:14px; position:relative;}
   .cta-band p{color:rgba(255,255,255,0.88); margin-bottom:30px; position:relative;}
