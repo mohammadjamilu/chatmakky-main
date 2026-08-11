@@ -25,14 +25,14 @@
 
 
 <!-- SEO Meta Tags -->
-<title>ChatMakky - One AI agent. Every channel.</title>
+<title>ChatMakky</title>
 <meta name="description" content="Build one AI agent and deploy it to WhatsApp, Instagram, Facebook, TikTok, your website, and more. Bring your own AI keys, automate comments and bookings, and d" />
 <meta name="keywords" content="AI agent" />
-<meta property="og:title" content="ChatMakky - One AI agent. Every channel." />
+<meta property="og:title" content="ChatMakky" />
 <meta property="og:description" content="Build one AI agent and deploy it to WhatsApp, Instagram, Facebook, TikTok, your website, and more. Bring your own AI keys, automate comments and bookings, and d" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="ChatMakky - One AI agent. Every channel." />
+<meta name="twitter:title" content="ChatMakky" />
 <meta name="twitter:description" content="Build one AI agent and deploy it to WhatsApp, Instagram, Facebook, TikTok, your website, and more. Bring your own AI keys, automate comments and bookings, and d" />
 <link rel="icon" href="https://paymegpt.com/objects/quick-uploads/1060/7c54510c5807efdd.png?v=3" />
 <link rel="icon" type="image/png" sizes="32x32" href="https://paymegpt.com/objects/quick-uploads/1060/7c54510c5807efdd.png?v=3" />
@@ -49,7 +49,7 @@
   var u=new URL(location.href);var found=null;var changed=false;
   var PINP=true;
   if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}u.searchParams.delete(p);changed=true;}});
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
   if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
   else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
   if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
@@ -364,8 +364,8 @@
   <section class="hero" data-section="hero">
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span> Build once, deploy to ten channels</div>
-      <h1>One AI agent. <span class="grad">Every channel</span> your customers already use.</h1>
-      <p class="lead">Set it up once, connect your AI providers, and put the same agent on WhatsApp, Instagram, your website, and more.</p>
+      <h1>One AI Agent. <span class="grad">Every Channel.</span></h1>
+      <p class="lead">ChatMakky is an AI agent automation platform that lets businesses build one AI agent and connect it across WhatsApp, Instagram, websites, and more.</p>
               <div class="hero-ctas">
           <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get Started Free</a>
           <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
