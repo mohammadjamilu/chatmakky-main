@@ -478,6 +478,7 @@
       background:rgba(255,255,255,0.03);
       transition:transform .15s ease, background .15s ease;
     }
+    body.theme-light #mobile-menu .mm-btn { color: #F1EFFF !important; }
     .mm-btn:active{
       transform:scale(0.97);
       background:rgba(157,153,255,0.08);
