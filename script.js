@@ -9,6 +9,11 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '2501386813634781');
 fbq('track', 'PageView');
 
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4GKN5J86CE');
+
 (function () {
       const themeToggle = document.querySelector('.theme-toggle');
       const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
