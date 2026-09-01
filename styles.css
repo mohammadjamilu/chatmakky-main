@@ -1,6 +1,3 @@
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0px !important; }
-.goog-te-gadget { height: 0; overflow: hidden; }
 :root{
     --bg:#0A0A1F;
     --bg-alt:#0F0F2E;
@@ -124,14 +121,34 @@ body { top: 0px !important; }
   /* shared small caption label */
   .flow-caption{font-size:0.78rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:0.09em; margin-bottom:22px; font-weight:600;}
 
-  /* logo marquee */
-  .marquee-wrap{padding:38px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden;}
-  .marquee-track{display:flex; gap:52px; width:max-content; animation:scroll 32s linear infinite;}
-  .marquee-track span{
-    font-family:'Sora'; font-weight:600; color:var(--muted-2); font-size:0.98rem;
-    display:flex; align-items:center; gap:8px; white-space:nowrap;
+  /* logo cycle — one platform/provider logo fades in, holds, fades out, next one takes over */
+  .logo-cycle-wrap{padding:40px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .logo-cycle-inner{display:flex; align-items:center; justify-content:center; gap:20px; flex-wrap:wrap;}
+  .logo-cycle-caption{
+    font-family:'Sora'; font-weight:600; color:var(--muted-2); font-size:0.86rem;
+    text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap;
   }
-  @keyframes scroll{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+  .logo-cycle-stage{position:relative; width:230px; height:56px;}
+  .logo-cycle-item{
+    position:absolute; inset:0; display:flex; align-items:center; gap:12px;
+    opacity:0; will-change:opacity, transform;
+  }
+  .logo-cycle-item .lc-badge{
+    width:42px; height:42px; border-radius:12px; flex-shrink:0; overflow:hidden;
+    display:flex; align-items:center; justify-content:center; color:#fff; font-size:18px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.12);
+  }
+  .logo-cycle-item .lc-badge img{width:76%; height:76%; object-fit:contain;}
+  .logo-cycle-item .lc-name{font-family:'Sora'; font-weight:700; font-size:1.06rem; color:var(--text); white-space:nowrap;}
+  @media (prefers-reduced-motion: reduce){.logo-cycle-item{animation:none !important; opacity:1 !important; position:static !important;} .logo-cycle-stage{display:none;}}
+  @media (max-width:640px){
+    .logo-cycle-wrap{padding:28px 0;}
+    .logo-cycle-inner{gap:14px;}
+    .logo-cycle-caption{font-size:0.76rem;}
+    .logo-cycle-stage{width:190px; height:48px;}
+    .logo-cycle-item .lc-badge{width:36px; height:36px; font-size:16px;}
+    .logo-cycle-item .lc-name{font-size:0.96rem;}
+  }
 
   /* section shell */
   .section{padding:110px 0;}
@@ -201,6 +218,17 @@ body { top: 0px !important; }
   @media (prefers-reduced-motion: reduce){.chan-item, .chan-wire{animation:none !important;}}
 
   .dash-mock{
+    --text:#F1EFFF;
+    --muted:#A6A2D6;
+    --muted-2:#7B77AE;
+    --surface:#15153F;
+    --surface-2:#1B1B4C;
+    --line:rgba(157,153,255,0.14);
+    --line-strong:rgba(157,153,255,0.28);
+    --success:#3DDC97;
+    --primary-light:#6E68FF;
+    --primary:#4640E0;
+    --secondary:#9D4EDD;
     border-radius:16px; overflow:hidden;
     background:#0E0E2C; border:1px solid var(--line-strong);
     box-shadow:0 30px 80px rgba(0,0,0,0.55), 0 0 0 10px rgba(70,64,224,0.05);
@@ -728,8 +756,7 @@ body { top: 0px !important; }
       footer .foot-bottom{
         font-size:0.78rem;
       }
-      .marquee-wrap{padding:28px 0;}
-      .marquee-track{gap:34px;}
+      .logo-cycle-wrap{padding:24px 0;}
     }
 
     @media (max-width:480px){
