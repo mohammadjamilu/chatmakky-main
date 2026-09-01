@@ -15,6 +15,98 @@ fbq('track', 'PageView');
       const menuToggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
       const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+      const langButtons = Array.from(document.querySelectorAll('.lang-toggle'));
+
+      function getGoogTransCookie() {
+        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+        return match ? decodeURIComponent(match[1]) : '';
+      }
+
+      function setGoogTransCookie(value) {
+        const host = location.hostname;
+        const base = 'googtrans=' + encodeURIComponent(value) + '; path=/';
+        document.cookie = base;
+        if (host && host.indexOf('.') !== -1) {
+          document.cookie = base + '; domain=.' + host;
+        }
+      }
+
+      function deleteGoogTransCookie() {
+        const host = location.hostname;
+        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        if (host && host.indexOf('.') !== -1) {
+          document.cookie = 'googtrans=; path=/; domain=.' + host + '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        }
+      }
+
+      function updateLangButton() {
+        const isBengali = getGoogTransCookie() === '/en/bn';
+        langButtons.forEach(function (btn) {
+          btn.textContent = isBengali ? 'English' : 'বাংলা';
+          btn.setAttribute('aria-label', isBengali ? 'Switch to English' : 'Switch to Bengali');
+        });
+      }
+
+      window.toggleBengaliTranslation = function () {
+        const current = getGoogTransCookie();
+        if (current === '/en/bn') {
+          deleteGoogTransCookie();
+          setGoogTransCookie('/en/en');
+        } else {
+          setGoogTransCookie('/en/bn');
+        }
+        updateLangButton();
+        window.location.reload();
+      };
+=======
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+      const langButtons = Array.from(document.querySelectorAll('.lang-toggle'));
+
+      function getGoogTransCookie() {
+        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+        return match ? decodeURIComponent(match[1]) : '';
+      }
+
+      function setGoogTransCookie(value) {
+        const host = location.hostname;
+        const base = 'googtrans=' + encodeURIComponent(value) + '; path=/';
+        document.cookie = base;
+        if (host && host.indexOf('.') !== -1) {
+          document.cookie = base + '; domain=.' + host;
+        }
+      }
+
+      function deleteGoogTransCookie() {
+        const host = location.hostname;
+        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        if (host && host.indexOf('.') !== -1) {
+          document.cookie = 'googtrans=; path=/; domain=.' + host + '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        }
+      }
+
+      function updateLangButton() {
+        const isBengali = getGoogTransCookie() === '/en/bn';
+        langButtons.forEach(function (btn) {
+          btn.textContent = isBengali ? 'English' : 'বাংলা';
+          btn.setAttribute('aria-label', isBengali ? 'Switch to English' : 'Switch to Bengali');
+        });
+      }
+
+      window.toggleBengaliTranslation = function () {
+        const current = getGoogTransCookie();
+        if (current === '/en/bn') {
+          deleteGoogTransCookie();
+          setGoogTransCookie('/en/en');
+        } else {
+          setGoogTransCookie('/en/bn');
+        }
+        updateLangButton();
+        window.location.reload();
+      };
 
       const applyTheme = (theme) => {
         const isLight = theme === 'light';
@@ -40,6 +132,7 @@ fbq('track', 'PageView');
       };
 
       applyTheme(getInitialTheme());
+      updateLangButton();
 
       if (themeToggle) {
         const toggleTheme = function (e) {
@@ -97,61 +190,14 @@ fbq('track', 'PageView');
       }
     })();
 
-(function(){
-  var items = [
-    {name:"WhatsApp",   cls:"brand-whatsapp",  icon:"fa-brands fa-whatsapp"},
-    {name:"Instagram",  cls:"brand-instagram", icon:"fa-brands fa-instagram"},
-    {name:"Facebook",   cls:"brand-facebook",  icon:"fa-brands fa-facebook-f"},
-    {name:"TikTok",     cls:"brand-tiktok",    icon:"fa-brands fa-tiktok"},
-    {name:"Telegram",   cls:"brand-telegram",  icon:"fa-brands fa-telegram"},
-    {name:"Discord",    cls:"brand-discord",   icon:"fa-brands fa-discord"},
-    {name:"X",          cls:"brand-x",         icon:"fa-brands fa-x-twitter"},
-    {name:"ChatGPT",    img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345238154_preview-2-removebg-preview.png"},
-    {name:"Claude",     img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345252621_preview-3-removebg-preview.png"},
-    {name:"Gemini",     img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345264502_preview-4-removebg-preview.png"},
-    {name:"DeepSeek",   img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345105593_preview-6-removebg-preview.png"},
-    {name:"Groq",       img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345307904_preview-5.webp"},
-    {name:"ElevenLabs", img:"https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786345321007_preview-8.webp"},
-    {name:"Grok",       icon:"fa-solid fa-bolt", bg:"#0B0B12"},
-    {name:"HeyGen",     icon:"fa-solid fa-clapperboard", bg:"linear-gradient(135deg,#7C3AED,#4F46E5)"}
-  ];
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'bn', autoDisplay: false}, 'google_translate_element');
+}
 
-  var stage = document.getElementById('logoCycle');
-  if (!stage) return;
-
-  var n = items.length;
-  var perItem = 2.2;                 // seconds each logo "owns" the stage
-  var total = n * perItem;           // full loop length, shared by every item
-  var slot = 100 / n;                // % of the loop each item gets
-  var fadeInPct = (slot * 0.22).toFixed(3);
-  var holdEndPct = (slot * 0.82).toFixed(3);
-  var slotEndPct = slot.toFixed(3);
-
-  var html = "";
-  items.forEach(function(it, i){
-    var badgeInner = it.img
-      ? '<img src="' + it.img + '" alt="' + it.name + '" loading="lazy">'
-      : '<i class="' + it.icon + '"></i>';
-    var badgeStyle = it.img
-      ? 'background:#fff; padding:6px;'
-      : (it.bg ? 'background:' + it.bg + ';' : '');
-    var delay = -(i * perItem); // negative delay staggers each item into its own slot of the shared loop
-    html +=
-      '<div class="logo-cycle-item" style="animation:lcCycle ' + total.toFixed(3) + 's ease-in-out infinite; animation-delay:' + delay.toFixed(3) + 's;">' +
-        '<span class="lc-badge ' + (it.cls || '') + '" style="' + badgeStyle + '">' + badgeInner + '</span>' +
-        '<span class="lc-name">' + it.name + '</span>' +
-      '</div>';
-  });
-  stage.innerHTML = html;
-
-  var styleTag = document.createElement('style');
-  styleTag.textContent =
-    '@keyframes lcCycle{' +
-      '0%{opacity:0; transform:translateY(8px) scale(0.94);}' +
-      fadeInPct + '%{opacity:1; transform:translateY(0) scale(1);}' +
-      holdEndPct + '%{opacity:1; transform:translateY(0) scale(1);}' +
-      slotEndPct + '%{opacity:0; transform:translateY(-8px) scale(0.94);}' +
-      '100%{opacity:0;}' +
-    '}';
-  document.head.appendChild(styleTag);
-})();
+var names = ["WhatsApp","Instagram","Facebook","TikTok","Telegram","Discord","OpenAI","Anthropic","Gemini","Grok","DeepSeek","Kimi","ElevenLabs","Groq","HeyGen"];
+var track = document.getElementById('marquee');
+var html = "";
+for (var r = 0; r < 2; r++) {
+  names.forEach(function(n){ html += "<span>" + n + "</span>"; });
+}
+track.innerHTML = html;
