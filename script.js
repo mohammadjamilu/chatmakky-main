@@ -9,104 +9,17 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '2501386813634781');
 fbq('track', 'PageView');
 
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4GKN5J86CE');
+
 (function () {
       const themeToggle = document.querySelector('.theme-toggle');
       const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
       const menuToggle = document.querySelector('.menu-toggle');
       const menu = document.getElementById('mobile-menu');
       const closeBtn = menu ? menu.querySelector('.mm-close') : null;
-      const langButtons = Array.from(document.querySelectorAll('.lang-toggle'));
-
-      function getGoogTransCookie() {
-        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-        return match ? decodeURIComponent(match[1]) : '';
-      }
-
-      function setGoogTransCookie(value) {
-        const host = location.hostname;
-        const base = 'googtrans=' + encodeURIComponent(value) + '; path=/';
-        document.cookie = base;
-        if (host && host.indexOf('.') !== -1) {
-          document.cookie = base + '; domain=.' + host;
-        }
-      }
-
-      function deleteGoogTransCookie() {
-        const host = location.hostname;
-        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-        if (host && host.indexOf('.') !== -1) {
-          document.cookie = 'googtrans=; path=/; domain=.' + host + '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-        }
-      }
-
-      function updateLangButton() {
-        const isBengali = getGoogTransCookie() === '/en/bn';
-        langButtons.forEach(function (btn) {
-          btn.textContent = isBengali ? 'English' : 'বাংলা';
-          btn.setAttribute('aria-label', isBengali ? 'Switch to English' : 'Switch to Bengali');
-        });
-      }
-
-      window.toggleBengaliTranslation = function () {
-        const current = getGoogTransCookie();
-        if (current === '/en/bn') {
-          deleteGoogTransCookie();
-          setGoogTransCookie('/en/en');
-        } else {
-          setGoogTransCookie('/en/bn');
-        }
-        updateLangButton();
-        window.location.reload();
-      };
-=======
-      const themeToggle = document.querySelector('.theme-toggle');
-      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.getElementById('mobile-menu');
-      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
-      const langButtons = Array.from(document.querySelectorAll('.lang-toggle'));
-
-      function getGoogTransCookie() {
-        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-        return match ? decodeURIComponent(match[1]) : '';
-      }
-
-      function setGoogTransCookie(value) {
-        const host = location.hostname;
-        const base = 'googtrans=' + encodeURIComponent(value) + '; path=/';
-        document.cookie = base;
-        if (host && host.indexOf('.') !== -1) {
-          document.cookie = base + '; domain=.' + host;
-        }
-      }
-
-      function deleteGoogTransCookie() {
-        const host = location.hostname;
-        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-        if (host && host.indexOf('.') !== -1) {
-          document.cookie = 'googtrans=; path=/; domain=.' + host + '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-        }
-      }
-
-      function updateLangButton() {
-        const isBengali = getGoogTransCookie() === '/en/bn';
-        langButtons.forEach(function (btn) {
-          btn.textContent = isBengali ? 'English' : 'বাংলা';
-          btn.setAttribute('aria-label', isBengali ? 'Switch to English' : 'Switch to Bengali');
-        });
-      }
-
-      window.toggleBengaliTranslation = function () {
-        const current = getGoogTransCookie();
-        if (current === '/en/bn') {
-          deleteGoogTransCookie();
-          setGoogTransCookie('/en/en');
-        } else {
-          setGoogTransCookie('/en/bn');
-        }
-        updateLangButton();
-        window.location.reload();
-      };
 
       const applyTheme = (theme) => {
         const isLight = theme === 'light';
@@ -132,7 +45,6 @@ fbq('track', 'PageView');
       };
 
       applyTheme(getInitialTheme());
-      updateLangButton();
 
       if (themeToggle) {
         const toggleTheme = function (e) {
@@ -157,11 +69,16 @@ fbq('track', 'PageView');
 
         setOpen(false);
 
-        menuToggle.addEventListener('click', function (e) {
+        const handleMenuToggle = function (e) {
+          e.preventDefault();
           e.stopPropagation();
           const isOpen = menu.classList.contains('open');
           setOpen(!isOpen);
-        });
+          menuToggle.setAttribute('aria-expanded', (!isOpen).toString());
+        };
+
+        menuToggle.addEventListener('click', handleMenuToggle);
+        menuToggle.addEventListener('touchstart', handleMenuToggle, { passive: false });
 
         if (closeBtn) {
           closeBtn.addEventListener('click', function (e) {
@@ -189,10 +106,6 @@ fbq('track', 'PageView');
         });
       }
     })();
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'bn', autoDisplay: false}, 'google_translate_element');
-}
 
 var names = ["WhatsApp","Instagram","Facebook","TikTok","Telegram","Discord","OpenAI","Anthropic","Gemini","Grok","DeepSeek","Kimi","ElevenLabs","Groq","HeyGen"];
 var track = document.getElementById('marquee');
