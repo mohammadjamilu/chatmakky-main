@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/</loc>
+    <lastmod>2026-09-01T21:26:26.940Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/privacy-policy/</loc>
+    <lastmod>2026-09-01T21:26:19.860Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/terms-of-service/</loc>
+    <lastmod>2026-09-01T21:26:09.230Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/pricing/</loc>
     <lastmod>2026-09-01T21:21:45.708Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/terms-of-service/</loc>
-    <lastmod>2026-09-01T21:21:36.547Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/privacy-policy/</loc>
-    <lastmod>2026-09-01T21:21:30.209Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.chatmakky.com/</loc>
     <lastmod>2026-09-01T21:21:24.010Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-09-01T21:21:11.786Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
