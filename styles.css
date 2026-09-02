@@ -58,7 +58,7 @@
     border-bottom:1px solid var(--line);
     overflow:visible !important;
   }
-  .nav{display:flex; align-items:center; gap:48px; height:74px; overflow:visible !important;}
+  .nav{display:flex; align-items:center; gap:48px; height:74px; position:relative; overflow:visible !important;}
   .logo{display:flex; align-items:center; gap:10px; font-family:'Sora'; font-weight:800; font-size:1.15rem; white-space:nowrap; flex-shrink:0;}
   .logo-mark{
     width:34px; height:34px; border-radius:9px;
@@ -69,14 +69,17 @@
     overflow:hidden;
   }
   .logo-mark img{width:100%; height:100%; object-fit:cover; display:block;}
-  .nav-links{display:flex; align-items:center; gap:8px; margin-right:auto;}
+  .nav-links{
+    display:flex; align-items:center; gap:8px;
+    position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  }
   .nav-links a.nav-item{
     padding:10px 16px; border-radius:100px; font-weight:500; font-size:0.94rem; color:var(--muted);
     transition:color .2s, background .2s;
   }
   .nav-links a.nav-item:hover{color:var(--text); background:rgba(157,153,255,0.08);}
   .nav-links a.nav-item.active{color:var(--text); background:rgba(157,153,255,0.10);}
-  .nav-actions{display:flex; align-items:center; gap:10px; flex-shrink:0; z-index:102;}
+  .nav-actions{display:flex; align-items:center; gap:10px; flex-shrink:0; z-index:102; margin-left:auto;}
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
     padding:11px 20px; border-radius:100px; font-weight:600; font-size:0.92rem;
