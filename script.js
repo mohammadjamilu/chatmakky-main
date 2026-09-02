@@ -107,6 +107,19 @@ window.dataLayer = window.dataLayer || [];
       }
     })();
 
+(function () {
+      var featuresLink = document.querySelector('.nav-links a.nav-item[href*="#features"]');
+      if (!featuresLink) return;
+      var sync = function () {
+        featuresLink.classList.toggle('active', window.location.hash === '#features');
+      };
+      sync();
+      window.addEventListener('hashchange', sync);
+      featuresLink.addEventListener('click', function () {
+        window.setTimeout(sync, 0);
+      });
+    })();
+
 var names = ["WhatsApp","Instagram","Facebook","TikTok","Telegram","Discord","OpenAI","Anthropic","Gemini","Grok","DeepSeek","Kimi","ElevenLabs","Groq","HeyGen"];
 var track = document.getElementById('marquee');
 var html = "";
