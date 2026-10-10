@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/refer-earn/</loc>
+    <lastmod>2026-10-10T18:51:04.865Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/pricing/</loc>
+    <lastmod>2026-10-10T18:45:30.732Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/</loc>
+    <lastmod>2026-10-10T18:44:41.269Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/terms-of-service/tiktokgpptmbtq2rzgnmrewzrd0y904dng3tha-txt/</loc>
     <lastmod>2026-09-11T20:12:41.394Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -11,18 +26,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/pricing/</loc>
-    <lastmod>2026-09-02T08:44:29.544Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.chatmakky.com/privacy-policy/</loc>
     <lastmod>2026-09-02T08:34:35.272Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-09-02T08:34:24.268Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
