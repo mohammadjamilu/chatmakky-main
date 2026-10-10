@@ -305,6 +305,15 @@
     .price-amount .num{font-size:2.05rem;}
     .cta-band{padding:40px 16px; border-radius:20px;}
   }
+  @media (max-width:640px){
+    .table-scroll{overflow-x:visible;}
+    table.compare{min-width:0; table-layout:fixed;}
+    table.compare th, table.compare td{padding:10px 6px; font-size:0.74rem;}
+    table.compare thead th{font-size:0.78rem;}
+    table.compare thead th span{font-size:0.62rem;}
+    table.compare td:first-child, table.compare th:first-child{width:34%; padding-left:10px;}
+    table.compare td:not(:first-child), table.compare th:not(:first-child){width:22%;}
+  }
 
 #mobile-menu.mobile-menu-overlay{
       display:none; position:fixed; inset:0; z-index:200;
