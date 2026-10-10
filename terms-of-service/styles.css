@@ -65,6 +65,9 @@ body.theme-light body::before{
     var(--bg);
 }
 body.theme-light .card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,247,255,0.9));}
+body.theme-light #mobile-menu .mm-btn{color:#fff !important;}
+body.theme-light #mobile-menu .mm-close{color:#fff !important; border-color:rgba(255,255,255,0.28);}
+body.theme-light .menu-toggle{color:#0f0f0f;}
 
 /* legal content */
 .eyebrow{display:inline-flex; align-items:center; gap:8px; padding:7px 14px; border-radius:100px; font-size:0.82rem; font-weight:600; color:var(--secondary-light); background:rgba(157,78,221,0.1); border:1px solid rgba(157,78,221,0.28); margin-bottom:18px;}
