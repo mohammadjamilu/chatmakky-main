@@ -22,7 +22,18 @@
 
 
 <!-- Meta Pixel Code -->
-
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2501386813634781');
+fbq('track', 'PageView');
+</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"
 /></noscript>
@@ -330,7 +341,8 @@ src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -343,6 +355,7 @@ src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"
     <nav class="nav-links">
       <a class="nav-item" href="https://www.chatmakky.com/#features">Features</a>
       <a class="nav-item" href="https://www.chatmakky.com/pricing/">Pricing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/refer-earn">Refer &amp; Earn</a>
     </nav>
     <div class="nav-actions">
       <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
@@ -351,13 +364,54 @@ src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"
       <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
   </div>
-  
+  <script>
+    (function () {
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('theme-light', isLight);
+        if (themeIcon) themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon';
+        if (themeToggle) themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        try { localStorage.setItem('chatmakky-theme', theme); } catch (e) {}
+      };
+      const getInitialTheme = () => {
+        try { const saved = localStorage.getItem('chatmakky-theme'); if (saved === 'light' || saved === 'dark') return saved; } catch (e) {}
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      };
+      applyTheme(getInitialTheme());
+      if (themeToggle) {
+        const toggleTheme = function (e) { if (e) { e.preventDefault(); e.stopPropagation(); } applyTheme(document.body.classList.contains('theme-light') ? 'dark' : 'light'); };
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', toggleTheme, { passive: false });
+      }
+      if (menuToggle && menu) {
+        const setOpen = (open) => {
+          menu.classList.toggle('open', open);
+          menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+          menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+        setOpen(false);
+        menuToggle.addEventListener('click', function (e) { e.stopPropagation(); setOpen(!menu.classList.contains('open')); });
+        if (closeBtn) closeBtn.addEventListener('click', function (e) { e.stopPropagation(); setOpen(false); });
+        menu.addEventListener('click', function (e) { if (e.target === menu) setOpen(false); });
+        menu.querySelectorAll('.mm-btn').forEach(function (btn) { btn.addEventListener('click', function () { setOpen(false); }); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('open')) setOpen(false); });
+      }
+    })();
+  </script>
 </header>
 <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
   <button class="mm-close" aria-label="Close menu">✕</button>
   <div class="mm-modal">
     <a class="mm-btn" href="https://www.chatmakky.com/#features">Features</a>
     <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/refer-earn">Refer &amp; Earn</a>
     <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth" rel="noopener">Log in</a>
     <a class="mm-btn mm-btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
   </div>
@@ -513,5 +567,4 @@ src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"
 </footer>
 
 <script src="https://app.chatmakky.com/widget.js" data-widget="11593776" async></script>
-  <script src="script.js"></script>
 </body></html>
