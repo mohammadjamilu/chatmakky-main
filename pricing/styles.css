@@ -314,6 +314,21 @@
     table.compare td:first-child, table.compare th:first-child{width:34%; padding-left:10px;}
     table.compare td:not(:first-child), table.compare th:not(:first-child){width:22%;}
   }
+  @media (max-width:768px){
+    html{overflow-x:clip;}
+    body{overflow-x:clip; max-width:100%;}
+    .hero .wrap{padding-left:20px; padding-right:20px;}
+    .hero h1{font-size:clamp(2.05rem, 8vw, 3.2rem); line-height:1.08; margin:0 auto 18px; text-wrap:balance; overflow-wrap:break-word;}
+    .hero h1 .grad{display:block;}
+  }
+  @media (max-width:640px){
+    .hero .wrap{padding-left:18px; padding-right:18px;}
+    .hero h1{font-size:clamp(1.95rem, 9vw, 2.9rem);}
+  }
+  @media (max-width:480px){
+    .hero .wrap{padding-left:16px; padding-right:16px;}
+    .hero h1{font-size:clamp(1.75rem, 9vw, 2.45rem);}
+  }
 
 #mobile-menu.mobile-menu-overlay{
       display:none; position:fixed; inset:0; z-index:200;
