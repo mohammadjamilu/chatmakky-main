@@ -383,6 +383,9 @@
         align-items:center; justify-content:center; font-size:26px; margin:0; line-height:1; touch-action:manipulation;
       }
     }
+    @media (max-width:768px){ header .wrap.nav{padding-left:20px !important; padding-right:20px !important;} }
+    @media (max-width:640px){ header .wrap.nav{padding-left:18px !important; padding-right:18px !important;} }
+    @media (max-width:480px){ header .wrap.nav{padding-left:16px !important; padding-right:16px !important;} }
 
 #login .footer-card{
       position:relative; overflow:hidden; border:1px solid var(--line); border-radius:22px;
