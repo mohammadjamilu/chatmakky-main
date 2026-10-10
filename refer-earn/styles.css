@@ -81,7 +81,8 @@
     .mm-close{position:absolute; top:20px; right:20px; width:40px; height:40px; border-radius:50%; border:1px solid var(--line-strong); background:rgba(255,255,255,0.04); color:var(--text); font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center;}
     .mm-modal{width:100%; max-width:340px; display:flex; flex-direction:column; gap:14px;}
     .mm-btn{display:flex; align-items:center; justify-content:center; width:100%; padding:16px 24px; border-radius:100px; font-size:1.05rem; font-weight:600; text-align:center; border:1px solid var(--line-strong); color:var(--text); background:rgba(255,255,255,0.03); transition:transform .15s ease, background .15s ease;}
-    body.theme-light #mobile-menu .mm-btn{color:#171738 !important;}
+    body.theme-light #mobile-menu .mm-btn{color:#fff !important;}
+    body.theme-light #mobile-menu .mm-close{color:#fff !important; border-color:rgba(255,255,255,0.28);}
     .mm-btn:active{transform:scale(0.97); background:rgba(157,153,255,0.08);}
     .mm-btn-solid{background:linear-gradient(135deg, var(--primary), var(--secondary)); border-color:transparent; color:#fff; box-shadow:0 10px 26px rgba(105,70,224,0.4); font-weight:700;}
 
