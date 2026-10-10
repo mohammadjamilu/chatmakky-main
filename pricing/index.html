@@ -369,7 +369,7 @@ fbq('track', 'PageView');
   </div>
 
   <script>
-    (function () {
+    document.addEventListener('DOMContentLoaded', function () {
       const themeToggle = document.querySelector('.theme-toggle');
       const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
       const menuToggle = document.querySelector('.menu-toggle');
@@ -434,7 +434,7 @@ fbq('track', 'PageView');
           if (e.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); }
         });
       }
-    })();
+    });
   </script>
 </header>
 <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
