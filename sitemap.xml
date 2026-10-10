@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/terms-of-service/</loc>
+    <lastmod>2026-10-10T19:10:16.873Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/refer-earn/</loc>
     <lastmod>2026-10-10T19:10:10.852Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,11 +23,6 @@
   <url>
     <loc>https://www.chatmakky.com/</loc>
     <lastmod>2026-10-10T19:09:53.380Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/terms-of-service/</loc>
-    <lastmod>2026-10-10T19:08:29.155Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
