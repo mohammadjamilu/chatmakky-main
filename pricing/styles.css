@@ -305,8 +305,6 @@
     .price-amount .num{font-size:2.05rem;}
     .cta-band{padding:40px 16px; border-radius:20px;}
   }
-  @media (max-width:768px){ #compare, #faq { display:none !important; } }
-  @media (max-width:768px){ .hero-ctas a[href="#compare"]{ display:none !important; } }
 
 #mobile-menu.mobile-menu-overlay{
       display:none; position:fixed; inset:0; z-index:200;
