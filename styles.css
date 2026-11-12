@@ -367,22 +367,19 @@
   }
   .price-card h3{font-size:1.15rem; margin-bottom:6px;}
   .price-card .sub{color:var(--muted-2); font-size:0.86rem; margin-bottom:22px;}
-  .price-amount{display:flex; align-items:baseline; gap:6px; margin-bottom:26px;}
-  .price-amount .num{font-family:'Sora'; font-size:2.6rem; font-weight:800;}
+  .price-amount{display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap;}
+  .price-amount .old{font-family:'Sora'; font-size:2rem; font-weight:800; color:#b3b5e3; text-decoration:line-through; text-decoration-thickness:2px; text-decoration-color:#b3b5e3; text-underline-offset:3px; opacity:1; line-height:1; white-space:nowrap;}
+  .price-amount .num{font-family:'Sora'; font-size:2.6rem; font-weight:800; line-height:1;}
   .price-amount .per{color:var(--muted-2); font-size:0.92rem;}
   .price-card .check-list{margin-bottom:28px; flex:1;}
   .price-card .check-list li{font-size:0.9rem;}
-  .price-card{position:relative;}
-  .price-amount{display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap;}
-  .price-amount .old{font-family:'Sora'; font-size:2rem; font-weight:800; color:#b3b5e3; text-decoration:line-through; text-decoration-thickness:2px; text-decoration-color:#b3b5e3; text-underline-offset:3px; opacity:1; line-height:1; white-space:nowrap;}
-  .price-amount .num{line-height:1;}
   .price-trial{font-size:0.8rem; color:var(--secondary-light); font-weight:600; margin-bottom:24px; display:flex; align-items:center; gap:7px;}
   .price-trial i{font-size:0.72rem;}
   .price-lock-note{display:flex; align-items:center; gap:8px; margin:-10px 0 18px; padding:0; font-size:0.82rem; font-weight:700; line-height:1.4; color:#E3C2FF; background:none; border:none;}
   .price-lock-note i{color:#E3C2FF;}
-  body.theme-light .price-lock-note{color:#5B21B6;}
-  body.theme-light .price-lock-note i{color:#5B21B6;}
-  body.theme-light .price-trial{color:var(--secondary);}
+  body.theme-light .price-lock-note{color:#5B21B6 !important;}
+  body.theme-light .price-lock-note i{color:#5B21B6 !important;}
+  body.theme-light .price-trial{color:var(--secondary) !important;}
   .price-meta{font-size:0.8rem; color:var(--muted-2); margin-bottom:24px;}
   .price-tag.trial{background:linear-gradient(135deg, #5B54E8, var(--secondary)); white-space:nowrap;}
   @media (max-width:640px){ .price-amount .old{font-size:1.625rem;} }
