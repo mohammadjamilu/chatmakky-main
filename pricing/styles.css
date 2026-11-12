@@ -160,7 +160,7 @@
   .price-amount{display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap;}
   .price-amount .num{font-family:'Sora'; font-size:2.6rem; font-weight:800; line-height:1;}
   .price-amount .old{
-    font-family:'Sora'; font-size:2rem; font-weight:800; color:#b3b5e3;
+    font-family:'Sora'; font-size:1.7rem; font-weight:800; color:#b3b5e3;
     position:relative; text-decoration:none;
     opacity:1; line-height:1; white-space:nowrap;
   }
@@ -211,7 +211,7 @@
     background:rgba(157,153,255,0.05);
   }
   table.compare thead th span{display:block; font-family:'Inter'; font-weight:500; font-size:0.76rem; color:var(--muted-2); margin-top:3px;}
-  table.compare thead .old{display:inline-block; font-family:'Sora'; font-size:0.72em; font-weight:800; color:#b3b5e3; position:relative; text-decoration:none; margin-right:6px;}
+  table.compare thead .old{display:inline-block; font-family:'Sora'; font-size:0.65em; font-weight:800; color:#b3b5e3; position:relative; text-decoration:none; margin-right:6px;}
   table.compare thead .old::after{
     content:""; position:absolute; left:-2px; right:-2px; top:64%; height:2px;
     background:#b3b5e3; border-radius:2px; pointer-events:none;
@@ -335,7 +335,7 @@
     .pricing-grid{gap:16px;}
     .price-card{padding:24px 18px; border-radius:18px;}
     .price-amount .num{font-size:2.25rem;}
-      .price-amount .old{font-size:1.625rem;}
+      .price-amount .old{font-size:1.4rem;}
     .check-list li{font-size:0.86rem;}
     details.faq{padding:16px 18px;}
     details.faq summary{font-size:0.94rem;}
@@ -350,7 +350,7 @@
     .hero p.lead{font-size:0.92rem; max-width:34ch;}
     .price-card{padding:22px 16px;}
     .price-amount .num{font-size:2.05rem;}
-  .price-amount .old{font-size:1.5rem;}
+  .price-amount .old{font-size:1.3rem;}
     .cta-band{padding:40px 16px; border-radius:20px;}
   }
   @media (max-width:640px){
