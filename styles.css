@@ -368,7 +368,8 @@
   .price-card h3{font-size:1.15rem; margin-bottom:6px;}
   .price-card .sub{color:var(--muted-2); font-size:0.86rem; margin-bottom:22px;}
   .price-amount{display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap;}
-  .price-amount .old{font-family:'Sora'; font-size:2rem; font-weight:800; color:#b3b5e3; text-decoration:line-through; text-decoration-thickness:2px; text-decoration-color:#b3b5e3; text-underline-offset:3px; opacity:1; line-height:1; white-space:nowrap;}
+  .price-amount .old{position:relative; font-family:'Sora'; font-size:2rem; font-weight:800; color:#b3b5e3; text-decoration:none !important; text-decoration-thickness:2px; text-decoration-color:#b3b5e3; text-underline-offset:3px; opacity:1; line-height:1; white-space:nowrap;}
+  .price-amount .old::after{content:""; position:absolute; left:-2px; right:-2px; top:64%; height:2px; background:#b3b5e3; border-radius:2px; pointer-events:none;}
   .price-amount .num{font-family:'Sora'; font-size:2.6rem; font-weight:800; line-height:1;}
   .price-amount .per{color:var(--muted-2); font-size:0.92rem;}
   .price-card .check-list{margin-bottom:28px; flex:1;}
