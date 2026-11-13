@@ -88,10 +88,10 @@
   }
   .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--success); box-shadow:0 0 8px var(--success);}
 
-  .hero{padding:96px 0 40px; text-align:center;}
+  .hero{padding:64px 0 24px; text-align:center;}
   .hero h1{
-    font-size:clamp(2.3rem, 5.5vw, 4.1rem);
-    line-height:1.06; letter-spacing:-0.03em; max-width:920px; margin:0 auto 24px;
+    font-size:clamp(1.5rem, 3.4vw, 2.6rem);
+    line-height:1.06; letter-spacing:-0.03em; max-width:none; margin:0 auto;
   }
   .hero h1 .grad{
     background:linear-gradient(100deg, var(--primary-light), var(--secondary-light));
@@ -100,6 +100,9 @@
   .hero p.lead{max-width:640px; margin:0 auto 36px; color:var(--muted); font-size:1.12rem;}
   .hero-ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:20px;}
   .hero-note{font-size:0.85rem; color:var(--muted-2);}
+  @media (min-width:900px){
+    .hero h1{white-space:nowrap;}
+  }
   .flow-caption{font-size:0.78rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:0.09em; margin-bottom:22px; font-weight:600;}
 
   .section{padding:110px 0;}
