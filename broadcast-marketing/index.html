@@ -872,4 +872,62 @@ fbq('track', 'PageView');
   });
 })();
 </script>
+<script>
+(function(){
+  try {
+    var hub = document.querySelector('.hero .hub');
+    var hero = document.querySelector('.hero');
+    var header = document.querySelector('header');
+    var headline = document.querySelector('.hero h1');
+    var caption = document.querySelector('.hero .hub-cap');
+    if (!hub || !hero || !header || !headline || !caption) return;
+    var useZoom = !!(window.CSS && CSS.supports && CSS.supports('zoom', '1'));
+    var rafId = null;
+    var lastW = window.innerWidth;
+    var lastH = window.innerHeight;
+
+    function anyOpen(){ return !!document.querySelector('.hub .acc.open'); }
+    function reset(){ hub.style.zoom = ''; hub.style.transform = ''; hub.style.marginBottom = ''; }
+
+    function apply(){
+      if (window.innerWidth <= 820) { reset(); return; }
+      if (anyOpen()) return; /* never touch the layout while a row is open */
+      reset();
+      var natural = hub.getBoundingClientRect().height || 1;
+      var vh = document.documentElement.clientHeight || window.innerHeight;
+      var cs = window.getComputedStyle(hero);
+      var padT = parseFloat(cs.paddingTop) || 0;
+      var padB = parseFloat(cs.paddingBottom) || 0;
+      var h1H = headline.getBoundingClientRect().height || 0;
+      var capH = caption.getBoundingClientRect().height || 0;
+      var available = vh - (header.offsetHeight || 0) - padT - padB - h1H - capH - 48;
+      var scale = Math.max(0.6, Math.min(1, available / natural));
+      if (useZoom) {
+        hub.style.zoom = scale;
+      } else {
+        hub.style.transformOrigin = 'top center';
+        hub.style.transform = 'scale(' + scale + ')';
+        hub.style.marginBottom = (natural * (scale - 1)) + 'px';
+      }
+    }
+
+    function schedule(){
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(apply);
+    }
+
+    window.addEventListener('load', schedule);
+    window.addEventListener('orientationchange', schedule);
+    window.addEventListener('resize', function(){
+      /* ignore resizes caused only by a scrollbar appearing/disappearing (height unchanged) */
+      var h = window.innerHeight, w = window.innerWidth;
+      var heightChanged = Math.abs(h - lastH) > 2;
+      var bigWidthChange = Math.abs(w - lastW) > 40;
+      lastH = h; lastW = w;
+      if (heightChanged || bigWidthChange) schedule();
+    });
+    schedule();
+  } catch (e) {}
+})();
+</script>
 </body></html>
