@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Broadcast Marketing — 9 Channels, One Dashboard | ChatMakky</title>
+<meta name="description" content="Reach your contacts on Email, SMS, Telegram, Phone, Push, WhatsApp, Messenger, Instagram and Discord from one ChatMakky Broadcast Hub. See what each channel does best and the rules to follow." />
+<meta property="og:title" content="Broadcast Marketing — 9 Channels, One Dashboard | ChatMakky" />
+<meta property="og:description" content="Reach your contacts on Email, SMS, Telegram, Phone, Push, WhatsApp, Messenger, Instagram and Discord from one ChatMakky Broadcast Hub. See what each channel does best and the rules to follow." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Broadcast Marketing — 9 Channels, One Dashboard | ChatMakky" />
+<meta name="twitter:description" content="Reach your contacts on Email, SMS, Telegram, Phone, Push, WhatsApp, Messenger, Instagram and Discord from one ChatMakky Broadcast Hub. See what each channel does best and the rules to follow." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mwf7hohf-etrdy";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.chatmakky.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=9221');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='EmKFMmuM3';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='EmKFMmuM3';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="https://www.chatmakky.com/">Chat<span>Makky</span></a>
+  <a class="btn btn-p" href="https://app.chatmakky.com/">Open Dashboard</a>
+</div></nav>
+
+<header class="hero" data-section="hero"><div class="wrap">
+  <span class="pill">Broadcast Hub</span>
+  <h1>One hub. <em>Nine channels.</em> Every customer, reached.</h1>
+  <p class="lead">Send campaigns on Email, SMS, Telegram, AI phone calls, Push, WhatsApp, Messenger, Instagram and Discord from a single ChatMakky dashboard, with each channel’s rules built in.</p>
+  <div class="cta">
+    <a class="btn btn-p" href="https://app.chatmakky.com/">Start broadcasting</a>
+    <a class="btn btn-o" href="#analysis">See the channel analysis</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>9</b><span>broadcast channels</span></div>
+    <div class="stat"><b>1</b><span>unified dashboard</span></div>
+    <div class="stat"><b>3</b><span>channels with 24-hour window rules</span></div>
+  </div>
+</div></header>
+
+<section id="analysis" data-section="analysis"><div class="wrap">
+  <div class="eyebrow">Channel analysis</div>
+  <h2>All 9 channels at a glance</h2>
+  <p class="sub">Each channel reaches a different audience in a different way. This table shows who you reach, what you can send and what to watch out for.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Channel</th><th>Who you reach</th><th>What you can send</th><th>Built-in tools</th><th>Watch out for</th></tr></thead>
+    <tbody>
+      <tr><td>✉️ Email</td><td>Segmented email contacts</td><td>Designed email campaigns with AI-generated content</td><td>Open and click tracking, analytics, SMTP setup</td><td>Needs a working SMTP configuration</td></tr>
+      <tr><td>📱 SMS</td><td>Contacts with phone numbers</td><td>Bulk text messages</td><td>Campaign folders, search, unsubscribed list</td><td>Short messages only; honour unsubscribes</td></tr>
+      <tr><td>✈️ Telegram</td><td>People who messaged your Telegram bot</td><td>Text, images and markdown-formatted messages</td><td>Bot token, subscriber list, scheduling, delivery reports</td><td>Only reaches people who started your bot</td></tr>
+      <tr><td>📞 Phone</td><td>Contacts, filtered by agent or tag</td><td>AI voice calls with a welcome message and custom prompt</td><td>ElevenLabs conversational AI, call scheduling</td><td>Needs a Twilio number connected to ElevenLabs</td></tr>
+      <tr><td>🔔 Push</td><td>Users who saved your widget to their Home Screen</td><td>Rich notifications with images, actions and deep links</td><td>Widget targeting, open and click analytics</td><td>Only reaches users who installed the widget (PWA)</td></tr>
+      <tr><td>💬 WhatsApp</td><td>Your WhatsApp contacts</td><td>Meta-approved template messages with variables</td><td>Template sync, recipient selection, history, delivery tracking</td><td>Templates must be approved; follows the 24-hour policy</td></tr>
+      <tr><td>🗨️ Messenger</td><td>People who messaged your Facebook Page</td><td>Rich messages and utility message templates</td><td>Contact list, scheduling, delivery tracking, HUMAN_AGENT replies</td><td>Standard sends need a message in the last 24 hours</td></tr>
+      <tr><td>📸 Instagram</td><td>People who messaged your Instagram account</td><td>Rich messages from a composer</td><td>Scheduling, delivery tracking, 24-hour window status</td><td>HUMAN_AGENT tag extends replies to 7 days</td></tr>
+      <tr><td>🎮 Discord</td><td>Contacts or channels reached by your Discord bot</td><td>Personalised direct messages</td><td>Contact selection, widget targeting, delivery tracking</td><td>Needs a bot token added to an AI Agent first</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section class="alt" data-section="channels"><div class="wrap">
+  <div class="eyebrow">Channel by channel</div>
+  <h2>What each channel does best</h2>
+  <p class="sub">A closer look at the nine channels, grouped by how they are used.</p>
+  <div class="grid">
+    <div class="card"><div class="ic" style="background:#e0e7ff">✉️</div><h3>Email Campaigns</h3><p>Create and send professional campaigns with AI content generation. Segment your audience and follow opens, clicks and conversions as they happen.</p><div class="chips"><span>AI content</span><span>Segmentation</span><span>Open/click tracking</span><span>Analytics</span><span>SMTP</span></div></div>
+    <div class="card"><div class="ic" style="background:#dcfce7">📱</div><h3>SMS Broadcast</h3><p>Send bulk text messages straight to your contacts. Organise campaigns in folders and keep an unsubscribed list so you only message people who want it.</p><div class="chips"><span>Bulk SMS</span><span>Folders</span><span>Search</span><span>Unsubscribe list</span></div></div>
+    <div class="card"><div class="ic" style="background:#e0f2fe">✈️</div><h3>Telegram Broadcast</h3><p>Connect your Telegram bot and broadcast to subscribers with images and markdown formatting. Schedule messages for the right moment.</p><div class="chips"><span>Bot token</span><span>Subscribers</span><span>Rich media</span><span>Scheduling</span><span>Delivery reports</span></div></div>
+    <div class="card"><div class="ic" style="background:#ede9fe">📞</div><h3>Phone Broadcast</h3><p>AI-powered outbound calls built on ElevenLabs conversational AI. Give each campaign a welcome message and a prompt that adapts to the conversation.</p><div class="chips"><span>AI voice calls</span><span>Welcome message</span><span>Custom prompts</span><span>Agent/tag filter</span><span>Scheduling</span></div><span class="tag">Requires Twilio number linked to ElevenLabs</span></div>
+    <div class="card"><div class="ic" style="background:#ffedd5">🔔</div><h3>Push Broadcast</h3><p>Instant notifications to users who saved your AI widget to their Home Screen. Add images, action buttons and deep links, then track opens and clicks.</p><div class="chips"><span>Instant delivery</span><span>Rich notifications</span><span>Click tracking</span><span>Widget targeting</span><span>PWA</span></div></div>
+    <div class="card"><div class="ic" style="background:#dcfce7">💬</div><h3>WhatsApp Broadcast</h3><p>Send Meta-approved templates to your WhatsApp contacts. Sync templates from your Business account, fill in variables and choose recipients.</p><div class="chips"><span>Template sync</span><span>Variables</span><span>Recipient selection</span><span>History</span><span>Delivery tracking</span></div></div>
+    <div class="card"><div class="ic" style="background:#dbeafe">🗨️</div><h3>Messenger Broadcast</h3><p>Message your Facebook Page contacts inside the 24-hour window, schedule sends, and use utility templates or HUMAN_AGENT for later replies.</p><div class="chips"><span>Contacts</span><span>Scheduling</span><span>Utility templates</span><span>HUMAN_AGENT</span><span>Delivery tracking</span></div></div>
+    <div class="card"><div class="ic" style="background:#fce7f3">📸</div><h3>Instagram Broadcast</h3><p>Reach people who messaged your Instagram account with a rich composer, scheduling and a live view of the 24-hour window status.</p><div class="chips"><span>Contact management</span><span>Composer</span><span>Scheduling</span><span>HUMAN_AGENT tag</span><span>Delivery tracking</span></div></div>
+    <div class="card"><div class="ic" style="background:#e0e7ff">🎮</div><h3>Discord Broadcast</h3><p>Send direct messages to contacts through your connected bot, with personalisation and widget targeting to keep the message relevant.</p><div class="chips"><span>Direct messages</span><span>Bot integration</span><span>Personalisation</span><span>Contact selection</span><span>Delivery tracking</span></div></div>
+  </div>
+</div></section>
+
+<section data-section="choose"><div class="wrap">
+  <div class="eyebrow">Choosing a channel</div>
+  <h2>Match the channel to your goal</h2>
+  <p class="sub">These are our recommendations based on how each channel works. Test them with your own audience.</p>
+  <div class="goal">
+    <div class="card"><div class="ic" style="background:#ffedd5">⚡</div><div><h3>Time-sensitive alerts</h3><p>Flash sales, last-day reminders and delivery updates need to be seen quickly and kept short.</p><span class="pick">Best fit: SMS, Push, WhatsApp</span></div></div>
+    <div class="card"><div class="ic" style="background:#e0e7ff">📰</div><div><h3>Detailed offers and newsletters</h3><p>Longer content with images, links and a clear layout, where you also want to measure clicks.</p><span class="pick">Best fit: Email</span></div></div>
+    <div class="card"><div class="ic" style="background:#dcfce7">🤝</div><div><h3>Follow-ups in an ongoing chat</h3><p>When a customer has already messaged you, replying in the same app feels natural.</p><span class="pick">Best fit: WhatsApp, Messenger, Instagram</span></div></div>
+    <div class="card"><div class="ic" style="background:#ede9fe">🎧</div><div><h3>High-touch outreach</h3><p>Confirmations, reminders and conversations that benefit from a human-like voice.</p><span class="pick">Best fit: Phone (AI voice)</span></div></div>
+    <div class="card"><div class="ic" style="background:#e0f2fe">👥</div><div><h3>Community updates</h3><p>Announcements for people who already follow you in community-style apps.</p><span class="pick">Best fit: Telegram, Discord</span></div></div>
+    <div class="card"><div class="ic" style="background:#fce7f3">🔁</div><div><h3>Staying in touch beyond 24 hours</h3><p>Use channel features designed for later replies, such as HUMAN_AGENT or approved templates.</p><span class="pick">Best fit: Messenger, Instagram, WhatsApp</span></div></div>
+  </div>
+</div></section>
+
+<section class="alt" data-section="playbook"><div class="wrap">
+  <div class="eyebrow">Example playbook</div>
+  <h2>A multi-channel flash sale</h2>
+  <p class="sub">One campaign, several touchpoints. This is an example of how channels can work together, not a guaranteed result.</p>
+  <div class="flow">
+    <div><small>Day 1</small><p><b>Email</b> announces the offer with full details and a tracked link.</p></div>
+    <div><small>Day 1, later</small><p><b>WhatsApp</b> template reaches opted-in contacts with the key message.</p></div>
+    <div><small>Day 2</small><p><b>Push</b> notification reminds Home Screen users with a deep link.</p></div>
+    <div><small>Final day</small><p><b>SMS</b> gives a short last-chance reminder.</p></div>
+  </div>
+  <p class="note">Check each channel’s analytics afterwards and adjust timing and wording for the next campaign.</p>
+</div></section>
+
+<section data-section="rules"><div class="wrap">
+  <div class="eyebrow">Stay compliant</div>
+  <h2>Rules that protect your reach</h2>
+  <p class="sub">Platforms such as Meta set strict messaging rules. The Broadcast Hub shows the relevant limits right where you send.</p>
+  <div class="rules">
+    <div class="rule"><h3>24-hour messaging window</h3><p>On Messenger, standard broadcasts go only to contacts who messaged you in the last 24 hours. Instagram shows the same status for information.</p></div>
+    <div class="rule"><h3>Approved templates for WhatsApp</h3><p>WhatsApp broadcasts use Meta-approved templates synced from your Business account, so content must be approved before you send.</p></div>
+    <div class="rule"><h3>HUMAN_AGENT replies</h3><p>For replies up to 7 days after a person’s last message on Messenger and Instagram, Meta offers the HUMAN_AGENT tag.</p></div>
+    <div class="rule"><h3>Opt-outs and consent</h3><p>Keep an unsubscribed list for SMS, message only people who have contacted you or agreed to hear from you, and follow local regulations.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" data-section="how"><div class="wrap">
+  <div class="eyebrow">Getting started</div>
+  <h2>From setup to send in three steps</h2>
+  <p class="sub">Open the Broadcast Hub, expand a channel and click its Open button.</p>
+  <div class="steps">
+    <div class="step"><h3>Connect the channel</h3><p>Link the account in your AI Agent’s Channels tab, such as a Telegram bot token, a Discord bot, a Facebook Page, WhatsApp Business or SMTP for email.</p></div>
+    <div class="step"><h3>Choose your audience</h3><p>Select contacts, segment by tag or agent, or target widget users, depending on the channel.</p></div>
+    <div class="step"><h3>Compose, schedule and track</h3><p>Write or generate your message, send it now or later, then follow delivery, opens and clicks where the channel supports them.</p></div>
+  </div>
+</div></section>
+
+<section data-section="cta"><div class="wrap">
+  <div class="final">
+    <h2>Ready to reach customers where they are?</h2>
+    <p>Open the Broadcast Hub and launch your first campaign on any of the nine channels.</p>
+    <a class="btn" href="https://app.chatmakky.com/">Open ChatMakky</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© ChatMakky · <a href="https://www.chatmakky.com/">www.chatmakky.com</a></div></footer>
+
+</body>
+</html>
