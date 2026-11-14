@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- SEO Meta Tags -->
+
+
+<link rel="canonical" href="https://www.chatmakky.com/appointment-slot-booking/">
+
+
+
+<meta property="og:url" content="https://www.chatmakky.com/appointment-slot-booking/">
+
+
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Do I need a Google account?","acceptedAnswer":{"@type":"Answer","text":"No. Connect Google Calendar if you use it, or choose a native calendar that works without any Google account."}},
+{"@type":"Question","name":"Can I collect extra information from bookers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Add custom questions to the booking form and use the answers in your flows."}},
+{"@type":"Question","name":"Can I charge for appointments?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can turn on paid bookings with Stripe."}},
+{"@type":"Question","name":"Can I have more than one team member?","acceptedAnswer":{"@type":"Answer","text":"Yes. Add staff, assign bookings and set availability per person."}},
+{"@type":"Question","name":"Where do I see my bookings?","acceptedAnswer":{"@type":"Answer","text":"Under Recent Bookings and the Upcoming tab inside the Calendar Booking tool, plus on your connected calendar."}}
+]}
+</script>
+<!-- End SEO Meta Tags -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2501386813634781');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2501386813634781&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GKN5J86CE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4GKN5J86CE');
+</script>
+
+<!-- SEO Meta Tags -->
+<title>ChatMakky Appointment &amp; Slot Booking: let clients book you automatically</title>
+<meta name="description" content="Public booking pages with Google Calendar sync, Google Meet links, custom questions, staff assignment and Stripe payments." />
+<meta name="keywords" content="appointment booking" />
+<meta property="og:title" content="ChatMakky Appointment &amp; Slot Booking: let clients book you automatically" />
+<meta property="og:description" content="Public booking pages with Google Calendar sync, Google Meet links, custom questions, staff assignment and Stripe payments." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ChatMakky Appointment &amp; Slot Booking: let clients book you automatically" />
+<meta name="twitter:description" content="Public booking pages with Google Calendar sync, Google Meet links, custom questions, staff assignment and Stripe payments." />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mwf7hohf-etrdy-copy-1794636495595";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.chatmakky.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=9284');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='hDbnLb';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='hDbnLb';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header data-section="header">
+  
+
+  <div class="wrap nav">
+    <a href="https://www.chatmakky.com/#top" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" fetchpriority="high" importance="high" decoding="sync" width="34" height="34" style="width:34px; height:34px; display:block; background:none; border:none; padding:0; box-shadow:none; object-fit: cover; object-position: center;"><span style="color:var(--text);font-weight:800;">ChatMakky</span></a>
+    <nav class="nav-links">
+      <a class="nav-item" href="https://www.chatmakky.com/#features">Features</a>
+      <a class="nav-item" href="https://www.chatmakky.com/pricing/">Pricing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/refer-earn">Refer &amp; Earn</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
+      <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Log in</a>
+      <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('theme-light', isLight);
+        if (themeIcon) {
+          themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon';
+        }
+        if (themeToggle) {
+          themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+          themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+        try {
+          localStorage.setItem('chatmakky-theme', theme);
+        } catch (e) {}
+      };
+
+      const getInitialTheme = () => {
+        try {
+          const saved = localStorage.getItem('chatmakky-theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      };
+
+      applyTheme(getInitialTheme());
+
+      if (themeToggle) {
+        const toggleTheme = function (e) {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+          const nextTheme = document.body.classList.contains('theme-light') ? 'dark' : 'light';
+          applyTheme(nextTheme);
+        };
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', toggleTheme, { passive: false });
+      }
+
+      if (menuToggle && menu) {
+        const setOpen = (open) => {
+          menu.classList.toggle('open', open);
+          menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+          menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+
+        setOpen(false);
+
+        const handleMenuToggle = function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          const isOpen = menu.classList.contains('open');
+          setOpen(!isOpen);
+          menuToggle.setAttribute('aria-expanded', (!isOpen).toString());
+        };
+
+        menuToggle.addEventListener('click', handleMenuToggle);
+        menuToggle.addEventListener('touchstart', handleMenuToggle, { passive: false });
+
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            setOpen(false);
+          });
+        }
+
+        menu.addEventListener('click', function (e) {
+          if (e.target === menu) {
+            setOpen(false);
+          }
+        });
+
+        menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            setOpen(false);
+          });
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('open')) {
+            setOpen(false);
+          }
+        });
+      }
+    });
+  </script>
+  <script>
+    (function () {
+      var featuresLink = document.querySelector('.nav-links a.nav-item[href*="#features"]');
+      if (!featuresLink) return;
+      var sync = function () {
+        featuresLink.classList.toggle('active', window.location.hash === '#features');
+      };
+      sync();
+      window.addEventListener('hashchange', sync);
+      featuresLink.addEventListener('click', function () {
+        window.setTimeout(sync, 0);
+      });
+    })();
+  </script>
+</header>
+<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+  <button class="mm-close" aria-label="Close menu">✕</button>
+  <div class="mm-modal">
+          <a class="mm-btn" href="https://www.chatmakky.com/#features">Features</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/refer-earn">Refer &amp; Earn</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Log in</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
+  </div>
+</div>
+
+<main id="top" data-section="main">
+
+  <!-- HERO -->
+  <section class="hero" data-section="hero">
+    <div class="wrap">
+      <h1>Let clients book you, <span class="grad">automatically.</span></h1>
+      <div class="hero-ctas hero-book"><a class="btn btn-solid btn-lg" href="https://app.chatmakky.com/book/chatmakky-talk" target="_blank" rel="noopener"><i class="fa-regular fa-calendar-check"></i> Book a free call</a></div>
+
+      <div class="hub" data-section="hub-mock">
+        <div class="hub-bar">
+          <span class="d" style="background:#FF5F57"></span><span class="d" style="background:#FEBC2E"></span><span class="d" style="background:#28C840"></span>
+          <div class="hub-url"><a href="https://app.chatmakky.com/book/chatmakky-talk" target="_blank" rel="noopener" style="color:inherit">chatmakky.com/book/chatmakky-talk</a></div>
+        </div>
+        <div class="bk">
+          <div class="bk-card">
+            <aside class="bk-info">
+              <h3>ChatMakky – Discuss Clients &amp; the Platform (30 Minutes)</h3>
+              <div class="bk-meta"><i class="fa-regular fa-clock"></i>30 min</div>
+              <div class="bk-meta"><i class="fa-solid fa-video"></i>Google Meet</div>
+              <p class="bk-desc">Book a 30-minute call to discuss the ChatMakky platform or learn how to set up an AI chatbot for your business. Choose a time that works best for you.</p>
+              <button class="bk-back" id="bkBack" type="button" hidden><i class="fa-solid fa-chevron-left"></i>Back</button>
+            </aside>
+
+            <div class="bk-view" id="bkPick">
+              <div class="bk-cal">
+                <div class="bk-cal-h"><span class="bk-nav"><i class="fa-solid fa-chevron-left"></i></span><span>November 2026</span><span class="bk-nav"><i class="fa-solid fa-chevron-right"></i></span></div>
+                <div class="bk-wd"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div>
+                <div class="bk-days" id="bkDays"></div>
+              </div>
+              <div class="bk-slots">
+                <h4 id="bkHead">Wednesday 18 November</h4>
+                <div class="bk-grid" id="bkSlots"></div>
+                <p class="bk-tz">Times shown in your time zone</p>
+              </div>
+            </div>
+
+            <div class="bk-view" id="bkForm" hidden>
+              <div class="bk-form">
+                <div class="bk-when"><i class="fa-regular fa-calendar"></i><span id="bkWhen">Wednesday 18 November at 16:00</span></div>
+                <label class="bk-f">Your name *<input type="text" readonly tabindex="-1"></label>
+                <label class="bk-f">Email *<input type="text" readonly tabindex="-1"></label>
+                <label class="bk-f">Your Phone / WhatsApp Number *<input type="text" readonly tabindex="-1"></label>
+                <label class="bk-f">Your Business Name / Facebook Page Link<input type="text" readonly tabindex="-1"></label>
+                <label class="bk-f full">Notes (optional)<textarea readonly tabindex="-1"></textarea></label>
+                <button class="bk-confirm" type="button" tabindex="-1">Confirm booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="hub-cap">Tap a time to see the booking form.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features-list" data-section="features">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Appointments &amp; Slot Booking</div>
+        <h2>Everything you need to fill your calendar</h2>
+        <p>Set up public booking pages, sync your calendar, and keep every appointment moving without manual back-and-forth.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-link"></i></div>
+          <h3>Public booking pages</h3>
+          <p>Cal.com-style booking pages with your own link, like /book/your-name. Share it anywhere.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-brands fa-google"></i></div>
+          <h3>Google Calendar sync</h3>
+          <p>Bookings are written straight to your Google Calendar, and busy times are checked so you never get double-booked. No Google account? Use a native calendar instead.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-video"></i></div>
+          <h3>Google Meet auto-links</h3>
+          <p>Every booking can get a Google Meet link automatically, added to the invite.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-paintbrush"></i></div>
+          <h3>Custom branding</h3>
+          <p>Set colors, appearance and the public page text so the page feels like your brand.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-users"></i></div>
+          <h3>Multi-staff support</h3>
+          <p>Add team members, assign bookings and manage availability per person.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-envelope-circle-check"></i></div>
+          <h3>Email confirmations</h3>
+          <p>Booker and host get instant confirmation emails with the details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section section-alt" id="how" data-section="how">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Getting started</div>
+        <h2>Set up in three steps</h2>
+        <p>Open the Calendar Booking tool from your ChatMakky dashboard and follow these steps.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Pick your calendar</h3><p>Choose Google Calendar or a native calendar. Connect Google in one click; native calendars need no Google account.</p></div>
+        <div class="step"><h3>Set availability and staff</h3><p>Set working hours for each weekday with simple AM/PM time pickers, add staff, choose which calendars to check for conflicts, then save.</p></div>
+        <div class="step"><h3>Share your link</h3><p>Publish your booking page and share the link. New bookings show up under Recent Bookings and the Upcoming tab.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section class="section" id="settings" data-section="settings">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Full control</div>
+        <h2>Two places to control everything</h2>
+        <p>Manage your calendar once, then fine-tune every booking page.</p>
+      </div>
+      <div class="two">
+        <div class="panel">
+          <h3><i class="fa-solid fa-calendar-days"></i>Calendar Settings</h3>
+          <p>Where your bookings are stored and who is available.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Calendar provider: Google Calendar or native</li>
+            <li><i class="fa-solid fa-check"></i>Connection status with one-click Disconnect</li>
+            <li><i class="fa-solid fa-check"></i>Booking settings</li>
+            <li><i class="fa-solid fa-check"></i>Staff &amp; assignment</li>
+            <li><i class="fa-solid fa-check"></i>Weekly availability for each day</li>
+            <li><i class="fa-solid fa-check"></i>Recent bookings counter</li>
+            <li><i class="fa-solid fa-check"></i>Save Calendar Settings</li>
+          </ul>
+          <p class="cap">Changing provider clears the calendar, staff and conflict selections. Save to apply.</p>
+        </div>
+        <div class="panel">
+          <h3><i class="fa-solid fa-sliders"></i>Booking Page Settings</h3>
+          <p>How each public page looks and behaves.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Title and URL slug</li>
+            <li><i class="fa-solid fa-check"></i>Description</li>
+            <li><i class="fa-solid fa-check"></i>Custom questions</li>
+            <li><i class="fa-solid fa-check"></i>Scheduling rules and appearance</li>
+            <li><i class="fa-solid fa-check"></i>Calendar &amp; location</li>
+            <li><i class="fa-solid fa-check"></i>Working hours and staff assignment</li>
+            <li><i class="fa-solid fa-check"></i>Event &amp; confirmation</li>
+            <li><i class="fa-solid fa-check"></i>Public page text</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW -->
+  <section class="section section-alt" id="workflow" data-section="workflow">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Automation</div>
+        <h2>Turn every booking into a workflow</h2>
+        <p>A booking is only the start. Collect the details you need, trigger your flows and get paid.</p>
+      </div>
+      <div class="grid four">
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-clipboard-question"></i></div>
+          <h3>Custom questions</h3>
+          <p>Add extra fields between Email and Notes, like a WhatsApp number or a Facebook page. Mark each as required or optional.</p>
+          <span class="code">&#123;&#123;booking.whatsapp&#125;&#125;</span><span class="code">&#123;&#123;booking.facebook&#125;&#125;</span>
+          <p class="cap">Every answer is available in your flow as &#123;&#123;booking.key&#125;&#125;.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>Trigger a flow after booking</h3>
+          <p>Start a ChatMakky flow the moment someone books: send a WhatsApp or Messenger message, tag the contact, notify your team.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Conversion tracking</h3>
+          <p>Track bookings as conversions in your ad and analytics pixels, so you know which campaigns bring appointments.</p>
+        </div>
+        <div class="card">
+          <div class="bic"><i class="fa-brands fa-stripe-s"></i></div>
+          <h3>Paid bookings (Stripe)</h3>
+          <p>Charge for consultations or sessions by asking for payment at booking time with Stripe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" data-section="faq">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Do I need a Google account?</summary><p>No. Connect Google Calendar if you use it, or choose a native calendar that works without any Google account.</p></details>
+        <details><summary>Can I collect extra information from bookers?</summary><p>Yes. Add custom questions to the booking form and use the answers in your flows as &#123;&#123;booking.key&#125;&#125;.</p></details>
+        <details><summary>Can I charge for appointments?</summary><p>Yes, you can turn on paid bookings with Stripe.</p></details>
+        <details><summary>Can I have more than one team member?</summary><p>Yes. Add staff, assign bookings and set availability per person.</p></details>
+        <details><summary>Where do I see my bookings?</summary><p>Under Recent Bookings and the Upcoming tab inside the Calendar Booking tool, plus on your connected calendar.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="get-started" style="padding-top:20px;" data-section="cta">
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Start taking bookings today.</h2>
+        <p>Create your first booking page in minutes.</p>
+        <div class="hero-ctas">
+          <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get Started Free</a>
+          <a href="https://app.chatmakky.com/book/chatmakky-talk" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Book a free call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="login" data-section="footer">
+  
+
+  <div class="wrap" style="padding-top:22px; padding-bottom:18px;">
+    <div class="footer-card">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="gi-brand">
+            <div class="foot-brand">
+              <a href="https://www.chatmakky.com/#top" class="logo">
+                <img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284332925_IMG_8969.PNG" alt="ChatMakky" loading="eager" decoding="async" style="width:34px; height:34px; display:block; flex-shrink:0; object-fit:cover; object-position:center;"> <span style="font-weight:800; color:var(--text); letter-spacing:-0.02em;">ChatMakky</span>
+              </a>
+              <p>Simple AI support for chats, leads, and sales.</p>
+
+              <div>
+                <div class="flow-caption" style="margin-bottom:10px;">Follow us</div>
+                <div class="social-row">
+                  <a href="https://www.facebook.com/share/1EZanVmRac/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="ChatMakky Facebook" title="ChatMakky Facebook" class="social-icon" style="background:linear-gradient(135deg, #1877F2, #2E8BFF); box-shadow:0 8px 16px rgba(24,119,242,0.18);">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                  <a href="mailto:support@chatmakky.com" target="_blank" rel="noopener" aria-label="ChatMakky Email" title="ChatMakky Email" class="social-icon" style="background:linear-gradient(135deg, #1B7CFF, #4FA3FF); box-shadow:0 8px 16px rgba(27,124,255,0.18);">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/chatmakky?igsh=dTJ5YjAwajVnZTJn&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="ChatMakky Instagram" title="ChatMakky Instagram" class="social-icon" style="background:radial-gradient(circle at 30% 110%, #FDF497 0%, #FD5949 30%, #D6249F 55%, #285AEB 90%); box-shadow:0 8px 16px rgba(214,36,159,0.18);">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://youtube.com/@chatmakky?si=_xPwEPrTeMypzdGJ" target="_blank" rel="noopener" aria-label="ChatMakky YouTube" title="ChatMakky YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="address">Lytchett House, 13 Freeland Park, Wareham Road, Poole, United Kingdom</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gi-product foot-col">
+            <h5>PRODUCT</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/#channels">Channels</a></li>
+              <li><a href="https://www.chatmakky.com/#features">Features</a></li>
+              <li><a href="https://www.chatmakky.com/pricing/">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="gi-company foot-col">
+            <h5>COMPANY</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/privacy-policy/">Privacy policy</a></li>
+              <li><a href="https://www.chatmakky.com/terms-of-service/">Terms of service</a></li>
+              <li><a href="mailto:support@chatmakky.com">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="gi-partner">
+            <div class="partner-card">
+              <div class="partner-badge">Official Partner</div>
+              <div class="partner-head">
+                <div class="partner-ic">
+                  <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <div class="partner-name">Chatbot Agency BD</div>
+                  <div class="partner-sub">Official partner in Bangladesh</div>
+                </div>
+              </div>
+              <div class="partner-socials">
+                <a href="https://www.facebook.com/share/1EPaXH2nDE/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Chatbot Agency BD Facebook" title="Chatbot Agency BD Facebook" class="social-icon" style="background:linear-gradient(135deg, #1877F2, #2E8BFF); box-shadow:0 8px 16px rgba(24,119,242,0.18);">
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/8801810285559" target="_blank" rel="noopener" aria-label="Chatbot Agency BD WhatsApp" title="Chatbot Agency BD WhatsApp" class="social-icon" style="background:linear-gradient(135deg, #25D366, #1DBF73); box-shadow:0 8px 16px rgba(37,211,102,0.18);">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtube.com/@chatbotagencybd?si=n-Tq-m1sHCoA__t1" target="_blank" rel="noopener" aria-label="Chatbot Agency BD YouTube" title="Chatbot Agency BD YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.tiktok.com/@chatbotagencybd?_r=1&amp;_t=ZS-98khhCX3KjQ" target="_blank" rel="noopener" aria-label="Chatbot Agency BD TikTok" title="Chatbot Agency BD TikTok" class="social-icon" style="background:#000; box-shadow:0 8px 16px rgba(0,0,0,0.18);">
+                  <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/chatbot_agency_bd?igsh=MWJndzhxeGNrNXA2eA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Chatbot Agency BD Instagram" title="Chatbot Agency BD Instagram" class="social-icon" style="background:radial-gradient(circle at 30% 110%, #FDF497 0%, #FD5949 30%, #D6249F 55%, #285AEB 90%); box-shadow:0 8px 16px rgba(214,36,159,0.18);">
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gi-legal foot-col">
+            <h5>LEGAL</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/privacy-policy/">Privacy policy</a></li>
+              <li><a href="https://www.chatmakky.com/terms-of-service/">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <span>© 2026 ChatMakky. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://app.chatmakky.com/widget.js" data-widget="11593776" async=""></script>
+<script>
+(function(){
+  try {
+    var days = document.getElementById('bkDays');
+    var head = document.getElementById('bkHead');
+    var grid = document.getElementById('bkSlots');
+    var pick = document.getElementById('bkPick');
+    var form = document.getElementById('bkForm');
+    var when = document.getElementById('bkWhen');
+    var back = document.getElementById('bkBack');
+    if (!days || !head || !grid || !pick || !form || !when || !back) return;
+    var WD = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var times = ['11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30'];
+    var sel = 18;
+    function label(d){ return WD[(d - 1) % 7] + ' ' + d + ' November'; }
+    function renderDays(){
+      days.innerHTML = '';
+      for (var i = 1; i <= 35; i++) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = i > 30 ? i - 30 : i;
+        if (i > 30 || i < 14) {
+          b.className = 'mut'; b.disabled = true;
+        } else {
+          var cls = [];
+          if (i === 14) cls.push('today');
+          if (i === sel) cls.push('sel');
+          b.className = cls.join(' ');
+          (function(n){ b.addEventListener('click', function(){ sel = n; head.textContent = label(n); renderDays(); }); })(i);
+        }
+        days.appendChild(b);
+      }
+    }
+    renderDays();
+    head.textContent = label(sel);
+    times.forEach(function(t){
+      var s = document.createElement('button');
+      s.type = 'button'; s.className = 'bk-slot'; s.textContent = t;
+      s.addEventListener('click', function(){
+        when.textContent = label(sel) + ' at ' + t;
+        pick.hidden = true; form.hidden = false; back.hidden = false;
+      });
+      grid.appendChild(s);
+    });
+    back.addEventListener('click', function(){
+      form.hidden = true; pick.hidden = false; back.hidden = true;
+    });
+  } catch (e) {}
+})();
+</script>
+<script>
+(function(){
+  try {
+    var hub = document.querySelector('.hero .hub');
+    var hero = document.querySelector('.hero');
+    var header = document.querySelector('header');
+    var headline = document.querySelector('.hero h1');
+    var caption = document.querySelector('.hero .hub-cap');
+    var cta = document.querySelector('.hero .hero-book');
+    if (!hub || !hero || !header || !headline || !caption) return;
+    var useZoom = !!(window.CSS && CSS.supports && CSS.supports('zoom', '1'));
+    var rafId = null;
+    var lastW = window.innerWidth;
+    var lastH = window.innerHeight;
+
+    function reset(){ hub.style.zoom = ''; hub.style.transform = ''; hub.style.marginBottom = ''; }
+
+    function apply(){
+      if (window.innerWidth <= 820) { reset(); return; }
+      reset();
+      var natural = hub.getBoundingClientRect().height || 1;
+      var vh = document.documentElement.clientHeight || window.innerHeight;
+      var cs = window.getComputedStyle(hero);
+      var padT = parseFloat(cs.paddingTop) || 0;
+      var padB = parseFloat(cs.paddingBottom) || 0;
+      var h1H = headline.getBoundingClientRect().height || 0;
+      var capH = caption.getBoundingClientRect().height || 0;
+      var ctaH = (cta ? cta.getBoundingClientRect().height : 0) + 14;
+      var available = vh - (header.offsetHeight || 0) - padT - padB - h1H - capH - ctaH - 48;
+      var scale = Math.max(0.6, Math.min(1, available / natural));
+      if (useZoom) {
+        hub.style.zoom = scale;
+      } else {
+        hub.style.transformOrigin = 'top center';
+        hub.style.transform = 'scale(' + scale + ')';
+        hub.style.marginBottom = (natural * (scale - 1)) + 'px';
+      }
+    }
+
+    function schedule(){
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(apply);
+    }
+
+    window.addEventListener('load', schedule);
+    window.addEventListener('orientationchange', schedule);
+    window.addEventListener('resize', function(){
+      var h = window.innerHeight, w = window.innerWidth;
+      var heightChanged = Math.abs(h - lastH) > 2;
+      var bigWidthChange = Math.abs(w - lastW) > 40;
+      lastH = h; lastW = w;
+      if (heightChanged || bigWidthChange) schedule();
+    });
+    schedule();
+  } catch (e) {}
+})();
+</script>
+</body></html>
