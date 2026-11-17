@@ -1113,6 +1113,31 @@
       }
     }
 
+#whatsapp-api .head{max-width:900px}
+#whatsapp-api .head h2{white-space:nowrap;font-size:clamp(1.05rem,4.6vw,2.6rem)}
+#whatsapp-api .eyebrow i{color:#25D366}
+#whatsapp-api .wa-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:980px;margin:0 auto}
+#whatsapp-api .wa-points{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-direction:column;gap:16px}
+#whatsapp-api .wa-points li{display:flex;align-items:flex-start;gap:12px;font-size:1.02rem;line-height:1.5;color:var(--text)}
+#whatsapp-api .wa-points li i{flex:none;margin-top:3px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.68rem;color:#06210f;background:#25D366}
+#whatsapp-api .wa-points li span{color:var(--muted)}
+#whatsapp-api .wa-points li b{color:var(--text);font-weight:700}
+#whatsapp-api .wa-cta{display:flex;gap:12px;flex-wrap:wrap}
+#whatsapp-api .wa-stage{display:flex;justify-content:center}
+#whatsapp-api .wa-phone{width:300px;max-width:100%;border-radius:34px;padding:9px;background:linear-gradient(160deg,#2a2a5c,#15153F);border:1px solid var(--line-strong);box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 50px rgba(37,211,102,.1)}
+#whatsapp-api .wa-screen{border-radius:27px;overflow:hidden;background:#0b141a}
+#whatsapp-api .wa-top{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#1f2c34;color:#e9edef}
+#whatsapp-api .wa-av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;background:linear-gradient(135deg,#4640E0,#9D4EDD)}
+#whatsapp-api .wa-top b{display:block;font-size:.9rem;line-height:1.1}
+#whatsapp-api .wa-top small{display:block;font-size:.68rem;color:#8696a0}
+#whatsapp-api .wa-top .fa-whatsapp{margin-left:auto;color:#25D366;font-size:1.2rem}
+#whatsapp-api .wa-chat{display:flex;flex-direction:column;gap:9px;padding:16px 12px 20px;min-height:300px}
+#whatsapp-api .wa-msg{max-width:84%;padding:8px 11px;border-radius:12px;font-size:.82rem;line-height:1.4;color:#e9edef}
+#whatsapp-api .wa-msg.in{align-self:flex-start;background:#202c33;border-top-left-radius:3px}
+#whatsapp-api .wa-msg.out{align-self:flex-end;background:#005c4b;border-top-right-radius:3px}
+#whatsapp-api .wa-ai{display:block;font-size:.62rem;font-weight:700;color:#7ff0b0;margin-bottom:2px}
+@media (max-width:860px){#whatsapp-api .wa-grid{grid-template-columns:1fr;gap:36px}#whatsapp-api .wa-stage{order:2}}
+
 #business-tabs{overflow:hidden}
 #business-tabs .head{max-width:1100px}
 #business-tabs .head h2{white-space:nowrap;font-size:clamp(1.1rem,5vw,2.6rem)}
