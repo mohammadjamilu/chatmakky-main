@@ -1005,6 +1005,8 @@ body.theme-light .cm-cta-ghost{color:var(--text);}
   .typing{display:none;}
   .new-contact{max-height:none; opacity:1; padding:7px 10px;}
 }
+.nav-links{gap:2px !important;}
+.nav-links a.nav-item{padding:8px 12px !important; font-size:.93rem !important; white-space:nowrap !important;}
 
 #mobile-menu.mobile-menu-overlay{
       display:none;
