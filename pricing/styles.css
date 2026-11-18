@@ -65,6 +65,8 @@
   }
   .nav-links a.nav-item:hover{color:var(--text); background:rgba(157,153,255,0.08);}
   .nav-links a.nav-item.active{color:var(--text); background:rgba(157,153,255,0.10);}
+  .nav-links{gap:2px}
+  .nav-links a.nav-item{padding:8px 12px;font-size:.93rem;white-space:nowrap}
   .nav-actions{display:flex; align-items:center; gap:10px; flex-shrink:0; z-index:102;}
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
