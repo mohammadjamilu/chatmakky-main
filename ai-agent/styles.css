@@ -857,7 +857,7 @@
   .trend-svg path:first-of-type{opacity:1 !important;}
 }
 
-  .hero h1, .hero h1.one-line{font-size:clamp(34px,5.6vw,64px) !important; line-height:1.05 !important; letter-spacing:-.03em !important; font-weight:800 !important; text-align:center !important; white-space:normal !important; max-width:860px !important; margin:0 auto 18px !important;}
+  .hero h1, .hero h1.one-line{font-size:clamp(34px,5.6vw,64px) !important; line-height:1.05 !important; letter-spacing:-.03em !important; font-weight:800 !important; text-align:center !important; white-space:normal !important; max-width:860px !important; margin:0 auto 18px !important; text-wrap:balance !important;}
 .hero .wrap{max-width:1180px; margin-left:auto; margin-right:auto; text-align:center;}
 .cm-pill{display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:999px; background:rgba(139,92,246,.14); border:1px solid rgba(139,92,246,.4); color:#c4b5fd; font-weight:700; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:22px;}
 .cm-lead{color:var(--muted); font-size:clamp(16px,1.6vw,19px); line-height:1.6; margin:0 auto 30px; max-width:640px; text-align:center;}
