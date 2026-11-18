@@ -435,6 +435,10 @@ body.theme-light #login .social-row .social-icon,
 body.theme-light #login .partner-socials .social-icon{
   border-color:rgba(255,255,255,.08) !important;
 }
+html{overflow-x:clip;}
+body.theme-light #email-marketing .em-chip{background:linear-gradient(180deg,rgba(38,33,102,.96),rgba(24,21,70,.96)) !important;border-color:rgba(110,104,255,.35) !important;color:#fff !important;box-shadow:0 12px 28px rgba(40,30,120,.28) !important;}
+body.theme-light #email-marketing .em-chip .em-txt strong,body.theme-light #email-marketing .em-chip .em-txt small{color:#fff !important;}
+@media (max-width:640px){#email-marketing .em-glow{width:min(420px,92vw) !important;}}
 </style>
 
 <!-- SEO Meta Tags -->
@@ -1991,4 +1995,14 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   vids.forEach(function(v){io.observe(v);});
 })();
 </script>
+<style id="mobile-overflow-logo-fix">
+@media (max-width:768px){
+  html,body{max-width:100%; overflow-x:clip;}
+  header .wrap.nav{padding-left:16px !important; padding-right:16px !important;}
+  header .logo img{object-fit:contain !important;}
+}
+@supports not (overflow:clip){
+  @media (max-width:768px){ html,body{overflow-x:hidden;} }
+}
+</style>
 </body></html>
