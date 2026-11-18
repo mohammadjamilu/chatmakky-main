@@ -599,6 +599,18 @@
   .cta-band .btn-solid:hover{background:#f2f1ff;}
   .cta-band .btn-ghost{border-color:rgba(255,255,255,0.5); color:#fff;}
 
+  .cm-pill{display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:999px; background:rgba(139,92,246,.14); border:1px solid rgba(139,92,246,.4); color:#c4b5fd; font-weight:700; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:22px;}
+  .cm-lead{color:var(--muted); font-size:clamp(16px,1.6vw,19px); line-height:1.6; margin:0 auto 30px; max-width:640px; text-align:center;}
+  .cm-btns{display:flex; flex-wrap:wrap; gap:14px; justify-content:center;}
+  .cm-cta{display:inline-block; background:linear-gradient(135deg,#8b5cf6,#6d4aff); color:#fff; font-weight:700; font-size:1.15rem; padding:19px 42px; border-radius:999px; box-shadow:0 12px 34px rgba(109,74,255,.45); transition:transform .15s, box-shadow .15s;}
+  .cm-cta:hover{transform:translateY(-2px); box-shadow:0 16px 42px rgba(109,74,255,.6);}
+  .cm-cta-ghost{background:transparent; border:1.5px solid rgba(167,139,250,.55); box-shadow:none; color:#e9e7ff;}
+  .cm-cta-ghost:hover{background:rgba(139,92,246,.14); box-shadow:none;}
+  .cm-note{margin:16px 0 0; font-size:.88rem; color:var(--muted); text-align:center;}
+  body.theme-light .cm-cta-ghost{color:var(--text);}
+  .hero{display:block !important; min-height:0 !important; padding:100px 20px 64px !important; text-align:center;}
+  .hero .hub{zoom:1 !important; transform:none !important; margin:56px auto 0 !important;}
+
   /* footer base */
   footer{border-top:1px solid var(--line); padding:64px 0 32px;}
   .foot-brand p{color:var(--muted-2); font-size:0.88rem; margin-top:14px; max-width:280px;}
