@@ -421,6 +421,7 @@
     .hero-ctas .btn{width:100%;}
     .cta-band{padding:40px 16px; border-radius:20px;}
   }
+  .hero h1, .hero h1.one-line{font-size:clamp(34px,5.6vw,64px) !important; line-height:1.05 !important; letter-spacing:-.03em !important; font-weight:800 !important; text-align:center !important; white-space:normal !important; max-width:860px !important; margin:0 auto 18px !important;}
 
 #mobile-menu.mobile-menu-overlay{
       display:none;
