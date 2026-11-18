@@ -1607,4 +1607,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
+<style id="mobile-overflow-logo-fix">
+@media (max-width:768px){
+  html,body{max-width:100%; overflow-x:clip;}
+  header .wrap.nav{padding-left:16px !important; padding-right:16px !important;}
+  header .logo img{object-fit:contain !important;}
+}
+@supports not (overflow:clip){
+  @media (max-width:768px){ html,body{overflow-x:hidden;} }
+}
+</style>
 </body></html>
