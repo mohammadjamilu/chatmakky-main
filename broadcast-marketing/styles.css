@@ -568,6 +568,9 @@
   body.theme-light #email-marketing .em-txt small{color:#4F4B78}
   body.theme-light #email-marketing .em-star{color:#6E68FF}
   #email-marketing{overflow-x:clip}
+  #email-marketing{padding:56px 0 24px}
+  #email-marketing .em-cards .nx-card{align-content:start}
+  @media (max-width:768px){#email-marketing{padding:44px 0 16px}}
   @media (max-width:768px){#email-marketing .em-glow{width:min(420px,100%) !important}}
   #email-marketing .em-hero{position:relative;height:300px;max-width:760px;margin:0 auto 24px;display:flex;align-items:center;justify-content:center;isolation:isolate;overflow:visible}
 #email-marketing .em-hero *{box-sizing:border-box}
