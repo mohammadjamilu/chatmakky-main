@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/ai-agent/</loc>
+    <lastmod>2026-11-18T20:19:17.083Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/pricing/</loc>
     <lastmod>2026-11-18T20:19:08.858Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,11 +28,6 @@
   <url>
     <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
     <lastmod>2026-11-18T20:18:40.718Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/ai-agent/</loc>
-    <lastmod>2026-11-18T20:18:34.553Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
