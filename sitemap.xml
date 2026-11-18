@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-11-18T20:10:20.483Z</lastmod>
+    <loc>https://www.chatmakky.com/pricing/</loc>
+    <lastmod>2026-11-18T20:14:03.102Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/pricing/</loc>
-    <lastmod>2026-11-18T19:39:10.425Z</lastmod>
+    <loc>https://www.chatmakky.com/terms-of-service/</loc>
+    <lastmod>2026-11-18T20:13:52.117Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/privacy-policy/</loc>
+    <lastmod>2026-11-18T20:13:45.315Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
+    <lastmod>2026-11-18T20:13:36.750Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
+    <lastmod>2026-11-18T20:13:29.346Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/ai-agent/</loc>
+    <lastmod>2026-11-18T20:13:22.790Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/</loc>
+    <lastmod>2026-11-18T20:10:20.483Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -16,33 +41,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
-    <lastmod>2026-11-18T19:08:33.934Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
-    <lastmod>2026-11-18T19:08:24.545Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/ai-agent/</loc>
-    <lastmod>2026-11-18T19:08:14.672Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.chatmakky.com/refer-earn/</loc>
     <lastmod>2026-11-15T20:52:16.333Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/privacy-policy/</loc>
-    <lastmod>2026-10-12T05:51:03.907Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/terms-of-service/</loc>
-    <lastmod>2026-10-12T05:49:36.112Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
