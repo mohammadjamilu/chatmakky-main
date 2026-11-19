@@ -887,34 +887,92 @@ body.theme-light #email-marketing .em-chip .em-txt strong,body.theme-light #emai
   </div>
 </div>
 
-<section class="cm-sub" aria-labelledby="cm-sub-title">
+<section class="cm-sub cm-prem" aria-labelledby="cm-sub-title">
 
+<style id="cm-prem">
+.cm-sub.cm-prem{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(900px 480px at 50% -5%,rgba(124,92,255,.38),transparent 62%),radial-gradient(520px 320px at 12% 70%,rgba(99,102,241,.16),transparent 70%),radial-gradient(560px 340px at 90% 35%,rgba(217,70,239,.14),transparent 70%),linear-gradient(180deg,#070716 0%,#0a0a22 55%,#070716 100%)}
+.cm-sub.cm-prem::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.55;background-image:linear-gradient(rgba(167,139,250,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(167,139,250,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 78%)}
+.cm-sub.cm-prem::after{content:"";position:absolute;left:50%;top:-140px;width:620px;height:620px;margin-left:-310px;z-index:-1;pointer-events:none;background:conic-gradient(from 0deg,rgba(124,92,255,0),rgba(124,92,255,.28),rgba(217,70,239,.18),rgba(124,92,255,0));filter:blur(90px);animation:cmSpin 22s linear infinite}
+@keyframes cmSpin{to{transform:rotate(360deg)}}
+.cm-prem .cm-pill{background:linear-gradient(135deg,rgba(139,92,246,.22),rgba(99,102,241,.10));border:1px solid rgba(167,139,250,.45);color:#ddd6fe;box-shadow:0 0 0 4px rgba(139,92,246,.07),0 8px 30px rgba(109,74,255,.25);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.cm-prem .cm-pill i{color:#facc15;filter:drop-shadow(0 0 6px rgba(250,204,21,.7))}
+.cm-prem h2{letter-spacing:-.035em}
+.cm-prem h2 .cm-grad{display:inline-block;background-image:linear-gradient(100deg,#c4b5fd 0%,#8b5cf6 35%,#e879f9 70%,#c4b5fd 100%)!important;background-color:transparent!important;background-size:220% auto;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;text-shadow:none!important;animation:cmShine 6s linear infinite}
+@keyframes cmShine{to{background-position:220% center}}
+.cm-prem .cm-lead{color:#a9a5d8;font-size:clamp(15px,1.5vw,18px);line-height:1.65;max-width:620px;margin:-4px auto 34px}
+.cm-prem .cm-stats-bar{position:relative;max-width:940px;margin-bottom:22px;border:0;border-radius:24px;background:linear-gradient(180deg,rgba(38,33,92,.62),rgba(20,18,52,.62));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 30px 80px rgba(6,4,30,.55),0 0 0 1px rgba(167,139,250,.22),inset 0 1px 0 rgba(255,255,255,.08)}
+.cm-prem .cm-stats-bar::before{content:"";position:absolute;left:8%;right:8%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(196,181,253,.9),transparent)}
+.cm-prem .cm-stat{padding:28px 18px 24px;transition:background .25s}
+.cm-prem .cm-stat:hover{background:linear-gradient(180deg,rgba(139,92,246,.10),transparent)}
+.cm-prem .cm-stat-number{background:linear-gradient(180deg,#fff 0%,#c9c2ff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-variant-numeric:tabular-nums;filter:drop-shadow(0 4px 22px rgba(139,92,246,.45))}
+.cm-prem .cm-stat-label{color:#b4b0e2;font-size:.82rem}
+.cm-prem .cm-cta-card{position:relative;max-width:940px;border:0;border-radius:24px;padding:30px 32px;background:linear-gradient(135deg,rgba(34,28,86,.92),rgba(18,15,46,.94));box-shadow:0 30px 90px rgba(109,74,255,.28),inset 0 1px 0 rgba(255,255,255,.08)}
+.cm-prem .cm-cta-card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;pointer-events:none;background:linear-gradient(120deg,rgba(167,139,250,.9),rgba(99,102,241,.25) 30%,rgba(232,121,249,.7) 60%,rgba(167,139,250,.9));background-size:240% 240%;animation:cmBorder 7s ease infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+@keyframes cmBorder{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.cm-prem .cm-cta-copy strong{letter-spacing:-.02em}
+.cm-prem .cm-cta-copy .cm-note{display:flex;flex-wrap:wrap;gap:8px 18px;color:#a9a5d8}
+.cm-prem .cm-note span{display:inline-flex;align-items:center;gap:7px}
+.cm-prem .cm-note i{color:#a78bfa;font-size:.8rem}
+.cm-prem .cm-cta{position:relative;overflow:hidden;background:linear-gradient(135deg,#8b5cf6 0%,#6d4aff 55%,#5b3df5 100%);box-shadow:0 14px 40px rgba(109,74,255,.55),inset 0 1px 0 rgba(255,255,255,.28);letter-spacing:.01em}
+.cm-prem .cm-cta::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);transition:left .65s ease}
+.cm-prem .cm-cta:hover::after{left:130%}
+.cm-prem .cm-cta:hover{transform:translateY(-3px);box-shadow:0 20px 52px rgba(109,74,255,.7),inset 0 1px 0 rgba(255,255,255,.3)}
+.cm-prem .cm-cta-ghost{background:rgba(255,255,255,.04);border:1.5px solid rgba(196,181,253,.5);color:#ede9fe;box-shadow:none;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cm-prem .cm-cta-ghost::after{display:none}
+.cm-prem .cm-cta-ghost:hover{background:rgba(139,92,246,.2);border-color:#c4b5fd;box-shadow:0 10px 30px rgba(109,74,255,.25)}
+.cm-prem .cm-rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.cm-prem .cm-rv.in{opacity:1;transform:none}
+.cm-prem .cm-rv.d1{transition-delay:.08s}.cm-prem .cm-rv.d2{transition-delay:.16s}.cm-prem .cm-rv.d3{transition-delay:.26s}
+@media(prefers-reduced-motion:reduce){.cm-sub.cm-prem::after,.cm-prem h2 .cm-grad,.cm-prem .cm-cta-card::before{animation:none}.cm-prem .cm-rv{opacity:1;transform:none;transition:none}}
+@media(max-width:639px){.cm-prem .cm-cta-card{padding:24px 20px}.cm-prem .cm-stat{padding:20px 12px 16px}.cm-sub.cm-prem::after{width:420px;height:420px;margin-left:-210px}}
+body.theme-light .cm-sub.cm-prem{background:radial-gradient(900px 480px at 50% -5%,rgba(124,92,255,.22),transparent 62%),radial-gradient(520px 320px at 10% 75%,rgba(99,102,241,.10),transparent 70%),radial-gradient(560px 340px at 92% 35%,rgba(217,70,239,.10),transparent 70%),linear-gradient(180deg,#f8f7ff 0%,#eee9ff 100%)!important;color:#171738!important}
+body.theme-light .cm-sub.cm-prem::before{opacity:.8;background-image:linear-gradient(rgba(109,74,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(109,74,255,.07) 1px,transparent 1px)}
+body.theme-light .cm-sub.cm-prem::after{opacity:.55}
+body.theme-light .cm-sub.cm-prem .cm-pill{background:rgba(255,255,255,.75)!important;border:1px solid rgba(109,74,255,.30)!important;color:#5b21b6!important;box-shadow:0 0 0 4px rgba(109,74,255,.06),0 10px 28px rgba(109,74,255,.16)!important}
+body.theme-light .cm-sub.cm-prem .cm-pill i{color:#f59e0b;filter:drop-shadow(0 0 5px rgba(245,158,11,.5))}
+body.theme-light .cm-sub.cm-prem h2{color:#171738!important;text-shadow:none!important}
+body.theme-light .cm-sub.cm-prem h2 .cm-grad{background-image:linear-gradient(100deg,#4f46e5 0%,#7c3aed 40%,#c026d3 75%,#4f46e5 100%)!important;background-color:transparent!important;background-size:220% auto;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+body.theme-light .cm-sub.cm-prem .cm-lead{color:#4f4b78!important}
+body.theme-light .cm-sub.cm-prem .cm-stats-bar{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.78))!important;border:0!important;box-shadow:0 28px 70px rgba(79,70,229,.15),0 0 0 1px rgba(109,74,255,.16),inset 0 1px 0 #fff!important}
+body.theme-light .cm-sub.cm-prem .cm-stats-bar::before{background:linear-gradient(90deg,transparent,rgba(109,74,255,.65),transparent)}
+body.theme-light .cm-sub.cm-prem .cm-stat:hover{background:linear-gradient(180deg,rgba(109,74,255,.07),transparent)}
+body.theme-light .cm-sub.cm-prem .cm-stat-number{background:linear-gradient(180deg,#2b1f80 0%,#6d4aff 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 4px 14px rgba(109,74,255,.22))}
+body.theme-light .cm-sub.cm-prem .cm-stat-label{color:#5b5a86!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-card{background:linear-gradient(135deg,#ffffff 0%,#f3efff 100%)!important;border:0!important;box-shadow:0 28px 80px rgba(109,74,255,.20),inset 0 1px 0 #fff!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-copy strong{color:#171738!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-copy .cm-note{color:#5b5a86!important}
+body.theme-light .cm-sub.cm-prem .cm-note i{color:#6d4aff}
+body.theme-light .cm-sub.cm-prem .cm-cta{color:#fff!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-ghost{background:#fff!important;border:1.5px solid rgba(109,74,255,.45)!important;color:#4c1d95!important;box-shadow:0 6px 18px rgba(109,74,255,.10)!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-ghost:hover{background:#f3f0ff!important;border-color:#6d4aff!important}
+</style>
 <div class="cm-wrap">
-  <div class="cm-pill"><i class="fa-solid fa-bolt"></i> All-in-one platform</div>
-  <h2 id="cm-sub-title">One subscription. <span style="background:linear-gradient(100deg,#a78bfa,#6d4aff);-webkit-background-clip:text;background-clip:text;color:transparent">Zero extra bills.</span></h2>
-  <div class="cm-stats-bar" aria-label="ChatMakky at a glance">
+  <div class="cm-pill cm-rv"><i class="fa-solid fa-bolt"></i> All-in-one platform</div>
+  <h2 id="cm-sub-title" class="cm-rv d1">One subscription. <span class="cm-grad">Zero extra bills.</span></h2>
+  <p class="cm-lead cm-rv d1">Every channel, every AI tool and every automation, together in one dashboard.</p>
+  <div class="cm-stats-bar cm-rv d2" aria-label="ChatMakky at a glance">
     <div class="cm-stat">
-      <div class="cm-stat-number">20+</div>
+      <div class="cm-stat-number" data-n="20" data-s="+">20+</div>
       <p class="cm-stat-label">Platforms Integrated in One Dashboard</p>
     </div>
     <div class="cm-stat">
-      <div class="cm-stat-number">700K+</div>
+      <div class="cm-stat-number" data-n="700" data-s="K+">700K+</div>
       <p class="cm-stat-label">Customer Messages Automated</p>
     </div>
     <div class="cm-stat">
-      <div class="cm-stat-number">1200+</div>
+      <div class="cm-stat-number" data-n="1200" data-s="+">1200+</div>
       <p class="cm-stat-label">Businesses Powered by AI</p>
     </div>
     <div class="cm-stat">
-      <div class="cm-stat-number">1</div>
+      <div class="cm-stat-number" data-n="1" data-s="">1</div>
       <p class="cm-stat-label">Subscription. Endless Business Possibilities.</p>
     </div>
   </div>
-  <div class="cm-cta-card">
+  <div class="cm-cta-card cm-rv d3">
     <div class="cm-cta-row">
       <div class="cm-cta-copy">
         <strong>One subscription can save you $100+ every month.</strong>
-        <p class="cm-note">No credit card required · Plans from $12/month</p>
+        <p class="cm-note"><span><i class="fa-solid fa-circle-check"></i>No credit card required</span><span><i class="fa-solid fa-tag"></i>Plans from $12/month</span></p>
       </div>
       <div class="cm-btns">
         <a class="cm-cta" href="https://app.chatmakky.com/subscriber/auth">Start free now</a>
@@ -923,6 +981,7 @@ body.theme-light #email-marketing .em-chip .em-txt strong,body.theme-light #emai
     </div>
   </div>
 </div>
+<script>(function(){try{var root=document.querySelector('.cm-sub.cm-prem');if(!root)return;var rv=root.querySelectorAll('.cm-rv');var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;function count(el){var n=parseInt(el.getAttribute('data-n'),10),s=el.getAttribute('data-s')||'';if(reduce||!n||n<2){return;}var d=1400,t0=null;function f(t){if(!t0)t0=t;if(((t-t0)/d)>1)p=1;var p=Math.min((t-t0)/d,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(n*e)+s;if(p<1)requestAnimationFrame(f);else el.textContent=n+s;}requestAnimationFrame(f);}if(!('IntersectionObserver' in window)||reduce){for(var i=0;i<rv.length;i++)rv[i].classList.add('in');return;}var done=false;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(!done&&e.target.classList.contains('cm-stats-bar')){done=true;e.target.querySelectorAll('.cm-stat-number').forEach(count);}io.unobserve(e.target);}});},{threshold:.15});for(var j=0;j<rv.length;j++)io.observe(rv[j]);}catch(err){document.querySelectorAll('.cm-prem .cm-rv').forEach(function(x){x.classList.add('in')});}})();</script>
 </section>
 
 
