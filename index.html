@@ -2016,4 +2016,13 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   .bx-sticky{box-sizing:border-box; padding-top:min(76px, max(0px, calc(792px - 100svh)));}
 }
 </style>
+<style id="bx-reduced-motion-fix">
+@media (prefers-reduced-motion:reduce){
+  .bx-card{--p:1;}
+  .bx-grid{display:none;}
+  .bx-stage{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; width:min(440px,88vw); margin:0 auto;}
+  .bx-card{grid-column:1 / -1; width:auto; margin:0 0 6px;}
+  .bx-chip{display:flex; position:static; width:auto; height:54px; min-width:0; transform:none; box-shadow:none;}
+}
+</style>
 </body></html>
