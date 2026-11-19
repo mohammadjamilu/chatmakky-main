@@ -2025,4 +2025,11 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   .bx-chip{display:flex; position:static; width:auto; height:54px; min-width:0; transform:none; box-shadow:none;}
 }
 </style>
+<style id="sticky-scroll-fix">
+html,body{overflow-x:clip;}
+@supports not (overflow:clip){
+  html{overflow-x:visible;}
+  body{overflow-x:hidden;}
+}
+</style>
 </body></html>
