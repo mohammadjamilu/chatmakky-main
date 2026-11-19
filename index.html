@@ -2009,4 +2009,11 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 .cm-sub{padding-top:40px !important;}
 @media (max-width:560px){ .cm-sub{padding-top:28px !important;} }
 </style>
+<style id="bx-layout-fix">
+.bx-hint{top:-34px; z-index:3;}
+@media (max-height:680px){ .bx-hint{display:none;} }
+@media (prefers-reduced-motion:no-preference){
+  .bx-sticky{box-sizing:border-box; padding-top:min(76px, max(0px, calc(792px - 100svh)));}
+}
+</style>
 </body></html>
