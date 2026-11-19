@@ -2032,4 +2032,41 @@ html,body{overflow-x:clip;}
   body{overflow-x:hidden;}
 }
 </style>
+<style id="bx-pin-head-fix">
+#broadcast .head .eyebrow{margin-bottom:8px; padding:5px 12px; font-size:.74rem;}
+#broadcast .head h2{font-size:clamp(1.35rem,2.6vw,2.1rem); line-height:1.1; margin-bottom:6px;}
+#broadcast .head p{font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.4; margin-bottom:0;}
+#broadcast .head p br{display:none;}
+@media (max-height:760px){ #broadcast .head .eyebrow{display:none;} }
+@media (prefers-reduced-motion:no-preference){
+  #broadcast .head{position:sticky; top:74px; z-index:3; padding-top:10px; margin-bottom:26px;}
+  .bx-hint{top:-24px;}
+  .bx-sticky{padding-top:0 !important;}
+}
+</style>
+<script id="bx-pin-head">
+(function(){
+  var head=document.querySelector('#broadcast .head'),sticky=document.querySelector('#bx .bx-sticky'),hdr=document.querySelector('header');
+  if(!head||!sticky)return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var busy=false;
+  function fit(){
+    if(busy)return;busy=true;
+    try{
+      var hh=hdr?hdr.offsetHeight:74;
+      head.style.top=hh+'px';
+      var mb=parseFloat(getComputedStyle(head).marginBottom)||0;
+      var t=Math.round(hh+head.offsetHeight+mb);
+      sticky.style.top=t+'px';
+      sticky.style.height='calc(100vh - '+t+'px)';
+      sticky.style.height='calc(100svh - '+t+'px)';
+      window.dispatchEvent(new Event('resize'));
+    }finally{busy=false;}
+  }
+  window.addEventListener('resize',fit);
+  window.addEventListener('load',fit);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  fit();
+})();
+</script>
 </body></html>
