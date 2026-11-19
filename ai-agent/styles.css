@@ -91,7 +91,7 @@
   .flow-caption{font-size:0.78rem; color:var(--muted-2); text-transform:uppercase; letter-spacing:0.09em; margin-bottom:22px; font-weight:600;}
 
   /* hero */
-  .hero{padding:96px 0 70px; text-align:center;}
+  .hero{padding:36px 20px 20px; text-align:center;}
   .hero h1{
     font-size:clamp(2.3rem, 5.5vw, 4.1rem);
     line-height:1.06; letter-spacing:-0.03em; max-width:920px; margin:0 auto 24px;
@@ -100,8 +100,8 @@
     background:linear-gradient(100deg, var(--primary-light), var(--secondary-light));
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
-  .hero p.lead{max-width:640px; margin:0 auto 36px; color:var(--muted); font-size:1.12rem;}
-  .hero h1.one-line{font-family:'Sora',sans-serif !important; font-size:clamp(1.15rem,2.4vw,1.75rem) !important; font-weight:800 !important; line-height:1.4 !important; letter-spacing:-0.025em !important; max-width:none !important; margin:0 auto 32px !important; white-space:nowrap;}
+  .hero p.lead{max-width:640px; margin:0 auto 18px; color:var(--muted); font-size:1.02rem;}
+  .hero h1.one-line{font-family:'Sora',sans-serif !important; font-size:clamp(1.15rem,2.4vw,1.75rem) !important; font-weight:800 !important; line-height:1.15 !important; letter-spacing:-0.025em !important; max-width:none !important; margin:0 auto 14px !important; white-space:nowrap;}
   @media (max-width:640px){.hero h1.one-line{white-space:normal; font-size:1.15rem !important;}}
   .hero-ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:20px;}
   .hero-note{font-size:0.85rem; color:var(--muted-2);}
@@ -124,7 +124,7 @@
   /* hero visual */
   .hero-showcase{
     position:relative;
-    margin:28px auto 0;
+    margin:16px auto 0;
     max-width:1120px;
     display:grid;
     grid-template-columns:minmax(0,1fr) minmax(0,620px) minmax(0,1fr);
@@ -336,7 +336,7 @@
   .trend-meta strong{color:var(--text);}
   .trend-svg{width:100%; height:auto; display:block;}
 
-  .hero{padding:72px 0 56px;}
+  .hero{padding:34px 0 24px;}
   .hero-showcase{
     max-width:920px;
     margin:36px auto 0;
@@ -571,7 +571,7 @@
   @media (max-width:768px){
     header .nav{height:68px;}
     .wrap{padding:0 20px;}
-    .hero{padding:78px 0 48px;}
+    .hero{padding:28px 0 18px;}
     .hero h1{font-size:clamp(2.05rem, 8vw, 3.2rem); margin-bottom:18px;}
     .hero p.lead{font-size:1rem; margin-bottom:28px;}
     .btn-lg{padding:13px 22px; font-size:0.96rem;}
@@ -593,7 +593,7 @@
   }
   @media (max-width:480px){
     .wrap{padding:0 16px;}
-    .hero{padding:62px 0 40px;}
+    .hero{padding:24px 0 16px;}
     .hero-ctas{flex-direction:column; align-items:stretch;}
     .hero-ctas .btn{width:100%;}
     .section{padding:66px 0;}
@@ -857,10 +857,10 @@
   .trend-svg path:first-of-type{opacity:1 !important;}
 }
 
-  .hero h1, .hero h1.one-line{font-size:clamp(34px,5.6vw,64px) !important; line-height:1.05 !important; letter-spacing:-.03em !important; font-weight:800 !important; text-align:center !important; white-space:normal !important; max-width:860px !important; margin:0 auto 18px !important; text-wrap:balance !important;}
+  .hero h1, .hero h1.one-line{font-size:clamp(1.5rem,3.4vw,2.6rem) !important; line-height:1.05 !important; letter-spacing:-.03em !important; font-weight:800 !important; text-align:center !important; white-space:nowrap !important; max-width:none !important; margin:0 auto 12px !important; text-wrap:nowrap !important;}
 .hero .wrap{max-width:1180px; margin-left:auto; margin-right:auto; text-align:center;}
-.cm-pill{display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:999px; background:rgba(139,92,246,.14); border:1px solid rgba(139,92,246,.4); color:#c4b5fd; font-weight:700; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:22px;}
-.cm-lead{color:var(--muted); font-size:clamp(16px,1.6vw,19px); line-height:1.6; margin:0 auto 30px; max-width:640px; text-align:center;}
+.cm-pill{display:inline-flex; align-items:center; gap:8px; padding:8px 16px; border-radius:999px; background:rgba(139,92,246,.14); border:1px solid rgba(139,92,246,.4); color:#c4b5fd; font-weight:700; font-size:.82rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:14px;}
+.cm-lead{color:var(--muted); font-size:clamp(16px,1.6vw,19px); line-height:1.6; margin:0 auto 14px; max-width:640px; text-align:center;}
 .cm-btns{display:flex; flex-wrap:wrap; gap:14px; justify-content:center;}
 .cm-cta{display:inline-block; background:linear-gradient(135deg,#8b5cf6,#6d4aff); color:#fff; font-weight:700; font-size:1.15rem; padding:19px 42px; border-radius:999px; box-shadow:0 12px 34px rgba(109,74,255,.45); transition:transform .15s, box-shadow .15s;}
 .cm-cta:hover{transform:translateY(-2px); box-shadow:0 16px 42px rgba(109,74,255,.6);}
@@ -868,14 +868,14 @@
 .cm-cta-ghost:hover{background:rgba(139,92,246,.14); box-shadow:none;}
 .cm-note{margin:16px 0 0; font-size:.88rem; color:var(--muted); text-align:center;}
 body.theme-light .cm-cta-ghost{color:var(--text);}
-.hero{display:block !important; min-height:0 !important; padding:100px 20px 64px !important; text-align:center;}
+.hero{display:block !important; min-height:0 !important; padding:36px 20px 20px !important; text-align:center;}
 .hero .hub{zoom:1 !important; transform:none !important; margin-bottom:0 !important;}
-@media(max-width:560px){.hero{padding:100px 20px 24px !important;} .cm-btns{flex-direction:column; align-items:stretch;} .cm-cta{text-align:center;}}
+@media(max-width:560px){.hero{padding:28px 16px 16px !important;} .cm-btns{flex-direction:column; align-items:stretch;} .cm-cta{text-align:center;}}
 
 /* interactive dashboard */
 .dashboard-window{color:var(--text);}
-.dash-body{height:410px;}
-.dash-sidebar,.dash-main{height:410px;}
+.dash-body{height:clamp(360px, calc(100vh - 330px), 410px);}
+.dash-sidebar,.dash-main{height:clamp(360px, calc(100vh - 330px), 410px);}
 .dash-main{padding:0 !important; position:relative; overflow:hidden; min-width:0;}
 .dash-view{display:none; height:100%; overflow-y:auto; padding:14px 16px 16px; scrollbar-width:none;}
 .dash-view::-webkit-scrollbar{display:none;}
