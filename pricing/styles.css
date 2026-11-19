@@ -95,11 +95,13 @@
   }
   .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--success); box-shadow:0 0 8px var(--success);}
 
-  .hero{padding:96px 0 40px; text-align:center;}
+  .hero{padding:96px 0 24px; text-align:center;}
   .hero h1{
-    font-size:clamp(2.3rem, 5.5vw, 4.1rem);
-    max-width:920px;
-    line-height:1.06; letter-spacing:-0.03em; margin:0 auto 24px;
+    font-size:clamp(1.5rem,3.4vw,2.6rem) !important;
+    white-space:nowrap !important;
+    max-width:none !important;
+    margin:0 auto !important;
+    line-height:1.06; letter-spacing:-0.03em;
   }
 
   .hero h1 .grad{
@@ -310,6 +312,7 @@
     .hero h1{font-size:clamp(2.05rem, 8vw, 3.2rem); margin-bottom:18px;}
     .hero p.lead{font-size:1rem; margin-bottom:26px;}
     .btn-lg{padding:13px 22px; font-size:0.96rem;}
+    .hero h1{white-space:normal !important; font-size:1.5rem !important;}
     .section{padding:56px 0;}
     .head{margin-bottom:32px;}
     .head h2{font-size:clamp(1.65rem, 5vw, 2.25rem);}
@@ -377,7 +380,7 @@
   }
   @media (max-width:480px){
     .hero .wrap{padding-left:16px; padding-right:16px;}
-    .hero h1{font-size:clamp(1.75rem, 9vw, 2.45rem);}
+    .hero h1{font-size:clamp(1.5rem, 3.4vw, 2.6rem); white-space:nowrap; max-width:none;}
   }
 
 #mobile-menu.mobile-menu-overlay{
