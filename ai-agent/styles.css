@@ -1908,6 +1908,19 @@ body.theme-light .cm-cta-ghost{color:var(--text);}
 #features .feature-card:nth-child(5n+4) .ic{background:rgba(52,211,153,.14);border-color:rgba(52,211,153,.42);color:#6ee7b7;}
 #features .feature-card:nth-child(5n+5) .ic{background:rgba(251,191,36,.14);border-color:rgba(251,191,36,.42);color:#fcd34d;}
 
+#comment-automation .cmt-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1100px;margin:0 auto}
+    #comment-automation .cmt-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:border-color .2s,transform .2s}
+    #comment-automation .cmt-card:hover{border-color:var(--primary-light);transform:translateY(-3px)}
+    #comment-automation .cmt-card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:18px;margin-bottom:14px}
+    #comment-automation .cmt-card:nth-child(1) .ic{background:rgba(167,139,250,.16);border:1px solid rgba(167,139,250,.42);color:#c4b5fd}
+    #comment-automation .cmt-card:nth-child(2) .ic{background:rgba(244,114,182,.15);border:1px solid rgba(244,114,182,.42);color:#f9a8d4}
+    #comment-automation .cmt-card:nth-child(3) .ic{background:rgba(34,211,238,.14);border:1px solid rgba(34,211,238,.42);color:#67e8f9}
+    #comment-automation .cmt-card:nth-child(4) .ic{background:rgba(52,211,153,.14);border:1px solid rgba(52,211,153,.42);color:#6ee7b7}
+    #comment-automation .cmt-card h4{font-size:1.02rem;margin-bottom:8px}
+    #comment-automation .cmt-card p{color:var(--muted);font-size:.9rem}
+    @media (max-width:980px){#comment-automation .cmt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:560px){#comment-automation .cmt-grid{grid-template-columns:1fr}}
+
 #models .model-row{display:grid; grid-template-columns:repeat(5,1fr); gap:18px; max-width:1100px; margin:0 auto;}
 #models .model-pill{gap:14px; padding:22px 24px; justify-content:center; font-size:1.15rem; width:100%;}
 #models .model-logo{width:32px;height:32px;flex:none;color:var(--c);}
