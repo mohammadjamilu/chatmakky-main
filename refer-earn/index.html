@@ -44,14 +44,14 @@ fbq('track', 'PageView');
 </script>
 
 <!-- SEO Meta Tags -->
-<title>ChatMakky Referral Partner Program — Earn 50%</title>
-<meta name="description" content="Refer clients to ChatMakky and earn 50% of their first-month subscription payment. Built for agency owners, freelancers and marketers." />
-<meta property="og:title" content="ChatMakky Referral Partner Program — Earn 50%" />
-<meta property="og:description" content="Refer clients to ChatMakky and earn 50% of their first-month subscription payment. Built for agency owners, freelancers and marketers." />
+<title>ChatMakky Referral Partner Program — Earn 25% for 2 Months</title>
+<meta name="description" content="Refer clients to ChatMakky and earn 25% of their payment in the 1st month and 25% in the 2nd month." />
+<meta property="og:title" content="ChatMakky Referral Partner Program — Earn 25% for 2 Months" />
+<meta property="og:description" content="Refer clients to ChatMakky and earn 25% of their payment in the 1st month and 25% in the 2nd month." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="ChatMakky Referral Partner Program — Earn 50%" />
-<meta name="twitter:description" content="Refer clients to ChatMakky and earn 50% of their first-month subscription payment. Built for agency owners, freelancers and marketers." />
+<meta name="twitter:title" content="ChatMakky Referral Partner Program — Earn 25% for 2 Months" />
+<meta name="twitter:description" content="Refer clients to ChatMakky and earn 25% of their payment in the 1st month and 25% in the 2nd month." />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
@@ -254,7 +254,7 @@ fbq('track', 'PageView');
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var pBtn=document.getElementById('lp-pay-success-btn');
       if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -331,7 +331,7 @@ fbq('track', 'PageView');
       overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
       function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
       var subTxt=successSubtext||'Thank you for your order.';
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
       document.body.appendChild(overlay);
       var cBtn=document.getElementById('lp-cart-success-btn');
       if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
@@ -458,21 +458,19 @@ fbq('track', 'PageView');
   <section class="hero" data-section="hero">
     <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
     <div class="chip c1"><i class="fa-solid fa-coins"></i> Basic <em>+$6</em></div>
-    <div class="chip c2"><i class="fa-solid fa-coins"></i> Advanced <em>+$11</em></div>
-    <div class="chip c3"><i class="fa-solid fa-coins"></i> Agency <em>+$31</em></div>
+    <div class="chip c2"><i class="fa-solid fa-coins"></i> Advanced <em>+$12</em></div>
+    <div class="chip c3"><i class="fa-solid fa-coins"></i> Agency <em>+$34</em></div>
     <div class="wrap">
       <div class="eyebrow"><span class="dot"></span> Referral Partner Program</div>
-      <h1>Become a ChatMakky Partner. Earn <span class="grad">50%</span></h1>
+      <h1>Become a ChatMakky Partner. Earn <span class="grad">25%</span> for 2 months</h1>
       <p class="lead">Whether you're an agency owner, freelancer, marketer or AI service provider, or you work with business clients regularly, this program is built for you.</p>
       <div class="hero-ctas">
-        <a href="#apply" class="btn btn-solid btn-lg">Apply now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get started <i class="fa-solid fa-arrow-right"></i></a>
         <a href="#how" class="btn btn-ghost btn-lg">How it works</a>
-        <a href="https://youtube.com/playlist?list=PLcXmFjiEDrGA&si=wf2Fbp3aDz_Aitka" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"><i class="fa-brands fa-youtube"></i> Watch tutorials</a>
       </div>
       <div class="stats">
-        <div class="stat"><b>50%</b><span>of your client's first-month payment</span></div>
-        <div class="stat"><b>5%</b><span>discount for clients using your code</span></div>
-        <div class="stat"><b>4</b><span>simple steps to become a partner</span></div>
+        <div class="stat"><b>25%</b><span>of your client's payment in the 1st month</span></div>
+        <div class="stat"><b>25%</b><span>again in the 2nd month</span></div>
       </div>
     </div>
   </section>
@@ -507,11 +505,16 @@ fbq('track', 'PageView');
         <span class="sp s5"></span>
         <span class="sp s6"></span>
         <div class="offer-badge"><i class="fa-solid fa-gem"></i> Partner bonus</div>
-        <div class="big">50%</div>
-        <h3>Referral bonus on your client's first-month payment</h3>
-        <p>When a client you refer pays for a ChatMakky subscription, you receive 50% of that first month's payment.</p>
-        <div class="offer-pills"><span><i class="fa-solid fa-percent"></i> 5% discount for your clients</span><span><i class="fa-solid fa-bolt"></i> Start on the Basic $12 plan</span></div>
-        <a href="#apply" class="btn btn-solid btn-lg">Become a partner <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="big">25%</div>
+        <h3>You earn 25% in the 1st month AND 25% in the 2nd month</h3>
+        <p>When a client you refer pays for ChatMakky, you get 25% of their payment in month 1 and 25% of their payment in month 2.</p>
+        <div class="offer-pills"><span><i class="fa-solid fa-bolt"></i> Start on the Basic $12 plan</span></div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px; color:#E9E6FF; font-size:0.92rem; font-weight:600;">
+          <span style="padding:10px 16px; border-radius:999px; border:1px solid rgba(157,153,255,.28); background:rgba(157,153,255,.10);">Month 1: you earn 25%</span>
+          <span style="padding:10px 16px; border-radius:999px; border:1px solid rgba(157,153,255,.28); background:rgba(157,153,255,.10);">→</span>
+          <span style="padding:10px 16px; border-radius:999px; border:1px solid rgba(157,153,255,.28); background:rgba(157,153,255,.10);">Month 2: you earn 25%</span>
+        </div>
+        <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg" style="margin-top:28px;">Become a partner <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
@@ -560,20 +563,19 @@ fbq('track', 'PageView');
         <h2>Follow these <span class="hl">four steps</span></h2>
       </div>
       <div class="timeline">
-        <div class="tstep reveal" style="--i:0;"><div class="tnode">1</div><div class="tcard"><h4>Watch the tutorials</h4><p>Start by watching the ChatMakky tutorials so you know the platform.</p><a href="https://youtube.com/playlist?list=PLcXmFjiEDrGA&si=wf2Fbp3aDz_Aitka" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:16px; padding:9px 14px; font-size:0.82rem; width:max-content;"><i class="fa-solid fa-arrow-right"></i> Watch the playlist</a></div></div>
-        <div class="tstep reveal" style="--i:1;"><div class="tnode">2</div><div class="tcard"><h4>Get a Premium account</h4><p>Take a Premium account on the Basic $12 plan.</p></div></div>
-        <div class="tstep reveal" style="--i:2;"><div class="tnode">3</div><div class="tcard"><h4>Fill out the partner form</h4><p>Complete the application form (use the link in the video comment or the Apply button below).</p></div></div>
-        <div class="tstep reveal" style="--i:3;"><div class="tnode">4</div><div class="tcard"><h4>Get your referral code</h4><p>Our team will contact you and give you a unique referral code. Clients who come through you and use your code get a 5% discount.</p></div></div>
+        <div class="tstep reveal" style="--i:0;"><div class="tnode">1</div><div class="tcard"><h4>Get a Premium account</h4><p>Take a Premium account on the Basic $12 plan. If you already have a paid account, you don't need another one.</p></div></div>
+        <div class="tstep reveal" style="--i:1;"><div class="tnode">2</div><div class="tcard"><h4>Contact our team</h4><p>Email support@chatmakky.com and tell us you want to join the partner program.</p></div></div>
+        <div class="tstep reveal" style="--i:2;"><div class="tnode">3</div><div class="tcard"><h4>Get your referral code</h4><p>We give you a unique referral code. Clients who use your code get 5% off, and you earn 25% in month 1 and 25% in month 2.</p></div></div>
       </div>
     </div>
   </section>
 
   <section class="section" id="earnings" data-section="earnings">
     <div class="wrap">
-      <div class="head reveal">
+              <div class="head reveal">
         <div class="eyebrow">Example earnings</div>
         <h2>What <span class="hl">one referral</span> is worth</h2>
-        <p>Your bonus is 50% of your client's first-month subscription payment.</p>
+        <p>You earn 25% in the 1st month and 25% in the 2nd month.</p>
       </div>
       <div class="egrid">
         <div class="ecard reveal" style="--i:0;">
@@ -581,24 +583,27 @@ fbq('track', 'PageView');
           <div class="plan-price">$12 / month</div>
           <div class="you">You earn</div>
           <div class="amt">$6</div>
-          <div class="bar"><i style="--w:19%;"></i></div>
+          <div class="breakdown">Month 1: $3<br>Month 2: $3<br><strong>Total $6</strong></div>
+          <div class="bar"><i style="--w:18%;"></i></div>
         </div>
         <div class="ecard feat reveal" style="--i:1;">
           <h4>Advanced</h4>
-          <div class="plan-price">$22 / month</div>
+          <div class="plan-price">$24 / month</div>
           <div class="you">You earn</div>
-          <div class="amt">$11</div>
+          <div class="amt">$12</div>
+          <div class="breakdown">Month 1: $6<br>Month 2: $6<br><strong>Total $12</strong></div>
           <div class="bar"><i style="--w:35%;"></i></div>
         </div>
         <div class="ecard reveal" style="--i:2;">
           <h4>Agency package</h4>
-          <div class="plan-price">$62 / month</div>
+          <div class="plan-price">$68 / month</div>
           <div class="you">You earn</div>
-          <div class="amt">$31</div>
+          <div class="amt">$34</div>
+          <div class="breakdown">Month 1: $17<br>Month 2: $17<br><strong>Total $34</strong></div>
           <div class="bar"><i style="--w:100%;"></i></div>
         </div>
       </div>
-      <p class="earn-note">Examples are based on current plan prices and a client's first-month payment.</p>
+      <p class="earn-note">Examples use current plan prices. You earn 25% of the client's payment in the 1st and 2nd month.</p>
     </div>
   </section>
 
@@ -621,15 +626,12 @@ fbq('track', 'PageView');
       <div class="faq-list">
         <details class="faq reveal" open>
           <summary>How much do I earn?</summary>
-          <p>You earn 50% of the first month's subscription payment of every client who subscribes through your referral.</p>
+          <p>You earn 25% of your client's payment in the 1st month and another 25% in the 2nd month. Example: client takes the Basic $12 plan → you get $3 + $3 = $6.</p>
         </details>
-        <details class="faq reveal" style="--i:1;">
-          <summary>How do clients get a discount?</summary>
-          <p>Each partner receives a unique referral code. Clients who use it get a 5% discount.</p>
-        </details>
+
         <details class="faq reveal" style="--i:2;">
           <summary>How do I become a partner?</summary>
-          <p>Watch the ChatMakky tutorials, take a Premium account on the Basic $12 plan, and fill out the partner application form. Our team will then contact you. You can <a href="https://youtube.com/playlist?list=PLcXmFjiEDrGA&si=wf2Fbp3aDz_Aitka" target="_blank" rel="noopener" style="color:var(--primary-light); text-decoration:underline;">watch the tutorial playlist here</a>.</p>
+          <p>Get a Premium account on the Basic $12 plan, then email support@chatmakky.com. Our team will give you your unique referral code.</p>
         </details>
         <details class="faq reveal" style="--i:3;">
           <summary>I already have a paid ChatMakky account. Do I need to buy another one?</summary>
@@ -643,24 +645,6 @@ fbq('track', 'PageView');
           <summary>Where can I ask questions or get updates?</summary>
           <p>Email support@chatmakky.com, and join our Facebook group for program updates.</p>
         </details>
-        <details class="faq reveal" style="--i:5;">
-          <summary>Where can I watch the ChatMakky tutorials?</summary>
-          <p>Watch the full ChatMakky AI Agent basic tutorial playlist (14 videos, in Bangla) on the Chatbot Agency BD YouTube channel: <a href="https://youtube.com/playlist?list=PLcXmFjiEDrGA&si=wf2Fbp3aDz_Aitka" target="_blank" rel="noopener" style="color:var(--primary-light); text-decoration:underline;">open the playlist</a>.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="apply" data-section="apply">
-    <div class="wrap">
-      <div class="head" style="margin-bottom:28px;">
-        <div class="eyebrow">Apply now</div>
-        <p>Fill out the form below and our team will contact you with your unique referral code.</p>
-      </div>
-      <div class="applybox">
-        <div style="max-width:640px; margin:0 auto;">
-          <script src="https://app.chatmakky.com/forms-embed.js" data-form="p2olikn3" data-theme="dark" data-accent="#6E68FF" async></script>
-        </div>
       </div>
     </div>
   </section>
@@ -707,9 +691,7 @@ fbq('track', 'PageView');
                   <a href="https://www.instagram.com/chatmakky?igsh=dTJ5YjAwajVnZTJn&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="ChatMakky Instagram" title="ChatMakky Instagram" class="social-icon" style="background:radial-gradient(circle at 30% 110%, #FDF497 0%, #FD5949 30%, #D6249F 55%, #285AEB 90%); box-shadow:0 8px 16px rgba(214,36,159,0.18);">
                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                   </a>
-                  <a href="https://youtube.com/@chatmakky?si=_xPwEPrTeMypzdGJ" target="_blank" rel="noopener" aria-label="ChatMakky YouTube" title="ChatMakky YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
-                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                  </a>
+
                 </div>
                 <div class="address">Lytchett House, 13 Freeland Park, Wareham Road, Poole, United Kingdom</div>
               </div>
@@ -722,7 +704,7 @@ fbq('track', 'PageView');
               <li><a href="https://www.chatmakky.com/#channels">Channels</a></li>
               <li><a href="https://www.chatmakky.com/#features">Features</a></li>
               <li><a href="https://app.chatmakky.com/p/2CMUdUW">Pricing</a></li>
-              <li><a href="https://youtube.com/playlist?list=PLcXmFjiEDrGA&si=wf2Fbp3aDz_Aitka" target="_blank" rel="noopener">Tutorials</a></li>
+
             </ul>
           </div>
 
@@ -754,9 +736,7 @@ fbq('track', 'PageView');
                 <a href="https://wa.me/8801810285559" target="_blank" rel="noopener" aria-label="Chatbot Agency BD WhatsApp" title="Chatbot Agency BD WhatsApp" class="social-icon" style="background:linear-gradient(135deg, #25D366, #1DBF73); box-shadow:0 8px 16px rgba(37,211,102,0.18);">
                   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 </a>
-                <a href="https://youtube.com/@chatbotagencybd?si=n-Tq-m1sHCoA__t1" target="_blank" rel="noopener" aria-label="Chatbot Agency BD YouTube" title="Chatbot Agency BD YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
-                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                </a>
+
                 <a href="https://www.tiktok.com/@chatbotagencybd?_r=1&amp;_t=ZS-98khhCX3KjQ" target="_blank" rel="noopener" aria-label="Chatbot Agency BD TikTok" title="Chatbot Agency BD TikTok" class="social-icon" style="background:#000; box-shadow:0 8px 16px rgba(0,0,0,0.18);">
                   <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
                 </a>
