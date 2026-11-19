@@ -906,9 +906,15 @@ body.theme-light #email-marketing .em-chip .em-txt strong,body.theme-light #emai
 .cm-prem .cm-stat:hover{background:linear-gradient(180deg,rgba(139,92,246,.10),transparent)}
 .cm-prem .cm-stat-number{background:linear-gradient(180deg,#fff 0%,#c9c2ff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-variant-numeric:tabular-nums;filter:drop-shadow(0 4px 22px rgba(139,92,246,.45))}
 .cm-prem .cm-stat-label{color:#b4b0e2;font-size:.82rem}
-.cm-prem .cm-cta-card{position:relative;max-width:940px;border:0;border-radius:24px;padding:30px 32px;background:linear-gradient(135deg,rgba(34,28,86,.92),rgba(18,15,46,.94));box-shadow:0 30px 90px rgba(109,74,255,.28),inset 0 1px 0 rgba(255,255,255,.08)}
-.cm-prem .cm-cta-card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;pointer-events:none;background:linear-gradient(120deg,rgba(167,139,250,.9),rgba(99,102,241,.25) 30%,rgba(232,121,249,.7) 60%,rgba(167,139,250,.9));background-size:240% 240%;animation:cmBorder 7s ease infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
-@keyframes cmBorder{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.cm-prem .cm-cta-card{position:relative;overflow:hidden;max-width:940px;border:1.5px solid transparent;border-radius:24px;padding:32px 34px;background:linear-gradient(135deg,#1d1752 0%,#120f2e 100%) padding-box,linear-gradient(120deg,rgba(167,139,250,.95),rgba(99,102,241,.3) 30%,rgba(232,121,249,.75) 60%,rgba(167,139,250,.95)) border-box;background-size:100% 100%,240% 240%;animation:cmBorder 7s ease infinite;box-shadow:0 30px 90px rgba(109,74,255,.30)}
+.cm-prem .cm-cta-card::before{content:"";position:absolute;right:-70px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.38),transparent 68%);pointer-events:none}
+.cm-prem .cm-cta-card::after{content:"";position:absolute;left:-80px;bottom:-110px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(232,121,249,.18),transparent 68%);pointer-events:none}
+.cm-prem .cm-cta-row{position:relative;z-index:1}
+@keyframes cmBorder{0%,100%{background-position:0 0,0% 50%}50%{background-position:0 0,100% 50%}}
+.cm-prem .cm-money{background:linear-gradient(100deg,#c4b5fd,#e879f9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;white-space:nowrap}
+.cm-prem .cm-stat-ic{display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin:0 auto 12px;border-radius:13px;font-size:1rem;color:#ddd6fe;background:linear-gradient(135deg,rgba(139,92,246,.35),rgba(99,102,241,.12));border:1px solid rgba(167,139,250,.35);box-shadow:0 8px 22px rgba(109,74,255,.25)}
+.cm-prem .cm-cta .fa-arrow-right{margin-left:8px;font-size:.85em;transition:transform .2s}
+.cm-prem .cm-cta:hover .fa-arrow-right{transform:translateX(4px)}
 .cm-prem .cm-cta-copy strong{letter-spacing:-.02em}
 .cm-prem .cm-cta-copy .cm-note{display:flex;flex-wrap:wrap;gap:8px 18px;color:#a9a5d8}
 .cm-prem .cm-note span{display:inline-flex;align-items:center;gap:7px}
@@ -923,7 +929,7 @@ body.theme-light #email-marketing .em-chip .em-txt strong,body.theme-light #emai
 .cm-prem .cm-rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
 .cm-prem .cm-rv.in{opacity:1;transform:none}
 .cm-prem .cm-rv.d1{transition-delay:.08s}.cm-prem .cm-rv.d2{transition-delay:.16s}.cm-prem .cm-rv.d3{transition-delay:.26s}
-@media(prefers-reduced-motion:reduce){.cm-sub.cm-prem::after,.cm-prem h2 .cm-grad,.cm-prem .cm-cta-card::before{animation:none}.cm-prem .cm-rv{opacity:1;transform:none;transition:none}}
+@media(prefers-reduced-motion:reduce){.cm-sub.cm-prem::after,.cm-prem h2 .cm-grad,.cm-prem .cm-cta-card{animation:none}.cm-prem .cm-rv{opacity:1;transform:none;transition:none}}
 @media(max-width:639px){.cm-prem .cm-cta-card{padding:24px 20px}.cm-prem .cm-stat{padding:20px 12px 16px}.cm-sub.cm-prem::after{width:420px;height:420px;margin-left:-210px}}
 body.theme-light .cm-sub.cm-prem{background:radial-gradient(900px 480px at 50% -5%,rgba(124,92,255,.22),transparent 62%),radial-gradient(520px 320px at 10% 75%,rgba(99,102,241,.10),transparent 70%),radial-gradient(560px 340px at 92% 35%,rgba(217,70,239,.10),transparent 70%),linear-gradient(180deg,#f8f7ff 0%,#eee9ff 100%)!important;color:#171738!important}
 body.theme-light .cm-sub.cm-prem::before{opacity:.8;background-image:linear-gradient(rgba(109,74,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(109,74,255,.07) 1px,transparent 1px)}
@@ -938,7 +944,11 @@ body.theme-light .cm-sub.cm-prem .cm-stats-bar::before{background:linear-gradien
 body.theme-light .cm-sub.cm-prem .cm-stat:hover{background:linear-gradient(180deg,rgba(109,74,255,.07),transparent)}
 body.theme-light .cm-sub.cm-prem .cm-stat-number{background:linear-gradient(180deg,#2b1f80 0%,#6d4aff 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 4px 14px rgba(109,74,255,.22))}
 body.theme-light .cm-sub.cm-prem .cm-stat-label{color:#5b5a86!important}
-body.theme-light .cm-sub.cm-prem .cm-cta-card{background:linear-gradient(135deg,#ffffff 0%,#f3efff 100%)!important;border:0!important;box-shadow:0 28px 80px rgba(109,74,255,.20),inset 0 1px 0 #fff!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-card{border:1.5px solid transparent!important;background:linear-gradient(135deg,#ffffff 0%,#f3efff 100%) padding-box,linear-gradient(120deg,#8b5cf6,#c4b5fd 30%,#e879f9 60%,#8b5cf6) border-box!important;background-size:100% 100%,240% 240%!important;box-shadow:0 28px 80px rgba(109,74,255,.20)!important}
+body.theme-light .cm-sub.cm-prem .cm-cta-card::before{background:radial-gradient(circle,rgba(139,92,246,.18),transparent 68%)}
+body.theme-light .cm-sub.cm-prem .cm-cta-card::after{background:radial-gradient(circle,rgba(232,121,249,.12),transparent 68%)}
+body.theme-light .cm-sub.cm-prem .cm-money{background:linear-gradient(100deg,#4f46e5,#c026d3)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+body.theme-light .cm-sub.cm-prem .cm-stat-ic{color:#5b21b6;background:linear-gradient(135deg,rgba(109,74,255,.14),rgba(109,74,255,.05));border:1px solid rgba(109,74,255,.25);box-shadow:0 8px 20px rgba(109,74,255,.12)}
 body.theme-light .cm-sub.cm-prem .cm-cta-copy strong{color:#171738!important}
 body.theme-light .cm-sub.cm-prem .cm-cta-copy .cm-note{color:#5b5a86!important}
 body.theme-light .cm-sub.cm-prem .cm-note i{color:#6d4aff}
@@ -952,18 +962,22 @@ body.theme-light .cm-sub.cm-prem .cm-cta-ghost:hover{background:#f3f0ff!importan
   <p class="cm-lead cm-rv d1">Every channel, every AI tool and every automation, together in one dashboard.</p>
   <div class="cm-stats-bar cm-rv d2" aria-label="ChatMakky at a glance">
     <div class="cm-stat">
+      <span class="cm-stat-ic" aria-hidden="true"><i class="fa-solid fa-plug"></i></span>
       <div class="cm-stat-number" data-n="20" data-s="+">20+</div>
       <p class="cm-stat-label">Platforms Integrated in One Dashboard</p>
     </div>
     <div class="cm-stat">
+      <span class="cm-stat-ic" aria-hidden="true"><i class="fa-solid fa-comments"></i></span>
       <div class="cm-stat-number" data-n="700" data-s="K+">700K+</div>
       <p class="cm-stat-label">Customer Messages Automated</p>
     </div>
     <div class="cm-stat">
+      <span class="cm-stat-ic" aria-hidden="true"><i class="fa-solid fa-building"></i></span>
       <div class="cm-stat-number" data-n="1200" data-s="+">1200+</div>
       <p class="cm-stat-label">Businesses Powered by AI</p>
     </div>
     <div class="cm-stat">
+      <span class="cm-stat-ic" aria-hidden="true"><i class="fa-solid fa-gem"></i></span>
       <div class="cm-stat-number" data-n="1" data-s="">1</div>
       <p class="cm-stat-label">Subscription. Endless Business Possibilities.</p>
     </div>
@@ -971,11 +985,11 @@ body.theme-light .cm-sub.cm-prem .cm-cta-ghost:hover{background:#f3f0ff!importan
   <div class="cm-cta-card cm-rv d3">
     <div class="cm-cta-row">
       <div class="cm-cta-copy">
-        <strong>One subscription can save you $100+ every month.</strong>
+        <strong>One subscription can save you <span class="cm-money">$100+</span> every month.</strong>
         <p class="cm-note"><span><i class="fa-solid fa-circle-check"></i>No credit card required</span><span><i class="fa-solid fa-tag"></i>Plans from $12/month</span></p>
       </div>
       <div class="cm-btns">
-        <a class="cm-cta" href="https://app.chatmakky.com/subscriber/auth">Start free now</a>
+        <a class="cm-cta" href="https://app.chatmakky.com/subscriber/auth">Start free now <i class="fa-solid fa-arrow-right"></i></a>
         <a class="cm-cta cm-cta-ghost" href="https://www.chatmakky.com/pricing/">See pricing</a>
       </div>
     </div>
