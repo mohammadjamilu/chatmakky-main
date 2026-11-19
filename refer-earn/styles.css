@@ -224,7 +224,7 @@
     .hero-ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
     .hero-ctas .btn-solid{animation:glowpulse 2.8s ease-in-out infinite;}
     @keyframes glowpulse{0%,100%{box-shadow:0 8px 22px rgba(105,70,224,0.38);} 50%{box-shadow:0 10px 38px rgba(199,125,255,0.7);}}
-    .stats{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; max-width:720px; margin:58px auto 0;}
+    .stats{display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px; max-width:540px; margin:58px auto 0;}
     .stat{padding:20px 16px; border-radius:20px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(157,153,255,0.10), rgba(157,153,255,0.03)); backdrop-filter:blur(8px);}
     .stat b{display:block; font-family:'Sora'; font-weight:800; font-size:2.1rem; line-height:1.1; background:linear-gradient(100deg, var(--primary-light), var(--secondary-light)); -webkit-background-clip:text; background-clip:text; color:transparent;}
     .stat span{display:block; margin-top:6px; color:var(--muted); font-size:0.85rem;}
@@ -289,8 +289,8 @@
     .who .gcard .ico{margin-left:auto; margin-right:auto;}
 
     /* ---------- timeline ---------- */
-    .timeline{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:24px; position:relative;}
-    .timeline::before{content:""; position:absolute; top:29px; left:12.5%; right:12.5%; height:2px; background:repeating-linear-gradient(90deg, var(--primary-light) 0 9px, transparent 9px 18px); opacity:.55;}
+    .timeline{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:24px; position:relative;}
+    .timeline::before{content:""; position:absolute; top:29px; left:16.66%; right:16.66%; height:2px; background:repeating-linear-gradient(90deg, var(--primary-light) 0 9px, transparent 9px 18px); opacity:.55;}
     .tstep{position:relative; text-align:center;}
     .tnode{position:relative; z-index:1; width:60px; height:60px; margin:0 auto 20px; border-radius:50%; display:grid; place-items:center; font-family:'Sora'; font-weight:800; font-size:1.25rem; color:#fff; background:linear-gradient(135deg, var(--primary), var(--secondary)); box-shadow:0 0 0 7px var(--bg-alt), 0 12px 28px rgba(105,70,224,0.5);}
     .tnode::after{content:""; position:absolute; inset:-9px; border-radius:50%; border:2px solid var(--primary-light); opacity:0; animation:ring 2.8s ease-out infinite;}
@@ -312,6 +312,7 @@
     .ecard h4{font-size:1.12rem; margin-bottom:4px;}
     .ecard .plan-price{color:var(--muted-2); font-size:0.9rem; margin-bottom:22px;}
     .ecard .you{color:var(--muted); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-bottom:4px;}
+    .ecard .breakdown{color:var(--muted); font-size:0.92rem; margin-top:10px; line-height:1.55;}
     .ecard .amt{font-family:'Sora'; font-weight:800; font-size:3.2rem; line-height:1.1; background:linear-gradient(100deg, #3DDC97, #22D3EE); -webkit-background-clip:text; background-clip:text; color:transparent;}
     .bar{height:9px; border-radius:99px; background:rgba(157,153,255,0.16); margin:22px auto 0; overflow:hidden;}
     .bar i{display:block; height:100%; width:var(--w); border-radius:99px; background:linear-gradient(90deg, #3DDC97, #22D3EE); animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both;}
@@ -347,7 +348,7 @@
       .grid.g3{grid-template-columns:repeat(2, minmax(0,1fr));}
       .grid.g3 .gcard{grid-column:auto !important; grid-column-start:auto !important;}
       .grid.g3 .gcard:nth-child(11){grid-column:1 / -1 !important; max-width:calc(50% - 12px); justify-self:center;}
-      .timeline{grid-template-columns:repeat(2, minmax(0,1fr)); row-gap:34px;}
+      .timeline{grid-template-columns:1fr; row-gap:34px;}
       .timeline::before{display:none;}
       .tcard{height:auto;}
       .egrid{grid-template-columns:1fr; max-width:440px; margin:0 auto;}
@@ -375,7 +376,6 @@
       .gcard{padding:26px 22px;}
       details.faq{padding:16px 18px;}
       details.faq summary{font-size:0.95rem;}
-      .applybox{padding:8px; border-radius:26px;}
     }
     @media (prefers-reduced-motion:reduce){
       *, *::before, *::after{animation:none !important; transition:none !important;}
