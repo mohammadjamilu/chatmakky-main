@@ -499,10 +499,8 @@ fbq('track', 'PageView');
   <section class="hero" data-section="hero">
     <div class="wrap">
       <div class="cm-pill"><i class="fa-solid fa-bolt"></i> AI Agent</div>
-      <h1 class="one-line">One AI agent to connect 10 channels or moderate them.</h1>
-      <p class="cm-lead">Build an AI agent that replies to messages, handles comments, books appointments and hands off to your team.</p>
-      <div class="cm-btns"><a class="cm-cta" href="https://app.chatmakky.com/subscriber/auth">Start free now</a><a class="cm-cta cm-cta-ghost" href="https://www.chatmakky.com/pricing/">See pricing</a></div>
-      <p class="cm-note">No credit card required · Plans from $12/month</p>
+      <h1 class="one-line">One AI agent for all your channels</h1>
+      <p class="cm-lead">Replies, comments, bookings, and handoffs in one place.</p>
 
       <div class="hero-showcase" aria-label="ChatMakky dashboard preview">
         <div class="channel-column channel-left">
@@ -1621,4 +1619,39 @@ document.addEventListener('DOMContentLoaded', function () {
 main#top > section:first-child, section.hero{padding-top:40px !important;}
 @media (max-width:560px){ main#top > section:first-child, section.hero{padding-top:28px !important;} }
 </style>
+<style id="hero-compact-fix">
+main#top > section:first-child .cm-btns, main#top > section:first-child .cm-note{display:none !important;}
+main#top > section:first-child{padding-top:28px !important; padding-bottom:24px !important;}
+main#top > section:first-child .cm-pill{margin-bottom:12px; padding:6px 14px; font-size:.74rem;}
+main#top > section:first-child h1{font-size:clamp(1.5rem,2.9vw,2.5rem) !important; line-height:1.12 !important; max-width:none !important; margin:0 auto 10px !important; white-space:normal !important;}
+main#top > section:first-child h1 br{display:none !important;}
+main#top > section:first-child h1 span{display:inline !important;}
+main#top > section:first-child .cm-lead{font-size:clamp(.88rem,1.2vw,1rem) !important; margin:0 auto !important; max-width:760px;}
+main#top > section:first-child .hub{margin-top:24px !important;}
+@media (min-width:821px){ main#top > section:first-child h1{white-space:nowrap !important;} }
+</style>
+<script id="hero-fit-screen">
+(function(){
+  var hero=document.querySelector('main#top > section:first-child');
+  if(!hero)return;
+  var wrap=hero.querySelector('.wrap')||hero.firstElementChild;
+  if(!wrap||!window.CSS||!CSS.supports||!CSS.supports('zoom','1'))return;
+  var hdr=document.querySelector('header');
+  function fit(){
+    if(hero.querySelector('.acc.open'))return;
+    wrap.style.zoom='';
+    if(window.innerWidth<=820)return;
+    var vh=document.documentElement.clientHeight;
+    var cs=getComputedStyle(hero);
+    var avail=vh-(hdr?hdr.offsetHeight:74)-(parseFloat(cs.paddingTop)||0)-(parseFloat(cs.paddingBottom)||0)-12;
+    var h=wrap.getBoundingClientRect().height;
+    if(h>0)wrap.style.zoom=Math.max(.5,Math.min(1,avail/h)).toFixed(3);
+  }
+  var t;function later(){clearTimeout(t);t=setTimeout(fit,80);}
+  window.addEventListener('resize',later);
+  window.addEventListener('load',function(){fit();setTimeout(fit,600);setTimeout(fit,1800);});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  fit();
+})();
+</script>
 </body></html>
