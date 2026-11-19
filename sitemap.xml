@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-11-19T08:24:51.395Z</lastmod>
+    <loc>https://www.chatmakky.com/ai-agent/</loc>
+    <lastmod>2026-11-19T08:40:07.092Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/ai-website/</loc>
-    <lastmod>2026-11-19T08:17:17.753Z</lastmod>
+    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
+    <lastmod>2026-11-19T08:39:17.191Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.chatmakky.com/terms-of-service/</loc>
-    <lastmod>2026-11-19T07:59:27.353Z</lastmod>
+    <lastmod>2026-11-19T08:39:06.156Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/ai-website/</loc>
+    <lastmod>2026-11-19T08:38:58.499Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
+    <lastmod>2026-11-19T08:37:50.826Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/</loc>
+    <lastmod>2026-11-19T08:25:47.256Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -21,23 +36,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
-    <lastmod>2026-11-19T07:59:08.087Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
-    <lastmod>2026-11-19T07:58:59.611Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.chatmakky.com/pricing/</loc>
     <lastmod>2026-11-19T06:34:55.770Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/ai-agent/</loc>
-    <lastmod>2026-11-18T20:19:17.083Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
