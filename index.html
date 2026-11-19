@@ -2032,40 +2032,40 @@ html,body{overflow-x:clip;}
   body{overflow-x:hidden;}
 }
 </style>
-<style id="bx-pin-head-fix">
+
+<style id="bx-pin-head-fix2">
 #broadcast .head .eyebrow{margin-bottom:8px; padding:5px 12px; font-size:.74rem;}
 #broadcast .head h2{font-size:clamp(1.35rem,2.6vw,2.1rem); line-height:1.1; margin-bottom:6px;}
 #broadcast .head p{font-size:clamp(.82rem,1.3vw,.95rem); line-height:1.4; margin-bottom:0;}
 #broadcast .head p br{display:none;}
 @media (max-height:760px){ #broadcast .head .eyebrow{display:none;} }
 @media (prefers-reduced-motion:no-preference){
-  #broadcast .head{position:sticky; top:74px; z-index:3; padding-top:10px; margin-bottom:26px;}
+  #broadcast .bx-sticky.bx-has-head{flex-direction:column; justify-content:flex-start; align-items:center; padding-top:0 !important;}
+  #broadcast .bx-sticky.bx-has-head > .head{position:static; flex:none; width:100%; margin:0 auto 26px; padding-top:10px;}
+  #broadcast .bx-sticky.bx-has-head > .bx-stage{flex:1 1 0; min-height:0; height:auto; max-height:640px;}
   .bx-hint{top:-24px;}
-  .bx-sticky{padding-top:0 !important;}
 }
 </style>
-<script id="bx-pin-head">
+<script id="bx-pin-head2">
 (function(){
-  var head=document.querySelector('#broadcast .head'),sticky=document.querySelector('#bx .bx-sticky'),hdr=document.querySelector('header');
-  if(!head||!sticky)return;
+  var head=document.querySelector('#broadcast .head'),sticky=document.querySelector('#bx .bx-sticky'),stage=document.getElementById('bxStage'),hdr=document.querySelector('header');
+  if(!head||!sticky||!stage)return;
   if(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  sticky.insertBefore(head,stage);
+  sticky.classList.add('bx-has-head');
   var busy=false;
   function fit(){
     if(busy)return;busy=true;
     try{
       var hh=hdr?hdr.offsetHeight:74;
-      head.style.top=hh+'px';
-      var mb=parseFloat(getComputedStyle(head).marginBottom)||0;
-      var t=Math.round(hh+head.offsetHeight+mb);
-      sticky.style.top=t+'px';
-      sticky.style.height='calc(100vh - '+t+'px)';
-      sticky.style.height='calc(100svh - '+t+'px)';
+      sticky.style.top=hh+'px';
+      sticky.style.height='calc(100vh - '+hh+'px)';
+      sticky.style.height='calc(100svh - '+hh+'px)';
       window.dispatchEvent(new Event('resize'));
     }finally{busy=false;}
   }
   window.addEventListener('resize',fit);
   window.addEventListener('load',fit);
-  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
   fit();
 })();
 </script>
