@@ -1173,16 +1173,29 @@ if('IntersectionObserver' in window){var once=false;new IntersectionObserver(fun
 <section class="section" id="comment-automation" data-section="comment-automation">
   
   <div class="wrap">
-    <div class="head">
-      <div class="eyebrow"><i class="fa-regular fa-comments"></i> Comment + DM</div>
-      <h2>Comment automation</h2>
-      <p>Your AI agent takes care of the comments on your posts, so you never miss a customer.</p>
-    </div>
-    <div class="cmt-grid">
-      <div class="cmt-card"><div class="ic"><i class="fa-regular fa-thumbs-up"></i></div><h4>Likes comments</h4><p>Likes the comments on your posts automatically.</p></div>
-      <div class="cmt-card"><div class="ic"><i class="fa-regular fa-comment"></i></div><h4>Replies to comments</h4><p>Replies to every comment with a smart AI answer.</p></div>
-      <div class="cmt-card"><div class="ic"><i class="fa-regular fa-paper-plane"></i></div><h4>Messages the commenter</h4><p>Sends an automatic private message to the person who commented.</p></div>
-      <div class="cmt-card"><div class="ic"><i class="fa-solid fa-shield-halved"></i></div><h4>Hides spam comments</h4><p>Spots spam comments and hides them automatically.</p></div>
+    <div class="cm-grid">
+      <div class="cm-copy">
+        <div class="eyebrow"><i class="fa-regular fa-comments"></i> Comment + DM</div>
+        <h2>Comment <em>automation</em></h2>
+        <p>Turn every comment into a conversation. Your AI agent likes, replies, messages and cleans up spam, all on its own.</p>
+        <div class="cm-list">
+          <div class="cm-item"><div class="cm-ic"><i class="fa-regular fa-thumbs-up"></i></div><div><b>Likes comments</b><span>Every comment gets a like, instantly.</span></div></div>
+          <div class="cm-item"><div class="cm-ic"><i class="fa-regular fa-comment-dots"></i></div><div><b>Replies to comments</b><span>A smart AI reply on every comment.</span></div></div>
+          <div class="cm-item"><div class="cm-ic"><i class="fa-regular fa-paper-plane"></i></div><div><b>Messages the commenter</b><span>Starts a private chat with the person who commented.</span></div></div>
+          <div class="cm-item"><div class="cm-ic"><i class="fa-solid fa-shield-halved"></i></div><div><b>Hides spam comments</b><span>Spam is spotted and hidden automatically.</span></div></div>
+        </div>
+        <a href="https://app.chatmakky.com/subscriber/auth" class="btn btn-solid btn-lg">Get Started Free</a>
+      </div>
+      <div class="cm-stage" aria-hidden="true">
+        <div class="cm-card">
+          <div class="cm-live"><i></i> AI agent is on</div>
+          <div class="cm-post"><div class="cm-av">G</div><div><b>Glow Clinic</b><small>New facial packages are live</small></div></div>
+          <div class="cm-c"><div class="cm-av s">S</div><div class="cm-bub"><b>Sara</b>How much is the facial package?<span class="cm-like"><i class="fa-solid fa-heart"></i> Liked</span></div></div>
+          <div class="cm-c re"><div class="cm-av">G</div><div class="cm-bub"><b>Glow Clinic <span class="cm-tag">AI agent</span></b>Hi Sara! Our facial package starts at $40. I just sent you the full details in a private message.</div></div>
+          <div class="cm-dm"><i class="fa-regular fa-paper-plane"></i> Private message sent to Sara</div>
+          <div class="cm-c cm-spam"><div class="cm-av b">P</div><div class="cm-bub"><b>Promo Bot</b>Earn $500 a day from home! Click my link now</div><div class="cm-hid"><span><i class="fa-solid fa-shield-halved"></i> Hidden as spam</span></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
