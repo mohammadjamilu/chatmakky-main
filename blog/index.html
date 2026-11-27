@@ -463,6 +463,17 @@ body.theme-light .post-meta{color:#B97E00!important}
 body.theme-light .blog-card p a{color:#B97E00!important}
 body.theme-light h2{border-left-color:#D99A00!important}
 </style>
+<style id="cm-blog-index">
+.blog-home{padding:26px 0 70px}
+.blog-home h1{font-family:'Sora',sans-serif;font-size:40px;line-height:1.15;margin:10px 0 14px;color:var(--text)}
+.blog-home .lede{font-size:18.5px;color:var(--muted);line-height:1.65;max-width:720px}
+.blog-home .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:30px 0 40px}
+.blog-home .blog-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.blog-home .blog-card h3{margin:0 0 10px;font-size:19.5px;line-height:1.35}
+.blog-home .blog-card p{color:var(--muted);line-height:1.65;font-size:15.5px}
+@media (max-width:1023px){.blog-home .blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.blog-home .blog-grid{grid-template-columns:1fr}.blog-home h1{font-size:31px}}
+</style>
 </header>
 <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
   <button class="mm-close" aria-label="Close menu">✕</button>
@@ -480,8 +491,7 @@ body.theme-light h2{border-left-color:#D99A00!important}
 
 </div>
 
-<div class="wrap">
-<section class="blog-home">
+<div class="wrap"><section class="blog-home">
 <p class="post-meta">ChatMakky Blog</p>
 <h1>Guides for Business Owners</h1>
 <p class="lede">Plain guides on WhatsApp, AI agents and reply speed. No jargon. Written for owners in the UAE and everywhere else.</p>
