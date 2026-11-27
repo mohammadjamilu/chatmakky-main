@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/blog/</loc>
+    <lastmod>2026-11-27T15:43:36.806Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/blog/ai-agent-vs-hiring-receptionist/</loc>
     <lastmod>2026-11-27T15:43:27.837Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://www.chatmakky.com/</loc>
     <lastmod>2026-11-27T15:39:58.843Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/blog/</loc>
-    <lastmod>2026-11-27T15:39:47.804Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
