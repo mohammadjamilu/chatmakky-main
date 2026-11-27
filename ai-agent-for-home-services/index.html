@@ -481,7 +481,7 @@ body.theme-light .annual b{color:#B97E00!important}
 .svc-tg{color:#229ED9;background:rgba(34,158,217,.13)}
 .svc-cal{color:#9D4EDD;background:rgba(157,78,221,.13)}
 .svc-mail{color:#F59E0B;background:rgba(245,158,11,.14)}
-.svc-dash{color:#3DDC97;background:rgba(61,220,151,.12)}section[data-section="included"] .card h3{display:flex;align-items:center;gap:12px}section[data-section="included"] .svc-ic{flex:0 0 auto;margin-right:0}@media (max-width:640px){section[data-section="included"] .svc-ic{width:32px;height:32px;font-size:15px;border-radius:9px}section[data-section="included"] .card h3{font-size:1.02rem;line-height:1.25}}
+.svc-dash{color:#3DDC97;background:rgba(61,220,151,.12)}section[data-section="included"] .card h3{display:flex;align-items:center;gap:12px}section[data-section="included"] .svc-ic{flex:0 0 auto;margin-right:0}@media (max-width:640px){section[data-section="included"] .svc-ic{width:32px;height:32px;font-size:15px;border-radius:9px}section[data-section="included"] .card h3{font-size:1.02rem;line-height:1.25}}.faq .card{padding:0;overflow:hidden}.faq .card h3{margin:0;padding:20px 52px 20px 22px;cursor:pointer;position:relative;font-size:1.05rem;user-select:none}.faq .card h3::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2px solid #FECA3C;border-bottom:2px solid #FECA3C;transform:translateY(-70%) rotate(45deg);transition:transform .25s}.faq .card.open h3::after{transform:translateY(-30%) rotate(225deg)}.faq .card p{display:none;margin:0;padding:0 22px 20px}.faq .card.open p{display:block}body.theme-light .faq .card h3::after{border-color:#B97E00}
 </style>
 </header>
 <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
@@ -631,6 +631,7 @@ body.theme-light .annual b{color:#B97E00!important}
   </div>
 </section>
 
+<script>(function(){var items=document.querySelectorAll(".faq .card");if(!items.length)return;items[0].classList.add("open");items.forEach(function(it){var h=it.querySelector("h3");if(!h)return;h.addEventListener("click",function(){var was=it.classList.contains("open");items.forEach(function(x){x.classList.remove("open")});if(!was)it.classList.add("open");});});})();</script>
 <section data-section="cta" style="padding-top:0">
   <div class="ctabox">
     <h2>Your competitors answer in the morning.<br><span class="grad">You&rsquo;ll answer in 5 seconds.</span></h2>
