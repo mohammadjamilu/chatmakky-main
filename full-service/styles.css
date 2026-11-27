@@ -79,7 +79,10 @@ td .amt,th .amt{font-family:'JetBrains Mono',monospace}
 footer{}
 
 .theme-toggle{margin-top:0;width:48px;height:48px;min-width:48px;padding:0;border-radius:50%;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
-body.theme-light{--bg:#F6F7FF;--bg-alt:#EEF1FF;--surface:#FFFFFF;--surface-2:#F2F4FF;--line:rgba(70,64,224,0.12);--line-strong:rgba(70,64,224,0.22);--text:#171738;--muted:#4F4B78;--muted-2:#6D6A92;color:var(--text)}
+body.theme-light{--bg:#F0EFFE;--bg-alt:#E6E3FC;--surface:#FFFFFF;--surface-2:#EBE8FB;--line:rgba(70,64,224,0.20);--line-strong:rgba(70,64,224,0.34);--text:#0E0E29;--muted:#37336A;--muted-2:#55518A;color:var(--text)}
+body.theme-light{background:linear-gradient(180deg,#F5F3FF 0%,#ECE9FC 52%,#F5F3FF 100%)}
+body.theme-light .card,body.theme-light .setup-item,body.theme-light .niche,body.theme-light .step,body.theme-light .faq,body.theme-light .price-chip{box-shadow:0 12px 32px rgba(70,64,224,0.12)}
+body.theme-light header{--header-bg:rgba(240,239,254,0.88)}
 body.theme-light header{background:rgba(246,247,255,0.82)}
 body.theme-light .menu-toggle{color:#0f0f0f}
 body.theme-light::before{background:radial-gradient(900px 500px at 12% -10%, rgba(70,64,224,0.16), transparent 60%),radial-gradient(700px 500px at 100% 10%, rgba(157,78,221,0.12), transparent 55%)}
