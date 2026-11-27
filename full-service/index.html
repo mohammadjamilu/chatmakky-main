@@ -311,6 +311,8 @@
 </head>
 <body id="top">
 <header data-section="header">
+
+
   <div class="wrap nav">
     <a href="https://www.chatmakky.com" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" width="34" height="34"><span>ChatMakky</span></a>
     <nav class="nav-links">
@@ -329,7 +331,7 @@
     </div>
   </div>
 </header>
-<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true" style="display:none">
   <button class="mm-close" aria-label="Close menu">&#10005;</button>
   <div class="mm-modal">
     <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
@@ -521,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (menuToggle && menu){
     var setOpen = function(open){
-      menu.classList.toggle('open', open);
+      menu.classList.toggle('open', open); menu.style.display = open ? 'flex' : 'none';
       menu.setAttribute('aria-hidden', open ? 'false' : 'true');
       menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       document.body.style.overflow = open ? 'hidden' : '';
