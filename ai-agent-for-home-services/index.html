@@ -435,6 +435,25 @@ header .nav-links a.nav-item{padding:10px 8px!important;font-size:15px!important
 header .wrap.nav{max-width:1180px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box!important}
 header .nav{justify-content:space-between!important}
 </style>
+<style id="cm-pricing2">
+.pricebox2{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:30px 32px;max-width:880px;margin:0 auto;text-align:center}
+.pb2-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.pb2-opt{border:1px solid var(--line);border-radius:16px;padding:22px 20px}
+.pb2-best{border:2px solid #FECA3C}
+.pb2-badge{display:inline-block;background:#FECA3C;color:#0E0E29;font-size:11px;font-weight:800;letter-spacing:.06em;padding:4px 10px;border-radius:100px;margin:0 0 10px}
+.pb2-label{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--muted);margin:0 0 8px}
+.pb2-amt{font-family:'JetBrains Mono',monospace;font-size:1.9rem;font-weight:700;color:var(--text);margin:0 0 8px}
+.pb2-best .pb2-amt{color:#FECA3C}
+.pb2-per{font-size:1rem;color:var(--muted);font-family:Inter,sans-serif;font-weight:500}
+.pb2-sub{color:var(--muted);font-size:.95rem;margin:0;line-height:1.55}
+.pb2-tag{color:var(--muted);margin:0 0 16px}
+.pb2-list{list-style:none;padding:0;margin:0 auto 22px;max-width:780px;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:10px 26px}
+.pb2-list li{color:var(--muted);line-height:1.55}
+.pricebox2 .note{color:var(--muted-2,#A6A2D6);font-size:.85rem;margin-top:16px;line-height:1.6}
+body.theme-light .pb2-best .pb2-amt{color:#B97E00}
+@media (max-width:720px){.pb2-grid{grid-template-columns:1fr}.pb2-list{grid-template-columns:1fr}.pricebox2{padding:24px 20px}}
+</style>
+
 <style id="cm-accent-test">
 .grad,.cm-grad{background:none!important;-webkit-background-clip:initial!important;background-clip:initial!important;color:#FECA3C!important;-webkit-text-fill-color:#FECA3C!important}
 .cm-accent-word{color:#FECA3C!important}
@@ -563,21 +582,30 @@ body.theme-light .annual b{color:#B97E00!important}
     <div class="eyebrow">PRICING</div>
     <h2>One price. Everything included.</h2>
   </div>
-  <div class="pricebox">
-    <p class="setup">Setup: <b>AED 2,999 <span class="usd">($817)</span></b> one-time</p>
-    <p class="monthly"><span class="amt">AED 999 <span class="usd">($272)</span></span><span style="font-size:1.1rem;color:var(--muted)"> /month</span></p>
-    <p style="color:var(--muted)">Per business. Not per agent. No tiers, no surprises.</p>
-    <ul>
-      <li><span class="check">&#10003;</span>All channels: website, WhatsApp, Facebook, Instagram, TikTok, Telegram</li>
-      <li><span class="check">&#10003;</span>Our AI API key with UNLIMITED AI messages &mdash; no token bill, no credits</li>
-      <li><span class="check">&#10003;</span>Dashboard + manual inbox, poster scheduling, notifications</li>
-      <li><span class="check">&#10003;</span>Premium support &mdash; response within 1 hour, we fix any issue for you</li>
-    </ul>
-    <p class="annual">Pay annually: <b>AED 11,988 ($3,264)</b> &mdash; and your setup is WAIVED, completely free.</p>
-    <a class="btn btn-primary btn-lg" href="https://app.chatmakky.com/agents/11593776">Start With a Free Demo</a>
-    <p class="note">Meta&rsquo;s own WhatsApp charges are billed at cost on your own Meta account &mdash; exactly as with every provider. Your AI usage itself is unlimited and included.</p>
-  </div>
-</section>
+  <div class="pricebox2">
+<div class="pb2-grid">
+<div class="pb2-opt">
+<p class="pb2-label">MONTHLY</p>
+<p class="pb2-amt">AED 999 <span class="usd">($272)</span><span class="pb2-per">/month</span></p>
+<p class="pb2-sub">Setup: <b>AED 2,999 <span class="usd">($817)</span></b> one-time</p>
+</div>
+<div class="pb2-opt pb2-best">
+<p class="pb2-badge">BEST VALUE &middot; SETUP FREE</p>
+<p class="pb2-label">ANNUAL</p>
+<p class="pb2-amt">AED 11,988 <span class="usd">($3,264)</span><span class="pb2-per">/year</span></p>
+<p class="pb2-sub">Setup waived, completely free. The same AED 999/month, paid once a year.</p>
+</div>
+</div>
+<p class="pb2-tag">Per business. Not per agent. No tiers, no surprises.</p>
+<ul class="pb2-list">
+<li><span class="check">&#10003;</span>All channels: website, WhatsApp, Facebook, Instagram, TikTok, Telegram</li>
+<li><span class="check">&#10003;</span>Our AI API key with UNLIMITED AI messages &mdash; no token bill, no credits</li>
+<li><span class="check">&#10003;</span>Dashboard + manual inbox, poster scheduling, notifications</li>
+<li><span class="check">&#10003;</span>Premium support &mdash; response within 1 hour, we fix any issue for you</li>
+</ul>
+<a class="btn btn-primary btn-lg" href="https://app.chatmakky.com/agents/11593776">Start With a Free Demo</a>
+<p class="note">Meta&rsquo;s own WhatsApp charges are billed at cost on your own Meta account &mdash; exactly as with every provider. Your AI usage itself is unlimited and included.</p>
+</div></section>
 </div></div>
 
 <div class="wrap">
