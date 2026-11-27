@@ -7,6 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 
@@ -321,6 +322,7 @@
       <a class="nav-item active" href="https://www.chatmakky.com/full-service/">Full Service</a>
     </nav>
     <div class="nav-actions">
+      <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
       <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
       <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
       <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
@@ -484,17 +486,58 @@
 </footer>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  var themeToggle = document.querySelector('.theme-toggle');
+  var themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
   var menuToggle = document.querySelector('.menu-toggle');
   var menu = document.getElementById('mobile-menu');
-  if (!menuToggle || !menu) return;
-  var closeBtn = menu.querySelector('.mm-close');
-  function openMenu(){ menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); menuToggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
-  function closeMenu(){ menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); menuToggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-  menuToggle.addEventListener('click', openMenu);
-  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-  menu.addEventListener('click', function(e){ if (e.target === menu) closeMenu(); });
-  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+  var closeBtn = menu ? menu.querySelector('.mm-close') : null;
+
+  function applyTheme(theme){
+    var isLight = theme === 'light';
+    document.body.classList.toggle('theme-light', isLight);
+    if (themeIcon) themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon';
+    if (themeToggle){
+      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+      themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+    }
+    try { localStorage.setItem('chatmakky-theme', theme); } catch(e) {}
+  }
+  function getInitialTheme(){
+    try {
+      var saved = localStorage.getItem('chatmakky-theme');
+      if (saved === 'light' || saved === 'dark') return saved;
+    } catch(e) {}
+    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+  }
+  applyTheme(getInitialTheme());
+  if (themeToggle){
+    var toggleTheme = function(e){
+      if (e){ e.preventDefault(); e.stopPropagation(); }
+      applyTheme(document.body.classList.contains('theme-light') ? 'dark' : 'light');
+    };
+    themeToggle.addEventListener('click', toggleTheme);
+    themeToggle.addEventListener('touchend', toggleTheme, { passive:false });
+  }
+
+  if (menuToggle && menu){
+    var setOpen = function(open){
+      menu.classList.toggle('open', open);
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    setOpen(false);
+    var handleMenuToggle = function(e){
+      if (e){ e.preventDefault(); e.stopPropagation(); }
+      setOpen(!menu.classList.contains('open'));
+    };
+    menuToggle.addEventListener('click', handleMenuToggle);
+    menuToggle.addEventListener('touchstart', handleMenuToggle, { passive:false });
+    if (closeBtn) closeBtn.addEventListener('click', function(e){ e.stopPropagation(); setOpen(false); });
+    menu.addEventListener('click', function(e){ if (e.target === menu) setOpen(false); });
+    menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setOpen(false); });
+  }
 });
 </script>
 </body>
