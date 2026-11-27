@@ -383,6 +383,12 @@
     .hero h1{font-size:clamp(1.5rem, 3.4vw, 2.6rem); white-space:nowrap; max-width:none;}
   }
 
+header .logo{margin-right:26px}
+header .nav-actions{margin-left:26px}
+header .nav{gap:20px}
+header .nav-links{gap:0px}
+header .nav-item{padding:10px 8px}
+
 #mobile-menu.mobile-menu-overlay{
       display:none; position:fixed; inset:0; z-index:200;
       background:rgba(10,10,31,0.94); backdrop-filter:blur(10px);
