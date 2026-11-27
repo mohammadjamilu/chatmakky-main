@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.chatmakky.com/full-service/</loc>
-    <lastmod>2026-11-27T11:09:55.839Z</lastmod>
+    <loc>https://www.chatmakky.com/</loc>
+    <lastmod>2026-11-27T11:10:29.749Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/ai-website/</loc>
+    <lastmod>2026-11-27T11:10:17.907Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
+    <lastmod>2026-11-27T11:10:15.700Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
+    <lastmod>2026-11-27T11:10:13.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/ai-agent/</loc>
+    <lastmod>2026-11-27T11:10:10.703Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.chatmakky.com/pricing/</loc>
-    <lastmod>2026-11-25T19:42:32.455Z</lastmod>
+    <lastmod>2026-11-27T11:10:08.461Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.chatmakky.com/full-service/</loc>
+    <lastmod>2026-11-27T11:09:55.839Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -28,31 +53,6 @@
   <url>
     <loc>https://www.chatmakky.com/privacy-policy/</loc>
     <lastmod>2026-11-21T09:37:18.301Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
-    <lastmod>2026-11-21T09:37:02.755Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
-    <lastmod>2026-11-21T09:36:55.819Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/ai-website/</loc>
-    <lastmod>2026-11-21T09:36:49.259Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/ai-agent/</loc>
-    <lastmod>2026-11-21T09:36:41.920Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/</loc>
-    <lastmod>2026-11-21T09:36:34.747Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
