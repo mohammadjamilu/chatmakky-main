@@ -215,16 +215,6 @@ header .nav{gap:20px}
     @media (max-width:640px){ header .wrap.nav{padding-left:18px !important; padding-right:18px !important;} }
     @media (max-width:480px){ header .wrap.nav{padding-left:16px !important; padding-right:16px !important;} }
 
-.blog-home{padding:26px 0 70px}
-.blog-home h1{font-family:'Sora',sans-serif;font-size:40px;line-height:1.15;margin:10px 0 14px;color:var(--text)}
-.blog-home .lede{font-size:18.5px;color:var(--muted);line-height:1.65;max-width:720px}
-.blog-home .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:30px 0 40px}
-.blog-home .blog-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.blog-home .blog-card h3{margin:0 0 10px;font-size:19.5px;line-height:1.35}
-.blog-home .blog-card p{color:var(--muted);line-height:1.65;font-size:15.5px}
-@media (max-width:1023px){.blog-home .blog-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:640px){.blog-home .blog-grid{grid-template-columns:1fr}.blog-home h1{font-size:31px}}
-
 #login .footer-card{
       position:relative; overflow:hidden; border:1px solid var(--line); border-radius:22px;
       background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008));
