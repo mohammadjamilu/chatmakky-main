@@ -18,8 +18,8 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,31,0.72);backdrop
 .logo{display:flex;align-items:center;gap:10px;font-size:1.15rem;flex-shrink:0}
 .logo img{width:34px;height:34px;display:block;object-fit:cover}
 .logo span{color:var(--text);font-weight:800;font-family:'Sora',sans-serif}
-.nav-links{display:flex;align-items:center;gap:2px}
-.nav-item{padding:10px 11px;border-radius:100px;font-weight:500;font-size:0.94rem;color:var(--muted);transition:color .2s,background .2s;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:0px}
+.nav-item{padding:10px 8px;border-radius:100px;font-weight:500;font-size:0.94rem;color:var(--muted);transition:color .2s,background .2s;white-space:nowrap}
 .nav-item:hover{color:var(--text)}
 .nav-item.active{color:var(--text);background:var(--surface-2);border:1px solid var(--line)}
 .nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0;z-index:102}
@@ -127,6 +127,10 @@ body.theme-light .nav-item.active{background:#EEF1FF}
   .eyebrow{font-size:0.74rem;padding:6px 12px}
 }
 @media (prefers-reduced-motion:reduce){ *{transition:none !important; scroll-behavior:auto !important} }
+
+header .logo{margin-right:26px}
+header .nav-actions{margin-left:26px}
+header .nav{gap:20px}
 
 #mobile-menu.mobile-menu-overlay{
       display:none; position:fixed; inset:0; z-index:200;
