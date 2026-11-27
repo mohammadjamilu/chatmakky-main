@@ -76,7 +76,7 @@ td .amt,th .amt{font-family:'JetBrains Mono',monospace}
 .faq{max-width:780px;margin:0 auto;display:grid;gap:12px}
 .ctabox{text-align:center;background:linear-gradient(135deg,rgba(70,64,224,0.16),rgba(157,78,221,0.10));border:1px solid var(--line-strong);border-radius:22px;padding:52px 28px}
 .ctabox h2{font-size:clamp(1.5rem,5.4vw,2rem);margin-bottom:14px}
-footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted-2);font-size:0.88rem}
+footer{}
 
 .theme-toggle{margin-top:0;width:48px;height:48px;min-width:48px;padding:0;border-radius:50%;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
 body.theme-light{--bg:#F6F7FF;--bg-alt:#EEF1FF;--surface:#FFFFFF;--surface-2:#F2F4FF;--line:rgba(70,64,224,0.12);--line-strong:rgba(70,64,224,0.22);--text:#171738;--muted:#4F4B78;--muted-2:#6D6A92;color:var(--text)}
@@ -105,7 +105,7 @@ body.theme-light .nav-item.active{background:#EEF1FF}
   header .menu-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:48px;min-height:48px;width:48px;height:48px;border-radius:18px;font-size:26px;line-height:1;margin:0}
   .pricebox{padding:32px 22px;border-radius:20px}
   .ctabox{padding:44px 20px}
-  footer{padding:26px 0}
+  
 }
 @media (max-width:640px){
   .grid{grid-template-columns:1fr}
