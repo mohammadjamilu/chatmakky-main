@@ -309,23 +309,37 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
-<header>
-  <nav class="nav">
-    <a href="https://www.chatmakky.com/#top" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" width="34" height="34"><span>ChatMakky</span></a>
-    <div class="menu">
-      <a href="https://www.chatmakky.com/pricing/">Pricing</a>
-      <a href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
-      <a href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
-      <a href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
-      <a href="https://www.chatmakky.com/ai-website/">AI Website</a>
-      <a href="https://www.chatmakky.com/full-service/" class="active">Full Service</a>
-    </div>
-    <div class="navcta">
-      <a class="btn btn-primary" href="https://app.chatmakky.com/agents/11593776">Get Started Free</a>
+<header data-section="header">
+  <div class="wrap nav">
+    <a href="https://www.chatmakky.com" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" width="34" height="34"><span>ChatMakky</span></a>
+    <nav class="nav-links">
+      <a class="nav-item" href="https://www.chatmakky.com/pricing/">Pricing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
+      <a class="nav-item" href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
+      <a class="nav-item" href="https://www.chatmakky.com/ai-website/">AI Website</a>
+      <a class="nav-item active" href="https://www.chatmakky.com/full-service/">Full Service</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
       <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
     </div>
-  </nav>
+  </div>
 </header>
+<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+  <button class="mm-close" aria-label="Close menu">&#10005;</button>
+  <div class="mm-modal">
+    <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/ai-website/">AI Website</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/full-service/">Full Service</a>
+    <a class="mm-btn mm-btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
+  </div>
+</div>
 
 <div class="wrap">
 <section class="hero" data-section="hero" style="padding-top:84px">
@@ -433,13 +447,13 @@
     <h2>DIY software vs <span class="grad">Full Service</span></h2>
     <p>Fair question: our website also has self-serve plans. Here is the honest difference.</p>
   </div>
-  <table>
+  <div class="table-scroll"><table class="compare">
     <tr><th></th><th>DIY Plans (from <span class="amt">AED 44 ($12)</span>/mo)</th><th>Full Service (<span class="amt">AED 999 ($272)</span>/mo)</th></tr>
     <tr><td><b>Setup</b></td><td>You connect and build everything yourself</td><td>We build everything for you</td></tr>
     <tr><td><b>AI key</b></td><td>You bring your own key and pay your own token bills</td><td>Our key included, unlimited AI messages</td></tr>
     <tr><td><b>Support</b></td><td>Standard support</td><td>Premium support, response within 1 hour, we fix it for you</td></tr>
     <tr><td><b>Best for</b></td><td>Tech-savvy users who want to build it themselves</td><td>Business owners who want customers, not setup work</td></tr>
-  </table>
+  </table></div>
 </section>
 
 <section data-section="faq" style="padding-top:0">
@@ -468,5 +482,20 @@
 <footer>
   <div class="wrap">ChatMakky &mdash; UK Registered &bull; Full Service: we build your AI agent for you.</div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var menuToggle = document.querySelector('.menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (!menuToggle || !menu) return;
+  var closeBtn = menu.querySelector('.mm-close');
+  function openMenu(){ menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); menuToggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closeMenu(){ menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); menuToggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  menuToggle.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  menu.addEventListener('click', function(e){ if (e.target === menu) closeMenu(); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+});
+</script>
 </body>
 </html>
