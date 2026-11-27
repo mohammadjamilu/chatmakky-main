@@ -995,6 +995,8 @@
   .new-contact{max-height:none; opacity:1; padding:7px 10px;}
 }
 
+.cm-sub h1{font-size:clamp(34px,5.6vw,64px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;color:#fff}
+
 header .logo{margin-right:26px}
 header .nav-actions{margin-left:26px}
 header .nav{gap:20px}
