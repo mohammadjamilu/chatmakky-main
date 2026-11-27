@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
+    <lastmod>2026-11-27T13:13:55.182Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/broadcast-marketing/</loc>
     <lastmod>2026-11-27T13:13:41.448Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,11 +28,6 @@
   <url>
     <loc>https://www.chatmakky.com/full-service/</loc>
     <lastmod>2026-11-27T13:09:35.809Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/appointment-slot-booking/</loc>
-    <lastmod>2026-11-27T12:23:30.978Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
