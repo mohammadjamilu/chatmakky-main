@@ -995,6 +995,12 @@
   .new-contact{max-height:none; opacity:1; padding:7px 10px;}
 }
 
+header .logo{margin-right:26px}
+header .nav-actions{margin-left:26px}
+header .nav{gap:20px}
+header .nav-links{gap:0px}
+header .nav-item{padding:10px 8px}
+
 #mobile-menu.mobile-menu-overlay{
       display:none;
       position:fixed;
