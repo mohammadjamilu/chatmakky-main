@@ -311,10 +311,10 @@
 </head>
 <body id="top">
 <header data-section="header">
-
+  
 
   <div class="wrap nav">
-    <a href="https://www.chatmakky.com" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" loading="eager" width="34" height="34"><span>ChatMakky</span></a>
+    <a href="https://www.chatmakky.com" class="logo"><img src="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG" alt="ChatMakky logo" width="34" height="34" loading="eager" fetchpriority="high" decoding="sync" style="width:34px; height:34px; display:block; background:none; border:none; padding:0; box-shadow:none; object-fit: cover; object-position: center;"><span style="color:var(--text);font-weight:800;">ChatMakky</span></a>
     <nav class="nav-links">
       <a class="nav-item" href="https://www.chatmakky.com/pricing/">Pricing</a>
       <a class="nav-item" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
@@ -327,24 +327,93 @@
       <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
       <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
       <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
-      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('theme-light', isLight);
+        if (themeIcon) { themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon'; }
+        if (themeToggle) {
+          themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+          themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+        try { localStorage.setItem('chatmakky-theme', theme); } catch (e) {}
+      };
+
+      const getInitialTheme = () => {
+        try {
+          const saved = localStorage.getItem('chatmakky-theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      };
+
+      applyTheme(getInitialTheme());
+
+      if (themeToggle) {
+        const toggleTheme = function (e) {
+          if (e) { e.preventDefault(); e.stopPropagation(); }
+          const nextTheme = document.body.classList.contains('theme-light') ? 'dark' : 'light';
+          applyTheme(nextTheme);
+        };
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', toggleTheme, { passive: false });
+      }
+
+      if (menuToggle && menu) {
+        const setOpen = (open) => {
+          menu.classList.toggle('open', open);
+          menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+          menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+        setOpen(false);
+        const handleMenuToggle = function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const isOpen = menu.classList.contains('open');
+          setOpen(!isOpen);
+          menuToggle.setAttribute('aria-expanded', (!isOpen).toString());
+        };
+        menuToggle.addEventListener('click', handleMenuToggle);
+        menuToggle.addEventListener('touchstart', handleMenuToggle, { passive: false });
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function (e) { e.stopPropagation(); setOpen(false); });
+        }
+        menu.addEventListener('click', function (e) { if (e.target === menu) { setOpen(false); } });
+        menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () { setOpen(false); });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); }
+        });
+      }
+    });
+  </script>
 </header>
-<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true" style="display:none">
-  <button class="mm-close" aria-label="Close menu">&#10005;</button>
+<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+  <button class="mm-close" aria-label="Close menu">✕</button>
   <div class="mm-modal">
     <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
     <a class="mm-btn" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
     <a class="mm-btn" href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
     <a class="mm-btn" href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
     <a class="mm-btn" href="https://www.chatmakky.com/ai-website/">AI Website</a>
-    <a class="mm-btn" href="https://www.chatmakky.com/full-service/">Full Service</a>
+      <a class="mm-btn" href="https://www.chatmakky.com/full-service/">Full Service</a>
     <a class="mm-btn mm-btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
     <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
   </div>
-</div>
 
+</div>
 <div class="wrap">
 <section class="hero" data-section="hero" style="padding-top:84px">
   <div class="eyebrow">&#9889; FULL SERVICE &mdash; DONE FOR YOU</div>
@@ -486,61 +555,5 @@
 <footer>
   <div class="wrap">ChatMakky &mdash; UK Registered &bull; Full Service: we build your AI agent for you.</div>
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var themeToggle = document.querySelector('.theme-toggle');
-  var themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
-  var menuToggle = document.querySelector('.menu-toggle');
-  var menu = document.getElementById('mobile-menu');
-  var closeBtn = menu ? menu.querySelector('.mm-close') : null;
-
-  function applyTheme(theme){
-    var isLight = theme === 'light';
-    document.body.classList.toggle('theme-light', isLight);
-    if (themeIcon) themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon';
-    if (themeToggle){
-      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
-      themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
-    }
-    try { localStorage.setItem('chatmakky-theme', theme); } catch(e) {}
-  }
-  function getInitialTheme(){
-    try {
-      var saved = localStorage.getItem('chatmakky-theme');
-      if (saved === 'light' || saved === 'dark') return saved;
-    } catch(e) {}
-    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
-  }
-  applyTheme(getInitialTheme());
-  if (themeToggle){
-    var toggleTheme = function(e){
-      if (e){ e.preventDefault(); e.stopPropagation(); }
-      applyTheme(document.body.classList.contains('theme-light') ? 'dark' : 'light');
-    };
-    themeToggle.addEventListener('click', toggleTheme);
-    themeToggle.addEventListener('touchend', toggleTheme, { passive:false });
-  }
-
-  if (menuToggle && menu){
-    var setOpen = function(open){
-      menu.classList.toggle('open', open); menu.style.display = open ? 'flex' : 'none';
-      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      document.body.style.overflow = open ? 'hidden' : '';
-    };
-    setOpen(false);
-    var handleMenuToggle = function(e){
-      if (e){ e.preventDefault(); e.stopPropagation(); }
-      setOpen(!menu.classList.contains('open'));
-    };
-    menuToggle.addEventListener('click', handleMenuToggle);
-    menuToggle.addEventListener('touchstart', handleMenuToggle, { passive:false });
-    if (closeBtn) closeBtn.addEventListener('click', function(e){ e.stopPropagation(); setOpen(false); });
-    menu.addEventListener('click', function(e){ if (e.target === menu) setOpen(false); });
-    menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setOpen(false); }); });
-    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setOpen(false); });
-  }
-});
-</script>
 </body>
 </html>
