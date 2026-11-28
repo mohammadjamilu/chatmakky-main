@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/privacy-policy/</loc>
+    <lastmod>2026-11-28T14:21:44.570Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/blog/whatsapp-broadcast-rules-uae/</loc>
     <lastmod>2026-11-28T14:21:28.380Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -133,11 +138,6 @@
   <url>
     <loc>https://www.chatmakky.com/terms-of-service/</loc>
     <lastmod>2026-11-27T21:31:29.877Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/privacy-policy/</loc>
-    <lastmod>2026-11-27T21:31:17.097Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
