@@ -391,7 +391,7 @@ header{overflow:visible !important}
       <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
       <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
       <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
-      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 
@@ -475,7 +475,10 @@ header .nav-actions .btn{font-size:15px!important;padding:11px 20px!important;li
 header .theme-toggle{width:48px!important;height:48px!important;min-width:48px!important}
 @media (max-width:768px){
 header .nav{height:68px!important}
-header .menu-toggle{width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important}
+header .theme-toggle{width:38px!important;height:38px!important;min-width:38px!important;font-size:.92rem!important}
+header .nav{align-items:center!important}
+header .menu-toggle{display:inline-flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;width:52px!important;height:52px!important;min-width:52px!important;min-height:52px!important;padding:0!important;margin:0!important}
+header .menu-toggle span{display:block!important;width:28px!important;height:3px!important;border-radius:2px!important;background:currentColor!important}
 }
 header .nav{padding-left:24px!important;padding-right:24px!important;box-sizing:border-box!important}
 @media (min-width:769px){header .menu-toggle{display:none!important}}
