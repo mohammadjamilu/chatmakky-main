@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.chatmakky.com/blog/</loc>
+    <lastmod>2026-11-28T15:07:12.789Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.chatmakky.com/blog/is-ai-chatbot-safe-customer-data/</loc>
     <lastmod>2026-11-28T15:06:27.391Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://www.chatmakky.com/blog/whatsapp-business-api-setup-guide-uae/</loc>
     <lastmod>2026-11-28T14:20:29.746Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.chatmakky.com/blog/</loc>
-    <lastmod>2026-11-28T14:20:16.791Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
