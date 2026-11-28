@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://www.chatmakky.com/blog/is-ai-chatbot-safe-customer-data/">
+
+<meta property="og:site_name" content="ChatMakky">
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Is It Safe to Give an AI Chatbot Your Customer Data?", "description": "Where your customers' messages actually go, whether AI providers train on your chats, why free personal AI accounts are the common mistake, the DPA document to ask for, and the ownership check that keeps your WhatsApp number and data yours. Plus 8 questions to ask any provider.", "datePublished": "2026-11-28", "image": "https://app.chatmakky.com/objects/generated-images/1060/1795878324229-f3942b45ac1111b0.jpg", "author": {"@type": "Organization", "name": "ChatMakky", "url": "https://www.chatmakky.com/"}, "publisher": {"@type": "Organization", "name": "ChatMakky"}, "mainEntityOfPage": "https://www.chatmakky.com/blog/is-ai-chatbot-safe-customer-data/"}</script>
+
+<!-- SEO Meta Tags -->
+<title>Is It Safe to Give an AI Chatbot Your Customer Data? | ChatMakky</title>
+<meta name="description" content="Where your customers&#39; messages actually go, whether AI providers train on your chats, why free personal AI accounts are the common mistake, the DPA document to ask for, and the ownership check that keeps your WhatsApp number and data yours. Plus 8 questions to ask any provider." />
+<meta name="keywords" content="is AI chatbot safe customer data privacy" />
+<meta property="og:title" content="Is It Safe to Give an AI Chatbot Your Customer Data? | ChatMakky" />
+<meta property="og:description" content="Where your customers&#39; messages actually go, whether AI providers train on your chats, why free personal AI accounts are the common mistake, the DPA document to ask for, and the ownership check that keeps your WhatsApp number and data yours. Plus 8 questions to ask any provider." />
+<meta property="og:image" content="https://app.chatmakky.com/objects/generated-images/1060/1795878324229-f3942b45ac1111b0.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.chatmakky.com/blog/is-ai-chatbot-safe-customer-data/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Is It Safe to Give an AI Chatbot Your Customer Data? | ChatMakky" />
+<meta name="twitter:description" content="Where your customers&#39; messages actually go, whether AI providers train on your chats, why free personal AI accounts are the common mistake, the DPA document to ask for, and the ownership check that keeps your WhatsApp number and data yours. Plus 8 questions to ask any provider." />
+<meta name="twitter:image" content="https://app.chatmakky.com/objects/generated-images/1060/1795878324229-f3942b45ac1111b0.jpg" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mx0jlmxg-i2005";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.chatmakky.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=9938');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='Up6h9c';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='Up6h9c';
+  var apiBase='https://app.chatmakky.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<header data-section="header">
+
+
+  
+
+  <div class="wrap nav">
+    <a href="https://www.chatmakky.com" class="logo"><img src="data:image/webp;base64,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" alt="ChatMakky logo" width="34" height="34" loading="eager" fetchpriority="high" decoding="sync" style="width:34px; height:34px; display:block; background:none; border:none; padding:0; box-shadow:none; object-fit: cover; object-position: center;"><span style="color:var(--text);font-weight:800;">ChatMakky</span></a>
+    <nav class="nav-links">
+      <a class="nav-item" href="https://www.chatmakky.com/pricing/">Pricing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
+      <a class="nav-item" href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
+      <a class="nav-item" href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
+      <a class="nav-item" href="https://www.chatmakky.com/ai-website/">AI Website</a>
+      <a class="nav-item active" href="https://www.chatmakky.com/full-service/">Full Service</a>
+      <a class="nav-item" href="https://www.chatmakky.com/blog/">Blog</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-ghost theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-regular fa-moon"></i></button>
+      <a class="btn btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
+      <a class="btn btn-ghost" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeToggle = document.querySelector('.theme-toggle');
+      const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = menu ? menu.querySelector('.mm-close') : null;
+
+      const applyTheme = (theme) => {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('theme-light', isLight);
+        if (themeIcon) { themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-regular fa-moon'; }
+        if (themeToggle) {
+          themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+          themeToggle.setAttribute('aria-pressed', isLight ? 'true' : 'false');
+        }
+        try { localStorage.setItem('chatmakky-theme', theme); } catch (e) {}
+      };
+
+      const getInitialTheme = () => {
+        try {
+          const saved = localStorage.getItem('chatmakky-theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      };
+
+      applyTheme(getInitialTheme());
+
+      if (themeToggle) {
+        const toggleTheme = function (e) {
+          if (e) { e.preventDefault(); e.stopPropagation(); }
+          const nextTheme = document.body.classList.contains('theme-light') ? 'dark' : 'light';
+          applyTheme(nextTheme);
+        };
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', toggleTheme, { passive: false });
+      }
+
+      if (menuToggle && menu) {
+        const setOpen = (open) => {
+          menu.classList.toggle('open', open);
+          menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+          menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          document.body.style.overflow = open ? 'hidden' : '';
+        };
+        setOpen(false);
+        const handleMenuToggle = function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const isOpen = menu.classList.contains('open');
+          setOpen(!isOpen);
+          menuToggle.setAttribute('aria-expanded', (!isOpen).toString());
+        };
+        menuToggle.addEventListener('click', handleMenuToggle);
+        menuToggle.addEventListener('touchstart', handleMenuToggle, { passive: false });
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function (e) { e.stopPropagation(); setOpen(false); });
+        }
+        menu.addEventListener('click', function (e) { if (e.target === menu) { setOpen(false); } });
+        menu.querySelectorAll('.mm-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () { setOpen(false); });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); }
+        });
+      }
+    });
+  </script>
+
+<style id="cm-header-std">
+header .nav{height:74px!important}
+header .logo{font-size:18px!important;gap:10px!important;margin-right:26px!important}
+header .logo img{width:34px!important;height:34px!important;object-fit:cover!important}
+header .nav-links{gap:0!important}
+header .nav-item{font-size:15px!important;padding:10px 8px!important;font-weight:500!important;line-height:1.2!important}
+header .nav-actions{gap:10px!important;margin-left:26px!important}
+header .nav-actions .btn{font-size:15px!important;padding:11px 20px!important;line-height:1.2!important}
+header .theme-toggle{width:48px!important;height:48px!important;min-width:48px!important}
+@media (max-width:768px){
+header .nav{height:68px!important}
+header .theme-toggle{width:38px!important;height:38px!important;min-width:38px!important;font-size:.92rem!important}
+header .nav{align-items:center!important}
+header .menu-toggle{display:inline-flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important;width:52px!important;height:52px!important;min-width:52px!important;min-height:52px!important;padding:0!important;margin:0!important}
+header .menu-toggle span{display:block!important;width:28px!important;height:3px!important;border-radius:2px!important;background:currentColor!important}
+}
+header .nav{padding-left:24px!important;padding-right:24px!important;box-sizing:border-box!important}
+@media (min-width:769px){header .menu-toggle{display:none!important}}
+header .nav{max-width:1180px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box!important}
+header .nav-links a.nav-item{padding:10px 8px!important;font-size:15px!important;line-height:1.2!important}
+header .wrap.nav{max-width:1180px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important;box-sizing:border-box!important}
+header .nav{justify-content:space-between!important}
+</style>
+<style id="cm-pricing2">
+.pricebox2{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:30px 32px;max-width:880px;margin:0 auto;text-align:center}
+.pb2-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.pb2-opt{border:1px solid var(--line);border-radius:16px;padding:22px 20px}
+.pb2-best{border:2px solid #FECA3C}
+.pb2-badge{display:inline-block;background:#FECA3C;color:#0E0E29;font-size:11px;font-weight:800;letter-spacing:.06em;padding:4px 10px;border-radius:100px;margin:0 0 10px}
+.pb2-label{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--muted);margin:0 0 8px}
+.pb2-amt{font-family:'JetBrains Mono',monospace;font-size:1.9rem;font-weight:700;color:var(--text);margin:0 0 8px}
+.pb2-best .pb2-amt{color:#FECA3C}
+.pb2-per{font-size:1rem;color:var(--muted);font-family:Inter,sans-serif;font-weight:500}
+.pb2-sub{color:var(--muted);font-size:.95rem;margin:0;line-height:1.55}
+.pb2-tag{color:var(--muted);margin:0 0 16px}
+.pb2-list{list-style:none;padding:0;margin:0 auto 22px;max-width:780px;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:10px 26px}
+.pb2-list li{color:var(--muted);line-height:1.55}
+.pricebox2 .note{color:var(--muted-2,#A6A2D6);font-size:.85rem;margin-top:16px;line-height:1.6}
+body.theme-light .pb2-best .pb2-amt{color:#B97E00}
+.pb2-grid{grid-template-columns:1fr;max-width:540px;margin-left:auto;margin-right:auto} @media (max-width:720px){.pb2-grid{grid-template-columns:1fr}.pb2-list{grid-template-columns:1fr}.pricebox2{padding:24px 20px}}.pb2-opt{border:2px solid #FECA3C;background:rgba(254,202,60,.05)}.pb2-grid .pb2-amt{color:#FECA3C}body.theme-light .pb2-opt{border-color:#D99A00}body.theme-light .pb2-grid .pb2-amt{color:#B97E00}
+</style>
+
+<style id="cm-accent-test">
+.grad,.cm-grad{background:none!important;-webkit-background-clip:initial!important;background-clip:initial!important;color:#FECA3C!important;-webkit-text-fill-color:#FECA3C!important}
+.cm-accent-word{color:#FECA3C!important}
+.eyebrow{color:#FECA3C!important;border-color:rgba(254,202,60,.45)!important;background:rgba(254,202,60,.10)!important}
+.tick{background:rgba(254,202,60,.16)!important;color:#FECA3C!important}
+.check{color:#FECA3C!important}
+.num{color:#FECA3C!important;-webkit-text-fill-color:#FECA3C!important;background:none!important;-webkit-background-clip:initial!important;background-clip:initial!important}
+.pricechips .chip b{color:#FECA3C!important}
+.annual b{color:#FECA3C!important}
+.price-tag{background:#FECA3C!important;color:#0E0E29!important}
+body.theme-light .grad,body.theme-light .cm-grad{color:#C78F00!important;-webkit-text-fill-color:#C78F00!important}
+body.theme-light .cm-accent-word{color:#B97E00!important}
+body.theme-light .eyebrow{color:#B97E00!important;border-color:rgba(185,126,0,.4)!important;background:rgba(254,202,60,.18)!important}
+body.theme-light .tick{background:rgba(254,202,60,.28)!important;color:#8A6100!important}
+body.theme-light .check{color:#B97E00!important}
+body.theme-light .num{color:#B97E00!important;-webkit-text-fill-color:#B97E00!important}
+body.theme-light .pricechips .chip b{color:#B97E00!important}
+body.theme-light .annual b{color:#B97E00!important}
+.svc-ic{display:inline-flex;width:34px;height:34px;border-radius:10px;align-items:center;justify-content:center;font-size:16.5px;margin-right:10px;vertical-align:-10px}
+.svc-web{color:#6E68FF;background:rgba(110,104,255,.14)}
+.svc-fb{color:#1877F2;background:rgba(24,119,242,.13)}
+.svc-ig{color:#E1306C;background:rgba(225,48,108,.12)}
+.svc-wa{color:#25D366;background:rgba(37,211,102,.13)}
+.svc-tt{color:#FE2C55;background:rgba(254,44,85,.12)}
+.svc-tg{color:#229ED9;background:rgba(34,158,217,.13)}
+.svc-cal{color:#9D4EDD;background:rgba(157,78,221,.13)}
+.svc-mail{color:#F59E0B;background:rgba(245,158,11,.14)}
+.svc-dash{color:#3DDC97;background:rgba(61,220,151,.12)}section[data-section="included"] .card h3{display:flex;align-items:center;gap:12px}section[data-section="included"] .svc-ic{flex:0 0 auto;margin-right:0}@media (max-width:640px){section[data-section="included"] .svc-ic{width:32px;height:32px;font-size:15px;border-radius:9px}section[data-section="included"] .card h3{font-size:1.02rem;line-height:1.25}}.faq .card{padding:0;overflow:hidden}.faq .card h3{margin:0;padding:20px 52px 20px 22px;cursor:pointer;position:relative;font-size:1.05rem;user-select:none}.faq .card h3::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2px solid #FECA3C;border-bottom:2px solid #FECA3C;transform:translateY(-70%) rotate(45deg);transition:transform .25s}.faq .card.open h3::after{transform:translateY(-30%) rotate(225deg)}.faq .card p{display:none;margin:0;padding:0 22px 20px}.faq .card.open p{display:block}body.theme-light .faq .card h3::after{border-color:#B97E00}
+.post-meta{color:#FECA3C!important}
+.blog-card p a{color:#FECA3C!important;font-weight:700}
+h2{border-left:4px solid #FECA3C!important;padding-left:12px!important}
+.ctabox h2{border-left:none!important;padding-left:0!important}
+body.theme-light .post-meta{color:#B97E00!important}
+body.theme-light .blog-card p a{color:#B97E00!important}
+body.theme-light h2{border-left-color:#D99A00!important}
+.cta-box a{color:#FECA3C!important}
+body.theme-light .cta-box a{color:var(--primary-light)!important}
+</style>
+</header>
+<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+  <button class="mm-close" aria-label="Close menu">✕</button>
+  <div class="mm-modal">
+    <a class="mm-btn" href="https://www.chatmakky.com/pricing/">Pricing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/ai-agent/">AI Agent</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/broadcast-marketing/">AI Bulk Marketing</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/appointment-slot-booking/">AI Booking</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/ai-website/">AI Website</a>
+      <a class="mm-btn" href="https://www.chatmakky.com/full-service/">Full Service</a>
+    <a class="mm-btn" href="https://www.chatmakky.com/blog/">Blog</a>
+    <a class="mm-btn mm-btn-solid" href="https://app.chatmakky.com/subscriber/auth">Get Started Free</a>
+    <a class="mm-btn" href="https://app.chatmakky.com/subscriber/auth">Sign up</a>
+  </div>
+
+</div>
+
+<div class="wrap"><article class="post">
+
+<p class="post-meta">Guide · AI Agents · 5 min read</p>
+<h1>Is It Safe to Give an AI Chatbot Your Customer Data?</h1>
+<p class="lede">Your customers tell your chat everything: names, phone numbers, addresses, sometimes health details and payment questions. Before you connect any AI agent, you should know exactly where those messages go, who can see them, and whether they are used to train someone else's AI. Here is the plain version.</p>
+<img src="https://app.chatmakky.com/objects/generated-images/1060/1795878324229-f3942b45ac1111b0.jpg" alt="Smartphone protected by a glowing shield and padlock with chat bubbles" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid var(--line);margin:18px 0 10px;display:block">
+
+<h2>Where the messages actually go</h2>
+<p>Follow one message. A customer writes on WhatsApp. The message reaches your AI platform, which sends the question to an AI model to prepare the reply. The reply comes back to the customer, and the whole chat lands in your inbox and dashboard. So three parties touch the data: the messaging channel, your AI provider, and the AI model provider. Safe setup means knowing all three and having a proper agreement with each.</p>
+<img src="https://app.chatmakky.com/objects/generated-images/1060/1795878331607-93afd0817f824da0.jpg" alt="Customer messages flowing through a protective shield into a business inbox" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid var(--line);margin:18px 0 10px;display:block">
+
+<h2>Does the AI train on your customer chats?</h2>
+<p>This is the question that matters most, and the answer depends on what kind of account you use:</p>
+<ul>
+<li><b>Business and API plans:</b> the major AI providers do not use your data to train their models by default. Your chats are processed to answer, not kept as training material.</li>
+<li><b>Free personal accounts:</b> different story. Chats on free consumer AI accounts may be used for training, and there is no data agreement protecting you. Running your business chats through a free personal AI account is the single most common safety mistake we see.</li>
+</ul>
+<p>The document to ask for is a <b>DPA</b>, a data processing agreement. It is the contract that says how the provider handles personal data for you. In Europe, GDPR Article 28 requires one with anyone processing data on your behalf, and the UAE's PDPL expects the same care. If a provider cannot show you one, that is your answer about them.</p>
+
+<h2>What customers send without thinking</h2>
+<p>People paste surprising things into chat: ID numbers, photos of cards, medical details, home addresses. You cannot stop them typing, but you can design for it:</p>
+<ul>
+<li><b>Never ask for card numbers or full ID numbers inside a chat.</b> WhatsApp policy also says not to collect these in messages. Use a secure form or payment link instead.</li>
+<li><b>Give the agent only what it needs.</b> Your services, prices and policies. It does not need your customer list to answer questions.</li>
+<li><b>Send sensitive topics to a human.</b> Health details, legal problems and payment disputes should reach your team, not sit in an automated flow.</li>
+</ul>
+
+<h2>Who on your team can see the chats?</h2>
+<p>Check three things before you buy. First, <b>role based access</b>: can you control which staff see which conversations? Second, <b>retention</b>: how long are chats kept, and can you delete them? Third, <b>export</b>: can a customer ask what you hold about them, and can you produce or delete it? Your duties to your customers stay yours, even when a tool does the typing. In Cisco's 2024 Data Privacy Benchmark, 94% of organisations said their customers would not buy from them if their data was not properly protected. Customers may never ask about your setup, but they feel the difference when something goes wrong.</p>
+<img src="https://app.chatmakky.com/objects/generated-images/1060/1795878340317-104123511f68d9a5.jpg" alt="Business owner holding the key to her own accounts and data vault" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid var(--line);margin:18px 0 10px;display:block">
+
+<h2>The ownership check most owners miss</h2>
+<p>Make sure the accounts are in <b>your</b> business name: the WhatsApp number, the Meta business account, the AI platform account, and the data itself. If you ever cancel, your number, your customers and your chat history should stay with you, not with the provider. Any provider who insists on running everything under their own name is holding your business hostage, politely.</p>
+
+<h2>8 questions to ask any provider before you buy</h2>
+<ol>
+<li>Do you train your AI on my customer conversations? Where is that written?</li>
+<li>Can I see your data processing agreement (DPA)?</li>
+<li>Which AI model processes the chats, and what are its data rules?</li>
+<li>Are the accounts and the WhatsApp number in my business name?</li>
+<li>Who on my team can see transcripts, and can I control that?</li>
+<li>How long do you keep chat data, and how do I delete it?</li>
+<li>What happens to my data if I cancel?</li>
+<li>How do you handle card numbers or ID details if a customer sends them?</li>
+</ol>
+<p>At ChatMakky, your accounts and number stay in your name, your agent is trained on your business information only, and chats that need a person come to you with the full history. If a provider answers all 8 questions clearly, you are probably safe with them, whoever you choose.</p>
+
+<h2>Questions owners ask us</h2>
+<h3>Is WhatsApp itself safe for business chats?</h3>
+<p>WhatsApp messages are encrypted in transit, and on the official API your chats live in your business systems, not on a staff member's personal phone. That second part is the real upgrade for most businesses: no customer data scattered across personal devices.</p>
+<h3>We are a clinic. Can an AI agent see patient details?</h3>
+<p>Design it so it does not need to. The agent can book appointments and answer general questions without holding medical information, and anything clinical goes to your team. We set those boundaries with you during setup.</p>
+
+<div class="cta-box">
+<h2>Want this done for you?</h2>
+<p>ChatMakky Full Service builds your AI agent for you: WhatsApp, Instagram, Facebook, TikTok, Telegram and your website. It replies instantly, day and night, and books the customer for you. Setup <b>AED 2,999 ($817)</b>, then <b>AED 999 ($272) per month</b>. AI messages are unlimited. Meta's own WhatsApp fees stay at cost on your account.</p>
+<p><a href="https://app.chatmakky.com/book/chatmakky-talk"><b>Book a free live demo</b></a> &nbsp;·&nbsp; <a href="https://www.chatmakky.com/full-service/">See Full Service</a></p>
+</div>
+
+<p>Read next: <a href="https://www.chatmakky.com/blog/ai-chatbot-wrong-answer/">What happens if an AI chatbot gives the wrong answer?</a> · <a href="https://www.chatmakky.com/blog/whatsapp-broadcast-rules-uae/">WhatsApp broadcast rules in the UAE</a></p>
+
+</article></div>
+<footer id="login" data-section="footer">
+  
+
+  <div class="wrap" style="padding-top:22px; padding-bottom:18px;">
+    <div class="footer-card">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="gi-brand">
+            <div class="foot-brand">
+              <a href="https://www.chatmakky.com/" class="logo">
+                <img src="data:image/webp;base64,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" alt="ChatMakky logo" width="34" height="34" loading="eager" decoding="async" style="width:34px; height:34px; display:block; flex-shrink:0; object-fit:cover; object-position:center;"> <span style="font-weight:800; color:var(--text); letter-spacing:-0.02em;">ChatMakky</span>
+              </a>
+              <p>Simple AI support for chats, leads, and sales.</p>
+
+              <div>
+                <div class="flow-caption" style="margin-bottom:10px;">Follow us</div>
+                <div class="social-row">
+                  <a href="https://www.facebook.com/share/1EZanVmRac/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="ChatMakky Facebook" title="ChatMakky Facebook" class="social-icon" style="background:linear-gradient(135deg, #1877F2, #2E8BFF); box-shadow:0 8px 16px rgba(24,119,242,0.18);">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                  <a href="mailto:support@chatmakky.com" target="_blank" rel="noopener" aria-label="ChatMakky Email" title="ChatMakky Email" class="social-icon" style="background:linear-gradient(135deg, #1B7CFF, #4FA3FF); box-shadow:0 8px 16px rgba(27,124,255,0.18);">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/chatmakky?igsh=dTJ5YjAwajVnZTJn&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="ChatMakky Instagram" title="ChatMakky Instagram" class="social-icon" style="background:radial-gradient(circle at 30% 110%, #FDF497 0%, #FD5949 30%, #D6249F 55%, #285AEB 90%); box-shadow:0 8px 16px rgba(214,36,159,0.18);">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://youtube.com/@chatmakky?si=_xPwEPrTeMypzdGJ" target="_blank" rel="noopener" aria-label="ChatMakky YouTube" title="ChatMakky YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="address">Lytchett House, 13 Freeland Park, Wareham Road, Poole, United Kingdom</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gi-product foot-col">
+            <h5>PRODUCT</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/#channels">Channels</a></li>
+              <li><a href="https://www.chatmakky.com/#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="gi-company foot-col">
+            <h5>COMPANY</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/privacy-policy/">Privacy policy</a></li>
+              <li><a href="https://www.chatmakky.com/terms-of-service/">Terms of service</a></li>
+              <li><a href="mailto:support@chatmakky.com">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="gi-partner">
+            <div class="partner-card">
+              <div class="partner-badge">Official Partner</div>
+              <div class="partner-head">
+                <div class="partner-ic">
+                  <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <div class="partner-name">Chatbot Agency BD</div>
+                  <div class="partner-sub">Official partner in Bangladesh</div>
+                </div>
+              </div>
+              <div class="partner-socials">
+                <a href="https://www.facebook.com/share/1EPaXH2nDE/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Chatbot Agency BD Facebook" title="Chatbot Agency BD Facebook" class="social-icon" style="background:linear-gradient(135deg, #1877F2, #2E8BFF); box-shadow:0 8px 16px rgba(24,119,242,0.18);">
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/8801810285559" target="_blank" rel="noopener" aria-label="Chatbot Agency BD WhatsApp" title="Chatbot Agency BD WhatsApp" class="social-icon" style="background:linear-gradient(135deg, #25D366, #1DBF73); box-shadow:0 8px 16px rgba(37,211,102,0.18);">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtube.com/@chatbotagencybd?si=n-Tq-m1sHCoA__t1" target="_blank" rel="noopener" aria-label="Chatbot Agency BD YouTube" title="Chatbot Agency BD YouTube" class="social-icon" style="background:linear-gradient(135deg, #FF1E1E, #FF4B4B); box-shadow:0 8px 16px rgba(255,30,30,0.18);">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.tiktok.com/@chatbotagencybd?_r=1&amp;_t=ZS-98khhCX3KjQ" target="_blank" rel="noopener" aria-label="Chatbot Agency BD TikTok" title="Chatbot Agency BD TikTok" class="social-icon" style="background:#000; box-shadow:0 8px 16px rgba(0,0,0,0.18);">
+                  <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/chatbot_agency_bd?igsh=MWJndzhxeGNrNXA2eA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Chatbot Agency BD Instagram" title="Chatbot Agency BD Instagram" class="social-icon" style="background:radial-gradient(circle at 30% 110%, #FDF497 0%, #FD5949 30%, #D6249F 55%, #285AEB 90%); box-shadow:0 8px 16px rgba(214,36,159,0.18);">
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gi-legal foot-col">
+            <h5>LEGAL</h5>
+            <ul>
+              <li><a href="https://www.chatmakky.com/privacy-policy/">Privacy policy</a></li>
+              <li><a href="https://www.chatmakky.com/terms-of-service/">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <span>© 2026 ChatMakky. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://app.chatmakky.com/widget.js" data-widget="11593776" async=""></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to do any technical setup?", "acceptedAnswer": {"@type": "Answer", "text": "No. We handle WhatsApp API verification, Meta connections, website installation, AI training and testing. You approve, we build."}}, {"@type": "Question", "name": "Is AI really unlimited?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We provide the AI API key and AI messages are unlimited on this plan \u2014 no credits and no per-message AI charges from us. Meta\u2019s own WhatsApp fees are at cost on your account, as with all providers."}}, {"@type": "Question", "name": "Can my team still talk to customers themselves?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The manual inbox lets your team jump into any conversation at any time, and the AI hands over to a human when needed."}}, {"@type": "Question", "name": "What if something breaks?", "acceptedAnswer": {"@type": "Answer", "text": "Premium support is included \u2014 response within 1 hour, and we fix the issue for you."}}, {"@type": "Question", "name": "Is there a free trial?", "acceptedAnswer": {"@type": "Answer", "text": "No \u2014 because we build everything for you, a free trial is not possible. Instead, book a free live demo and see exactly how it works before you pay anything."}}, {"@type": "Question", "name": "How much is it in total?", "acceptedAnswer": {"@type": "Answer", "text": "Setup AED 2,999 ($817) one-time, then AED 999 ($272)/month."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ChatMakky", "url": "https://www.chatmakky.com/", "logo": "https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1786284317291_IMG_8969.PNG", "description": "AI agents for WhatsApp, Instagram, Facebook, TikTok and website chat.", "address": {"@type": "PostalAddress", "streetAddress": "Lytchett House, 13 Freeland Park, Wareham Road", "addressLocality": "Poole", "addressCountry": "GB"}, "sameAs": ["https://www.instagram.com/chatmakky", "https://youtube.com/@chatmakky"]}</script>
+</body>
+</html>
